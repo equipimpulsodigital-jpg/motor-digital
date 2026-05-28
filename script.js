@@ -133,7 +133,7 @@ if (gradientText) {
 }
 
 // ── Contact form → Formspree ───────────────────────────────────
-const FORMSPREE_ID = 'TU_FORM_ID'; // ← reemplaza esto con tu ID de Formspree
+const FORMSPREE_ID = 'xgoqdkjb';
 
 document.getElementById('form').addEventListener('submit', async function (e) {
   e.preventDefault();
