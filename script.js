@@ -132,22 +132,42 @@ if (gradientText) {
   typewriter(gradientText, original);
 }
 
-// ── Contact form ───────────────────────────────────────────────
-document.getElementById('form').addEventListener('submit', function (e) {
+// ── Contact form → Formspree ───────────────────────────────────
+const FORMSPREE_ID = 'TU_FORM_ID'; // ← reemplaza esto con tu ID de Formspree
+
+document.getElementById('form').addEventListener('submit', async function (e) {
   e.preventDefault();
   const btn = this.querySelector('button[type="submit"]');
   btn.innerHTML = '<span class="spinner"></span> Enviando...';
   btn.disabled = true;
 
-  setTimeout(() => {
-    this.innerHTML = `
-      <div class="form-success" style="display:block">
-        <div style="font-size:3rem;margin-bottom:1rem">🎉</div>
-        <h3>¡Mensaje enviado!</h3>
-        <p>Te respondemos en menos de 24h. ¡Gracias por contactar con Impulso Digital!</p>
-      </div>
-    `;
-  }, 1200);
+  const data = new FormData(this);
+
+  try {
+    const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      method: 'POST',
+      body: data,
+      headers: { Accept: 'application/json' },
+    });
+
+    if (res.ok) {
+      this.innerHTML = `
+        <div class="form-success" style="display:block">
+          <div style="font-size:3rem;margin-bottom:1rem">🎉</div>
+          <h3>¡Mensaje recibido!</h3>
+          <p>Te respondemos en menos de 24h. ¡Gracias por contactar con Impulso Digital!</p>
+        </div>
+      `;
+    } else {
+      btn.innerHTML = 'Enviar mensaje';
+      btn.disabled = false;
+      alert('Algo salió mal. Prueba de nuevo o escríbenos directamente a equip.impulsodigital@gmail.com');
+    }
+  } catch {
+    btn.innerHTML = 'Enviar mensaje';
+    btn.disabled = false;
+    alert('Sin conexión. Escríbenos a equip.impulsodigital@gmail.com');
+  }
 });
 
 // ── Active nav link ────────────────────────────────────────────
