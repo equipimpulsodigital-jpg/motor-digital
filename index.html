@@ -3,156 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Impulso Digital – Hacemos webs para negocios reales. Diseño, desarrollo, SEO, publicidad online y mucho más desde Barcelona." />
-  <title>Impulso Digital | Tu empresa, visible en internet</title>
+  <meta name="description" content="Impulso Digital – Hacemos webs para negocios reales. Diseño, desarrollo, SEO y más." />
+  <title>Impulso Digital</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
 </head>
 <body>
 
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-dot"></div>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="progress-bar"></div>
+
   <!-- NAV -->
   <nav id="navbar">
-    <div class="nav-inner">
-      <a href="#" class="logo">Impulso<span>Digital</span></a>
-      <ul class="nav-links">
+    <a href="#" class="logo">Impulso<em>Digital</em></a>
+    <ul class="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#como-trabajamos">Proceso</a></li>
+      <li><a href="#precios">Precios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menú"><span></span><span></span></button>
+    <div class="nav-drawer">
+      <ul>
         <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#como-trabajamos">Cómo trabajamos</a></li>
+        <li><a href="#como-trabajamos">Proceso</a></li>
         <li><a href="#precios">Precios</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
-      <a href="#contacto" class="btn-nav">Hablar con nosotros</a>
-      <button class="hamburger" aria-label="Menú">&#9776;</button>
     </div>
-    <ul class="nav-mobile">
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#como-trabajamos">Cómo trabajamos</a></li>
-      <li><a href="#precios">Precios</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-      <li><a href="#contacto" class="btn-nav">Hablar con nosotros</a></li>
-    </ul>
   </nav>
 
   <!-- HERO -->
   <section id="hero">
-    <div class="hero-bg">
-      <div class="blob blob-1"></div>
-      <div class="blob blob-2"></div>
-      <div class="blob blob-3"></div>
-    </div>
-    <div class="hero-content">
-      <span class="badge">Hacemos webs para negocios reales</span>
-      <h1>Tu empresa,<br /><span class="gradient-text">visible en internet</span></h1>
-      <p>Si tienes un negocio y no tienes web —o la que tienes no te trae clientes— nosotros lo arreglamos. Rápido, sin complicaciones y a buen precio.</p>
-      <div class="hero-ctas">
-        <a href="#contacto" class="btn-primary">Pide tu presupuesto gratis</a>
-        <a href="#servicios" class="btn-ghost">Ver qué hacemos ↓</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><strong data-count="100" data-suffix="%">0%</strong><span>A medida, siempre</span></div>
-        <div class="stat-sep"></div>
-        <div class="stat"><strong data-count="24" data-suffix="h">0h</strong><span>Te respondemos en</span></div>
-        <div class="stat-sep"></div>
-        <div class="stat"><strong data-count="0" data-suffix="€ por hablar">0</strong><span>Presupuesto gratis</span></div>
+    <div class="hero-inner">
+      <div class="hero-tag">Agencia web — Barcelona</div>
+      <h1>
+        <span class="line"><span class="word">Tu empresa,</span></span>
+        <span class="line"><span class="word accent">visible</span></span>
+        <span class="line"><span class="word">en internet.</span></span>
+      </h1>
+      <div class="hero-bottom">
+        <p>Si tu web no te trae clientes, algo falla.<br>Nosotros lo arreglamos.</p>
+        <a href="#contacto" class="btn-main magnetic">Pide presupuesto gratis</a>
       </div>
     </div>
+    <div class="hero-scroll-hint">scroll ↓</div>
   </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Diseño Web</span><span class="dot">·</span>
+      <span>Desarrollo</span><span class="dot">·</span>
+      <span>SEO</span><span class="dot">·</span>
+      <span>Tienda Online</span><span class="dot">·</span>
+      <span>Redes Sociales</span><span class="dot">·</span>
+      <span>Email Marketing</span><span class="dot">·</span>
+      <span>Mantenimiento</span><span class="dot">·</span>
+      <span>Diseño Web</span><span class="dot">·</span>
+      <span>Desarrollo</span><span class="dot">·</span>
+      <span>SEO</span><span class="dot">·</span>
+      <span>Tienda Online</span><span class="dot">·</span>
+      <span>Redes Sociales</span><span class="dot">·</span>
+      <span>Email Marketing</span><span class="dot">·</span>
+      <span>Mantenimiento</span><span class="dot">·</span>
+    </div>
+  </div>
 
   <!-- SERVICIOS -->
   <section id="servicios">
     <div class="container">
-      <div class="section-header">
-        <span class="label">Qué hacemos</span>
-        <h2>Nuestros servicios</h2>
-        <p>De la idea a la pantalla. Todo lo que necesita tu negocio para funcionar online.</p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">🎨</div>
-          <h3>Diseño Web</h3>
-          <p>Webs que no parecen hechas con una plantilla. Diseñamos desde cero pensando en tus clientes, no en los nuestros.</p>
+      <div class="section-label">01 — Qué hacemos</div>
+      <div class="services-list">
+        <div class="svc-row">
+          <div class="svc-head">
+            <span class="svc-num">01</span>
+            <h3>Diseño Web</h3>
+          </div>
+          <p class="svc-desc">Webs que no parecen plantillas. Diseñamos desde cero pensando en tus clientes.</p>
         </div>
-        <div class="service-card">
-          <div class="service-icon">💻</div>
-          <h3>Desarrollo Web</h3>
-          <p>Rápidas, seguras y que funcionan bien en el móvil. Nada de constructores de webs baratos que se rompen solos.</p>
+        <div class="svc-row">
+          <div class="svc-head">
+            <span class="svc-num">02</span>
+            <h3>Desarrollo Web</h3>
+          </div>
+          <p class="svc-desc">Rápidas, seguras y que funcionan bien en el móvil. Sin constructores de webs baratos.</p>
         </div>
-        <div class="service-card featured">
-          <div class="service-icon">🔍</div>
-          <h3>SEO</h3>
-          <p>Para que cuando alguien busque lo que ofreces en Google, aparezcas tú. No tu competencia.</p>
-          <span class="badge-card">Lo más pedido</span>
+        <div class="svc-row highlight">
+          <div class="svc-head">
+            <span class="svc-num">03</span>
+            <h3>SEO <span class="tag-hot">Lo más pedido</span></h3>
+          </div>
+          <p class="svc-desc">Para que cuando alguien busque lo que ofreces en Google, aparezcas tú. No tu competencia.</p>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🛒</div>
-          <h3>Tienda Online</h3>
-          <p>Si quieres vender por internet, te montamos la tienda completa. Pagos, stock, pedidos — todo funcionando.</p>
+        <div class="svc-row">
+          <div class="svc-head">
+            <span class="svc-num">04</span>
+            <h3>Tienda Online</h3>
+          </div>
+          <p class="svc-desc">Tu tienda completa lista para vender. Pagos, stock, pedidos — todo funcionando.</p>
         </div>
-        <div class="service-card">
-          <div class="service-icon">📱</div>
-          <h3>Redes Sociales</h3>
-          <p>Creamos y gestionamos tu perfil en Instagram, Facebook o LinkedIn. Contenido que no parece corporativo.</p>
+        <div class="svc-row">
+          <div class="svc-head">
+            <span class="svc-num">05</span>
+            <h3>Redes Sociales</h3>
+          </div>
+          <p class="svc-desc">Creamos y gestionamos tu perfil. Contenido que no parece corporativo.</p>
         </div>
-        <div class="service-card">
-          <div class="service-icon">✉️</div>
-          <h3>Email Marketing</h3>
-          <p>Newsletters y campañas de correo para mantener el contacto con tus clientes y venderles más sin molestar.</p>
+        <div class="svc-row">
+          <div class="svc-head">
+            <span class="svc-num">06</span>
+            <h3>Email Marketing</h3>
+          </div>
+          <p class="svc-desc">Newsletters que la gente abre. Mantén el contacto con tus clientes sin molestar.</p>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🔧</div>
-          <h3>Mantenimiento Web</h3>
-          <p>Para que tu web no se caiga, no se hackee y siempre esté actualizada. Nos encargamos de todo eso por ti.</p>
+        <div class="svc-row">
+          <div class="svc-head">
+            <span class="svc-num">07</span>
+            <h3>Mantenimiento Web</h3>
+          </div>
+          <p class="svc-desc">Para que tu web no se caiga, no se hackee y siempre esté actualizada.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CÓMO TRABAJAMOS -->
+  <!-- PROCESO -->
   <section id="como-trabajamos">
     <div class="container">
-      <div class="section-header">
-        <span class="label">El proceso</span>
-        <h2>Cómo lo hacemos</h2>
-        <p>Sin reuniones eternas ni presupuestos que te dejan frío. Así funciona trabajar con nosotros.</p>
-      </div>
-      <div class="process-list">
-
-        <div class="process-item">
-          <div class="process-num">01</div>
-          <div class="process-body">
-            <h3>Nos cuentas qué necesitas</h3>
-            <p>Una llamada o un mensaje basta. Nos dices qué tienes, qué te falta y qué quieres conseguir. Sin formularios de 30 preguntas.</p>
-          </div>
+      <div class="section-label">02 — Cómo trabajamos</div>
+      <div class="process-grid">
+        <div class="process-card">
+          <span class="pnum">01</span>
+          <h3>Nos cuentas qué necesitas</h3>
+          <p>Una llamada o un mensaje basta. Sin formularios de 30 preguntas.</p>
         </div>
-
-        <div class="process-item">
-          <div class="process-num">02</div>
-          <div class="process-body">
-            <h3>Te enviamos un presupuesto claro</h3>
-            <p>En menos de 24 horas tienes un presupuesto detallado, con lo que incluye y lo que no. Sin sorpresas al final.</p>
-          </div>
+        <div class="process-card">
+          <span class="pnum">02</span>
+          <h3>Presupuesto en 24h</h3>
+          <p>Detallado, con lo que incluye y lo que no. Sin sorpresas al final.</p>
         </div>
-
-        <div class="process-item">
-          <div class="process-num">03</div>
-          <div class="process-body">
-            <h3>Diseñamos y construimos</h3>
-            <p>Trabajamos con revisiones abiertas. Puedes ver el avance, pedir cambios y opinar en todo momento. Es tu web, no la nuestra.</p>
-          </div>
+        <div class="process-card">
+          <span class="pnum">03</span>
+          <h3>Diseñamos juntos</h3>
+          <p>Revisiones abiertas. Puedes ver el avance y pedir cambios en todo momento.</p>
         </div>
-
-        <div class="process-item">
-          <div class="process-num">04</div>
-          <div class="process-body">
-            <h3>Lanzamos y nos quedamos</h3>
-            <p>Una vez publicada, no desaparecemos. Te explicamos cómo gestionar lo tuyo y seguimos disponibles si algo falla o quieres crecer.</p>
-          </div>
+        <div class="process-card">
+          <span class="pnum">04</span>
+          <h3>Lanzamos y seguimos</h3>
+          <p>No desaparecemos. Seguimos disponibles si algo falla o quieres crecer.</p>
         </div>
-
-      </div>
-      <div class="process-cta">
-        <a href="#contacto" class="btn-primary">Empezar ahora</a>
       </div>
     </div>
   </section>
@@ -160,93 +166,63 @@
   <!-- PRECIOS -->
   <section id="precios">
     <div class="container">
-      <div class="section-header">
-        <span class="label">Sin letra pequeña</span>
-        <h2>Precios</h2>
-        <p>Tres opciones pensadas para la mayoría de negocios. Si el tuyo es distinto, te hacemos un precio a medida.</p>
-      </div>
-      <div class="pricing-grid">
+      <div class="section-label">03 — Precios</div>
+      <p class="pricing-intro">Sin letra pequeña. Hosting incluido. Cambios básicos cada mes.</p>
+      <div class="pricing-row">
 
-        <!-- Plan Básico -->
-        <div class="pricing-card">
-          <div class="pricing-top">
-            <span class="pricing-icon">🌐</span>
-            <h3>Web Básica</h3>
-            <p class="pricing-desc">Para negocios que necesitan estar en internet y hacerlo bien. Sin complicaciones.</p>
-          </div>
-          <div class="pricing-price">
-            <span class="price-amount">399€</span>
-            <span class="price-setup">pago único</span>
-          </div>
-          <div class="price-monthly">+ <strong>30€/mes</strong> mantenimiento</div>
-          <ul class="pricing-features">
-            <li>✅ Diseño 100% a medida</li>
-            <li>✅ SEO básico incluido</li>
-            <li>✅ Alta en Google</li>
-            <li>✅ Adaptada a móvil</li>
-            <li>✅ Formulario de contacto</li>
-            <li>✅ Hosting y dominio incluidos</li>
-            <li>✅ Actualizaciones de seguridad</li>
-            <li>✅ Cambios básicos cada mes</li>
+        <div class="plan">
+          <div class="plan-name">Web Básica</div>
+          <div class="plan-price">399<span>€</span></div>
+          <div class="plan-monthly">+ 30€/mes</div>
+          <ul>
+            <li>Diseño 100% a medida</li>
+            <li>SEO básico + alta en Google</li>
+            <li>Adaptada a móvil</li>
+            <li>Formulario de contacto</li>
+            <li>Hosting y dominio incluidos</li>
+            <li>Actualizaciones de seguridad</li>
+            <li>Cambios básicos cada mes</li>
           </ul>
-          <a href="#contacto" class="btn-ghost pricing-btn">Solicitar presupuesto</a>
+          <a href="#contacto" class="btn-plan magnetic">Solicitar</a>
         </div>
 
-        <!-- Plan Pro -->
-        <div class="pricing-card pricing-featured">
-          <span class="pricing-badge">⭐ Más vendido</span>
-          <div class="pricing-top">
-            <span class="pricing-icon">⚙️</span>
-            <h3>Web + Panel Admin</h3>
-            <p class="pricing-desc">Para negocios que quieren publicar noticias, gestionar reservas y no depender de nadie para actualizar su web.</p>
-          </div>
-          <div class="pricing-price">
-            <span class="price-amount">549€</span>
-            <span class="price-setup">pago único</span>
-          </div>
-          <div class="price-monthly">+ <strong>50€/mes</strong> mantenimiento</div>
-          <ul class="pricing-features">
-            <li>✅ Todo lo del plan Básico</li>
-            <li>✅ Hosting y dominio incluidos</li>
-            <li>✅ Panel de administración propio</li>
-            <li>✅ Publica noticias y artículos</li>
-            <li>✅ Sistema de reservas online</li>
-            <li>✅ Gestión de usuarios</li>
-            <li>✅ SEO avanzado</li>
-            <li>✅ Cambios básicos cada mes</li>
-            <li>✅ Soporte prioritario</li>
+        <div class="plan plan-featured">
+          <div class="plan-badge">Más vendido</div>
+          <div class="plan-name">Web + Panel Admin</div>
+          <div class="plan-price">549<span>€</span></div>
+          <div class="plan-monthly">+ 50€/mes</div>
+          <ul>
+            <li>Todo lo del plan Básico</li>
+            <li>Panel de administración propio</li>
+            <li>Publica noticias y artículos</li>
+            <li>Sistema de reservas online</li>
+            <li>Gestión de usuarios</li>
+            <li>SEO avanzado</li>
+            <li>Cambios básicos cada mes</li>
+            <li>Soporte prioritario</li>
           </ul>
-          <a href="#contacto" class="btn-primary pricing-btn">Solicitar presupuesto</a>
+          <a href="#contacto" class="btn-plan btn-plan-inv magnetic">Solicitar</a>
         </div>
 
-        <!-- Plan E-commerce -->
-        <div class="pricing-card">
-          <div class="pricing-top">
-            <span class="pricing-icon">🛒</span>
-            <h3>Tienda Online</h3>
-            <p class="pricing-desc">Quieres vender online. Te lo ponemos a punto: productos, pagos, pedidos y todo lo que necesita una tienda real.</p>
-          </div>
-          <div class="pricing-price">
-            <span class="price-amount">1.499€</span>
-            <span class="price-setup">pago único</span>
-          </div>
-          <div class="price-monthly">+ <strong>150€/mes</strong> mantenimiento</div>
-          <ul class="pricing-features">
-            <li>✅ Todo lo del plan Pro</li>
-            <li>✅ Hosting y dominio incluidos</li>
-            <li>✅ Catálogo de productos</li>
-            <li>✅ Pasarela de pago (Stripe / PayPal)</li>
-            <li>✅ Gestión de stock</li>
-            <li>✅ Panel de pedidos</li>
-            <li>✅ Facturas automáticas</li>
-            <li>✅ Integración con envíos</li>
-            <li>✅ Cambios básicos cada mes</li>
+        <div class="plan">
+          <div class="plan-name">Tienda Online</div>
+          <div class="plan-price">1.499<span>€</span></div>
+          <div class="plan-monthly">+ 150€/mes</div>
+          <ul>
+            <li>Todo lo del plan Pro</li>
+            <li>Catálogo de productos</li>
+            <li>Pago con Stripe / PayPal</li>
+            <li>Gestión de stock</li>
+            <li>Panel de pedidos</li>
+            <li>Facturas automáticas</li>
+            <li>Integración con envíos</li>
+            <li>Cambios básicos cada mes</li>
           </ul>
-          <a href="#contacto" class="btn-ghost pricing-btn">Solicitar presupuesto</a>
+          <a href="#contacto" class="btn-plan magnetic">Solicitar</a>
         </div>
 
       </div>
-      <p class="pricing-note">¿Tu proyecto no encaja en ningún plan? <a href="#contacto">Cuéntanoslo y te hacemos un presupuesto a medida →</a></p>
+      <p class="pricing-custom">¿Proyecto especial? <a href="#contacto">Pídenos presupuesto a medida →</a></p>
     </div>
   </section>
 
@@ -254,25 +230,22 @@
   <section id="contacto">
     <div class="container contact-wrap">
       <div class="contact-left">
-        <span class="label">Escríbenos</span>
+        <div class="section-label">04 — Contacto</div>
         <h2>¿Hablamos?</h2>
-        <p>Cuéntanos qué tienes en mente. Te respondemos en menos de 24 horas con un presupuesto honesto, sin compromiso.</p>
-        <div class="contact-info">
-          <a href="mailto:equip.impulsodigital@gmail.com" class="contact-item">
-            <span class="contact-icon">✉️</span>
-            equip.impulsodigital@gmail.com
-          </a>
-        </div>
+        <p>Cuéntanos qué tienes en mente. Te respondemos en menos de 24 horas.</p>
+        <a href="mailto:equip.impulsodigital@gmail.com" class="contact-email">
+          equip.impulsodigital@gmail.com
+        </a>
       </div>
-      <form class="contact-form" id="form">
-        <div class="form-group">
-          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+      <form id="form">
+        <div class="field">
+          <input type="text" name="nombre" placeholder="Nombre" required />
         </div>
-        <div class="form-group">
-          <input type="email" id="email" name="email" placeholder="Tu email" required />
+        <div class="field">
+          <input type="email" name="email" placeholder="Email" required />
         </div>
-        <div class="form-group">
-          <select id="servicio" name="servicio">
+        <div class="field">
+          <select name="servicio">
             <option value="" disabled selected>¿Qué necesitas?</option>
             <option>Diseño Web</option>
             <option>Desarrollo Web</option>
@@ -284,20 +257,20 @@
             <option>No sé, necesito consejo</option>
           </select>
         </div>
-        <div class="form-group">
-          <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos un poco sobre tu proyecto o negocio..." rows="4" required></textarea>
+        <div class="field">
+          <textarea name="mensaje" placeholder="Cuéntanos tu proyecto..." rows="4" required></textarea>
         </div>
-        <button type="submit" class="btn-primary full">Enviar mensaje</button>
-        <p class="form-note">Te respondemos en menos de 24h — normalmente antes</p>
+        <button type="submit" class="btn-main magnetic">Enviar mensaje</button>
+        <p class="form-note">Respondemos en menos de 24h — normalmente antes</p>
       </form>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <div class="container footer-inner">
-      <a href="#" class="logo">Impulso<span>Digital</span></a>
-      <p>© 2026 Impulso Digital. Tu empresa, visible en internet.</p>
+    <div class="footer-big">ImpulsoDigital</div>
+    <div class="footer-bar">
+      <span>© 2026 Impulso Digital</span>
       <div class="footer-links">
         <a href="#servicios">Servicios</a>
         <a href="#precios">Precios</a>

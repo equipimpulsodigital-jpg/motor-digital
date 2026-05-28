@@ -1,199 +1,162 @@
-// Navbar scroll effect
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 30);
-}, { passive: true });
+// ── Custom cursor ──────────────────────────────────────────────
+const cursor    = document.getElementById('cursor');
+const cursorDot = document.getElementById('cursor-dot');
 
-// Hamburger menu
-const hamburger = document.querySelector('.hamburger');
-const navMobile = document.querySelector('.nav-mobile');
-hamburger.addEventListener('click', () => navMobile.classList.toggle('open'));
-navMobile.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navMobile.classList.remove('open'));
-});
+if (cursor) {
+  let cx = 0, cy = 0, tx = 0, ty = 0;
 
-// ── HERO entrance ──────────────────────────────────────────────
-function animateHero() {
-  const els = [
-    { el: document.querySelector('.badge'),       delay: 100,  cls: 'anim-drop' },
-    { el: document.querySelector('.hero-content h1'), delay: 280, cls: 'anim-rise' },
-    { el: document.querySelector('.hero-content p'),  delay: 500, cls: 'anim-rise' },
-    { el: document.querySelector('.hero-ctas'),   delay: 680,  cls: 'anim-rise' },
-    { el: document.querySelector('.hero-stats'),  delay: 860,  cls: 'anim-rise' },
-  ];
-  els.forEach(({ el, delay, cls }) => {
-    if (!el) return;
-    el.style.opacity = '0';
-    el.style.transform = cls === 'anim-drop' ? 'translateY(-20px)' : 'translateY(32px)';
-    setTimeout(() => {
-      el.style.transition = 'opacity 0.65s ease, transform 0.65s ease';
-      el.style.opacity = '1';
-      el.style.transform = 'translateY(0)';
-    }, delay);
+  document.addEventListener('mousemove', e => { tx = e.clientX; ty = e.clientY; });
+
+  (function loop() {
+    cx += (tx - cx) * 0.12;
+    cy += (ty - cy) * 0.12;
+    cursor.style.left    = cx + 'px';
+    cursor.style.top     = cy + 'px';
+    cursorDot.style.left = tx + 'px';
+    cursorDot.style.top  = ty + 'px';
+    requestAnimationFrame(loop);
+  })();
+
+  document.querySelectorAll('a, button, .svc-row, .plan, input, select, textarea').forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
   });
 }
 
-// ── Scroll-reveal with stagger ─────────────────────────────────
-function reveal(entries, observer) {
+// ── Scroll progress bar ────────────────────────────────────────
+const progressBar = document.getElementById('progress-bar');
+window.addEventListener('scroll', () => {
+  const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+  if (progressBar) progressBar.style.width = pct + '%';
+}, { passive: true });
+
+// ── Navbar scroll ──────────────────────────────────────────────
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+}, { passive: true });
+
+// ── Hamburger ─────────────────────────────────────────────────
+const hamburger = document.querySelector('.hamburger');
+const drawer    = document.querySelector('.nav-drawer');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  drawer.classList.toggle('open');
+});
+drawer.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    drawer.classList.remove('open');
+  });
+});
+
+// ── Hero text reveal ───────────────────────────────────────────
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('#hero h1 .word').forEach((w, i) => {
+    setTimeout(() => w.classList.add('visible'), 200 + i * 180);
+  });
+});
+
+// ── Magnetic buttons ───────────────────────────────────────────
+document.querySelectorAll('.magnetic').forEach(el => {
+  el.addEventListener('mousemove', function(e) {
+    const rect = this.getBoundingClientRect();
+    const cx   = rect.left + rect.width  / 2;
+    const cy   = rect.top  + rect.height / 2;
+    const dx   = (e.clientX - cx) * 0.25;
+    const dy   = (e.clientY - cy) * 0.25;
+    this.style.transform = `translate(${dx}px, ${dy}px)`;
+  });
+  el.addEventListener('mouseleave', function() {
+    this.style.transform = '';
+  });
+});
+
+// ── Scroll reveal ──────────────────────────────────────────────
+const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) return;
-    const el = entry.target;
+    const el    = entry.target;
     const delay = parseInt(el.dataset.delay || 0);
     setTimeout(() => el.classList.add('visible'), delay);
     observer.unobserve(el);
   });
-}
+}, { threshold: 0.1 });
 
-const scrollObserver = new IntersectionObserver(reveal, { threshold: 0.12 });
-
-// Section headers — slide up
-document.querySelectorAll('.section-header').forEach(el => {
-  el.classList.add('sr', 'sr-up');
-  scrollObserver.observe(el);
+// Services rows
+document.querySelectorAll('.svc-row').forEach((el, i) => {
+  el.classList.add('sr');
+  el.dataset.delay = i * 60;
+  observer.observe(el);
 });
 
-// Service cards — stagger slide up
-document.querySelectorAll('.service-card').forEach((el, i) => {
-  el.classList.add('sr', 'sr-up');
-  el.dataset.delay = i * 90;
-  scrollObserver.observe(el);
+// Process cards
+document.querySelectorAll('.process-card').forEach((el, i) => {
+  el.classList.add('sr');
+  el.dataset.delay = i * 100;
+  observer.observe(el);
 });
 
-// Pricing cards — stagger up, featured in the middle pops last
-document.querySelectorAll('.pricing-card').forEach((el, i) => {
-  el.classList.add('sr', 'sr-up');
-  el.dataset.delay = i * 130;
-  scrollObserver.observe(el);
-});
-
-// Process steps — stagger up
-document.querySelectorAll('.process-item').forEach((el, i) => {
-  el.classList.add('sr', 'sr-up');
+// Pricing plans
+document.querySelectorAll('.plan').forEach((el, i) => {
+  el.classList.add('sr');
   el.dataset.delay = i * 120;
-  scrollObserver.observe(el);
+  observer.observe(el);
 });
 
-// Process CTA
-const processCta = document.querySelector('.process-cta');
-if (processCta) { processCta.classList.add('sr', 'sr-up'); processCta.dataset.delay = 480; scrollObserver.observe(processCta); }
+// Contact halves
+const cl = document.querySelector('.contact-left');
+const cf = document.getElementById('form');
+if (cl) { cl.classList.add('sr', 'sr-left'); observer.observe(cl); }
+if (cf) { cf.classList.add('sr', 'sr-right'); cf.dataset.delay = 150; observer.observe(cf); }
 
-// Contact halves — left from left, form from right
-const contactLeft = document.querySelector('.contact-left');
-const contactForm = document.querySelector('.contact-form');
-if (contactLeft) { contactLeft.classList.add('sr', 'sr-left'); scrollObserver.observe(contactLeft); }
-if (contactForm) { contactForm.classList.add('sr', 'sr-right'); contactForm.dataset.delay = 150; scrollObserver.observe(contactForm); }
+// Footer big text
+const fb = document.querySelector('.footer-big');
+if (fb) { fb.classList.add('sr'); observer.observe(fb); }
 
-// ── Animated counter for hero stats ───────────────────────────
-function animateCounter(el, target, suffix, duration = 1400) {
-  let start = null;
-  const step = ts => {
-    if (!start) start = ts;
-    const progress = Math.min((ts - start) / duration, 1);
-    const ease = 1 - Math.pow(1 - progress, 3);
-    el.textContent = Math.round(ease * target) + suffix;
-    if (progress < 1) requestAnimationFrame(step);
-  };
-  requestAnimationFrame(step);
-}
-
-const statsObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    statsObserver.unobserve(entry.target);
-    document.querySelectorAll('.stat strong[data-count]').forEach(el => {
-      animateCounter(el, parseInt(el.dataset.count), el.dataset.suffix || '');
-    });
+// Active nav highlight
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+  let cur = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) cur = s.id; });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.style.color = a.getAttribute('href') === `#${cur}` ? 'var(--fg)' : '';
   });
-}, { threshold: 0.5 });
-
-const heroStats = document.querySelector('.hero-stats');
-if (heroStats) statsObserver.observe(heroStats);
-
-// ── Typewriter for gradient text ──────────────────────────────
-function typewriter(el, text, speed = 55) {
-  el.textContent = '';
-  el.style.borderRight = '3px solid #a78bfa';
-  let i = 0;
-  const type = () => {
-    if (i <= text.length) {
-      el.textContent = text.slice(0, i);
-      i++;
-      setTimeout(type, speed);
-    } else {
-      setTimeout(() => el.style.borderRight = 'none', 600);
-    }
-  };
-  setTimeout(type, 900);
-}
-
-const gradientText = document.querySelector('.gradient-text');
-if (gradientText) {
-  const original = gradientText.textContent;
-  typewriter(gradientText, original);
-}
+}, { passive: true });
 
 // ── Contact form → Formspree ───────────────────────────────────
 const FORMSPREE_ID = 'xgoqdkjb';
 
-document.getElementById('form').addEventListener('submit', async function (e) {
+document.getElementById('form').addEventListener('submit', async function(e) {
   e.preventDefault();
   const btn = this.querySelector('button[type="submit"]');
-  btn.innerHTML = '<span class="spinner"></span> Enviando...';
+  const orig = btn.textContent;
+  btn.textContent = 'Enviando...';
   btn.disabled = true;
-
-  const data = new FormData(this);
 
   try {
     const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
       method: 'POST',
-      body: data,
+      body: new FormData(this),
       headers: { Accept: 'application/json' },
     });
 
     if (res.ok) {
       this.innerHTML = `
-        <div class="form-success" style="display:block">
-          <div style="font-size:3rem;margin-bottom:1rem">🎉</div>
-          <h3>¡Mensaje recibido!</h3>
-          <p>Te respondemos en menos de 24h. ¡Gracias por contactar con Impulso Digital!</p>
+        <div style="padding:2rem 0;text-align:center">
+          <div style="font-size:2.5rem;margin-bottom:1rem;color:var(--accent)">✓</div>
+          <p style="font-size:1.1rem;font-weight:700;color:var(--fg);margin-bottom:0.5rem">Mensaje recibido</p>
+          <p style="color:var(--muted);font-size:0.9rem">Te respondemos en menos de 24h.</p>
         </div>
       `;
     } else {
-      btn.innerHTML = 'Enviar mensaje';
+      btn.textContent = orig;
       btn.disabled = false;
-      alert('Algo salió mal. Prueba de nuevo o escríbenos directamente a equip.impulsodigital@gmail.com');
+      alert('Algo salió mal. Escríbenos a equip.impulsodigital@gmail.com');
     }
   } catch {
-    btn.innerHTML = 'Enviar mensaje';
+    btn.textContent = orig;
     btn.disabled = false;
     alert('Sin conexión. Escríbenos a equip.impulsodigital@gmail.com');
   }
 });
-
-// ── Active nav link ────────────────────────────────────────────
-const sections = document.querySelectorAll('section[id]');
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(sec => {
-    if (window.scrollY >= sec.offsetTop - 120) current = sec.getAttribute('id');
-  });
-  document.querySelectorAll('.nav-links a').forEach(a => {
-    a.style.color = a.getAttribute('href') === `#${current}` ? '#a78bfa' : '';
-  });
-}, { passive: true });
-
-// ── Cursor glow that follows the mouse ────────────────────────
-const glow = document.createElement('div');
-glow.id = 'cursor-glow';
-document.body.appendChild(glow);
-let mx = 0, my = 0, gx = 0, gy = 0;
-document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-(function loop() {
-  gx += (mx - gx) * 0.08;
-  gy += (my - gy) * 0.08;
-  glow.style.transform = `translate(${gx - 150}px, ${gy - 150}px)`;
-  requestAnimationFrame(loop);
-})();
-
-// ── Init ───────────────────────────────────────────────────────
-animateHero();
