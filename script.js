@@ -114,6 +114,31 @@ if (cf) { cf.classList.add('sr', 'sr-right'); cf.dataset.delay = 150; observer.o
 const fb = document.querySelector('.footer-big');
 if (fb) { fb.classList.add('sr'); observer.observe(fb); }
 
+// Clock (Europe/Madrid = Barcelona)
+const clockEl = document.getElementById('nav-clock');
+function updateClock() {
+  if (!clockEl) return;
+  const now = new Date();
+  clockEl.textContent = now.toLocaleTimeString('es-ES', {
+    timeZone: 'Europe/Madrid',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+  });
+}
+updateClock();
+setInterval(updateClock, 1000);
+
+// Language switcher
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const lang = btn.dataset.lang;
+    document.querySelectorAll('.lang-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.lang === lang);
+    });
+  });
+});
+
 // Active nav highlight
 const sections = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {
