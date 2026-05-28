@@ -6,8 +6,8 @@ html { scroll-behavior: smooth; font-size: 16px; }
   --bg:     #ffffff;
   --fg:     #0a0a0a;
   --accent: #7c3aed;
-  --muted:  #666;
-  --border: #e5e5e5;
+  --muted:  #4a4a4a;
+  --border: #ddd;
   --white:  #ffffff;
 }
 
@@ -260,7 +260,7 @@ a { text-decoration: none; color: inherit; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--muted);
+  color: var(--accent);
   margin-bottom: 4rem;
   padding-top: 6rem;
 }
@@ -319,9 +319,9 @@ a { text-decoration: none; color: inherit; }
 }
 
 .svc-desc {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--muted);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 /* ===== PROCESO ===== */
@@ -364,7 +364,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .process-card p {
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   color: var(--muted);
   line-height: 1.65;
 }
@@ -377,7 +377,7 @@ a { text-decoration: none; color: inherit; }
 
 .pricing-intro {
   font-size: 1rem;
-  color: var(--muted);
+  color: var(--fg);
   margin-bottom: 3rem;
   margin-top: -2rem;
 }
@@ -408,7 +408,7 @@ a { text-decoration: none; color: inherit; }
 }
 .plan-featured:hover { background: #6d28d9; }
 .plan-featured .plan-monthly,
-.plan-featured .plan-name { color: rgba(255,255,255,0.85); }
+.plan-featured .plan-name { color: rgba(255,255,255,0.92); }
 .plan-featured ul li { color: #ffffff; }
 .plan-featured .plan-price { color: #ffffff; }
 
@@ -429,7 +429,7 @@ a { text-decoration: none; color: inherit; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #444;
+  color: var(--fg);
 }
 
 .plan-price {
@@ -445,8 +445,9 @@ a { text-decoration: none; color: inherit; }
 }
 
 .plan-monthly {
-  font-size: 0.85rem;
-  color: #555;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--muted);
   margin-top: -0.8rem;
 }
 
@@ -458,9 +459,9 @@ a { text-decoration: none; color: inherit; }
   flex: 1;
 }
 .plan ul li {
-  font-size: 0.85rem;
-  color: #333;
-  padding-left: 1rem;
+  font-size: 0.9rem;
+  color: var(--fg);
+  padding-left: 1.2rem;
   position: relative;
 }
 .plan ul li::before {
