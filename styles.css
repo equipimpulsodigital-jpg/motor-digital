@@ -429,6 +429,140 @@ section { padding: 6rem 2rem; }
   line-height: 1.6;
 }
 
+/* ===== PRECIOS ===== */
+#precios { background: var(--dark); }
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.pricing-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.pricing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+.pricing-card.pricing-featured {
+  background: linear-gradient(160deg, rgba(124,58,237,0.18), rgba(236,72,153,0.1));
+  border-color: rgba(124,58,237,0.5);
+  transform: scale(1.03);
+  box-shadow: 0 0 40px rgba(124,58,237,0.2);
+}
+.pricing-card.pricing-featured:hover {
+  transform: scale(1.03) translateY(-6px);
+  box-shadow: 0 24px 70px rgba(124,58,237,0.3);
+}
+
+.pricing-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--primary), var(--pink));
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.35rem 1.1rem;
+  border-radius: 50px;
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+}
+
+.pricing-top { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.pricing-icon { font-size: 2rem; }
+
+.pricing-card h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.pricing-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.pricing-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.price-amount {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1;
+}
+.price-setup {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.price-monthly {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: -0.5rem;
+}
+.price-monthly strong { color: var(--primary-light); }
+
+.pricing-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  flex: 1;
+}
+.pricing-features li {
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.pricing-btn {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+  padding: 0.85rem 1rem;
+}
+
+.pricing-note {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+.pricing-note a {
+  color: var(--primary-light);
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.pricing-note a:hover { color: var(--white); }
+
+@media (max-width: 900px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .pricing-card.pricing-featured { transform: scale(1); }
+  .pricing-card.pricing-featured:hover { transform: translateY(-6px); }
+}
+
 /* ===== CONTACTO ===== */
 #contacto {
   background: linear-gradient(135deg, #0f0c29, #1a0533, #0f0c29);

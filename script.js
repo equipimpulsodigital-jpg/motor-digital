@@ -59,10 +59,10 @@ document.querySelectorAll('.service-card').forEach((el, i) => {
   scrollObserver.observe(el);
 });
 
-// Portfolio cards — alternate left / right
-document.querySelectorAll('.portfolio-card').forEach((el, i) => {
-  el.classList.add('sr', i % 2 === 0 ? 'sr-left' : 'sr-right');
-  el.dataset.delay = i * 120;
+// Pricing cards — stagger up, featured in the middle pops last
+document.querySelectorAll('.pricing-card').forEach((el, i) => {
+  el.classList.add('sr', 'sr-up');
+  el.dataset.delay = i * 130;
   scrollObserver.observe(el);
 });
 
