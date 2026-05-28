@@ -66,6 +66,17 @@ document.querySelectorAll('.pricing-card').forEach((el, i) => {
   scrollObserver.observe(el);
 });
 
+// Process steps — stagger up
+document.querySelectorAll('.process-item').forEach((el, i) => {
+  el.classList.add('sr', 'sr-up');
+  el.dataset.delay = i * 120;
+  scrollObserver.observe(el);
+});
+
+// Process CTA
+const processCta = document.querySelector('.process-cta');
+if (processCta) { processCta.classList.add('sr', 'sr-up'); processCta.dataset.delay = 480; scrollObserver.observe(processCta); }
+
 // Contact halves — left from left, form from right
 const contactLeft = document.querySelector('.contact-left');
 const contactForm = document.querySelector('.contact-form');

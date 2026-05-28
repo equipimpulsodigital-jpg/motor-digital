@@ -429,6 +429,70 @@ section { padding: 6rem 2rem; }
   line-height: 1.6;
 }
 
+/* ===== CÓMO TRABAJAMOS ===== */
+#como-trabajamos { background: var(--dark2); }
+
+.process-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 780px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.process-list::before {
+  content: '';
+  position: absolute;
+  left: 28px;
+  top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary), var(--pink));
+  opacity: 0.3;
+}
+
+.process-item {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+  align-items: flex-start;
+  position: relative;
+}
+
+.process-num {
+  flex-shrink: 0;
+  width: 58px; height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--pink));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: white;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 0 6px var(--dark2);
+}
+
+.process-body h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.process-body p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.process-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
 /* ===== PRECIOS ===== */
 #precios { background: var(--dark); }
 
