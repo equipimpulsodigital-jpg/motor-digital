@@ -413,6 +413,9 @@ a { text-decoration: none; color: inherit; }
 .plan-featured .plan-price { color: #ffffff; }
 
 .plan-badge {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
   font-size: 0.65rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -421,7 +424,6 @@ a { text-decoration: none; color: inherit; }
   color: var(--accent);
   padding: 0.3rem 0.7rem;
   border-radius: 3px;
-  align-self: flex-start;
 }
 
 .plan-name {
