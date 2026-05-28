@@ -1,3 +1,307 @@
+// ── Translations ───────────────────────────────────────────────
+const TRANSLATIONS = {
+  es: {
+    'nav.services':       'Servicios',
+    'nav.process':        'Proceso',
+    'nav.pricing':        'Precios',
+    'nav.contact':        'Contacto',
+    'nav.cta':            'Hablar con nosotros',
+    'hero.tag':           'Hacemos webs para negocios reales',
+    'hero.line1':         'Tu empresa,',
+    'hero.line2':         'visible',
+    'hero.line3':         'en internet.',
+    'hero.p':             'Si tu web no te trae clientes, algo falla.<br>Nosotros lo arreglamos.',
+    'hero.cta':           'Pide presupuesto gratis',
+    'svc.design':         'Diseño Web',
+    'svc.design.desc':    'Webs que no parecen plantillas. Diseñamos desde cero pensando en tus clientes.',
+    'svc.dev':            'Desarrollo Web',
+    'svc.dev.desc':       'Rápidas, seguras y que funcionan bien en el móvil. Sin constructores de webs baratos.',
+    'svc.seo.tag':        'Lo más pedido',
+    'svc.seo.desc':       'Para que cuando alguien busque lo que ofreces en Google, aparezcas tú. No tu competencia.',
+    'svc.shop':           'Tienda Online',
+    'svc.shop.desc':      'Tu tienda completa lista para vender. Pagos, stock, pedidos — todo funcionando.',
+    'svc.social':         'Redes Sociales',
+    'svc.social.desc':    'Creamos y gestionamos tu perfil. Contenido que no parece corporativo.',
+    'svc.email.desc':     'Newsletters que la gente abre. Mantén el contacto con tus clientes sin molestar.',
+    'svc.maint':          'Mantenimiento Web',
+    'svc.maint.desc':     'Para que tu web no se caiga, no se hackee y siempre esté actualizada.',
+    'services.label':     '01 — Qué hacemos',
+    'process.label':      '02 — Cómo trabajamos',
+    'process.1.title':    'Nos cuentas qué necesitas',
+    'process.1.desc':     'Una llamada o un mensaje basta. Sin formularios de 30 preguntas.',
+    'process.2.title':    'Presupuesto en 24h',
+    'process.2.desc':     'Detallado, con lo que incluye y lo que no. Sin sorpresas al final.',
+    'process.3.title':    'Diseñamos juntos',
+    'process.3.desc':     'Revisiones abiertas. Puedes ver el avance y pedir cambios en todo momento.',
+    'process.4.title':    'Lanzamos y seguimos',
+    'process.4.desc':     'No desaparecemos. Seguimos disponibles si algo falla o quieres crecer.',
+    'pricing.label':      '03 — Precios',
+    'pricing.intro':      'Sin letra pequeña. Hosting incluido. Cambios básicos cada mes.',
+    'plan1.name':         'Web Básica',
+    'plan1.monthly':      '+ 30€/mes',
+    'plan.f1':            'Diseño 100% a medida',
+    'plan.f2':            'SEO básico + alta en Google',
+    'plan.f3':            'Adaptada a móvil',
+    'plan.f4':            'Formulario de contacto',
+    'plan.f5':            'Hosting y dominio incluidos',
+    'plan.f6':            'Actualizaciones de seguridad',
+    'plan.f7':            'Cambios básicos cada mes',
+    'plan.cta':           'Solicitar',
+    'plan.badge':         'Más vendido',
+    'plan2.name':         'Web + Panel Admin',
+    'plan2.monthly':      '+ 50€/mes',
+    'plan2.f1':           'Todo lo del plan Básico',
+    'plan2.f2':           'Panel de administración propio',
+    'plan2.f3':           'Publica noticias y artículos',
+    'plan2.f4':           'Sistema de reservas online',
+    'plan2.f5':           'Gestión de usuarios',
+    'plan2.f6':           'SEO avanzado',
+    'plan2.f8':           'Soporte prioritario',
+    'plan3.name':         'Tienda Online',
+    'plan3.monthly':      '+ 150€/mes',
+    'plan3.f1':           'Todo lo del plan Pro',
+    'plan3.f2':           'Catálogo de productos',
+    'plan3.f3':           'Pago con Stripe / PayPal',
+    'plan3.f4':           'Gestión de stock',
+    'plan3.f5':           'Panel de pedidos',
+    'plan3.f6':           'Facturas automáticas',
+    'plan3.f7':           'Integración con envíos',
+    'pricing.custom.text':'¿Proyecto especial?',
+    'pricing.custom.link':'Pídenos presupuesto a medida →',
+    'contact.label':      '04 — Contacto',
+    'contact.title':      '¿Hablamos?',
+    'contact.desc':       'Cuéntanos qué tienes en mente. Te respondemos en menos de 24 horas.',
+    'contact.name':       'Nombre',
+    'contact.select':     '¿Qué necesitas?',
+    'contact.msg':        'Cuéntanos tu proyecto...',
+    'contact.send':       'Enviar mensaje',
+    'contact.note':       'Respondemos en menos de 24h — normalmente antes',
+    'contact.advice':     'No sé, necesito consejo',
+  },
+  ca: {
+    'nav.services':       'Serveis',
+    'nav.process':        'Procés',
+    'nav.pricing':        'Preus',
+    'nav.contact':        'Contacte',
+    'nav.cta':            'Parlem-ne',
+    'hero.tag':           'Fem webs per a negocis reals',
+    'hero.line1':         'La teva empresa,',
+    'hero.line2':         'visible',
+    'hero.line3':         'a internet.',
+    'hero.p':             'Si la teva web no et porta clients, alguna cosa falla.<br>Nosaltres ho arreglem.',
+    'hero.cta':           'Demana pressupost gratis',
+    'svc.design':         'Disseny Web',
+    'svc.design.desc':    'Webs que no semblen plantilles. Dissenyem des de zero pensant en els teus clients.',
+    'svc.dev':            'Desenvolupament Web',
+    'svc.dev.desc':       'Ràpides, segures i que funcionen bé al mòbil. Sense constructors de webs barats.',
+    'svc.seo.tag':        'El més demanat',
+    'svc.seo.desc':       'Perquè quan algú busqui el que ofereixes a Google, apareguis tu. No la teva competència.',
+    'svc.shop':           'Botiga Online',
+    'svc.shop.desc':      'La teva botiga completa llesta per vendre. Pagaments, estoc, comandes — tot funcionant.',
+    'svc.social':         'Xarxes Socials',
+    'svc.social.desc':    'Creem i gestionem el teu perfil. Contingut que no sembla corporatiu.',
+    'svc.email.desc':     'Newsletters que la gent obre. Mantén el contacte amb els teus clients sense molestar.',
+    'svc.maint':          'Manteniment Web',
+    'svc.maint.desc':     'Perquè la teva web no caigui, no es hackegi i sempre estigui actualitzada.',
+    'services.label':     '01 — Què fem',
+    'process.label':      '02 — Com treballem',
+    'process.1.title':    'Ens expliques què necessites',
+    'process.1.desc':     'Una trucada o un missatge és suficient. Sense formularis de 30 preguntes.',
+    'process.2.title':    'Pressupost en 24h',
+    'process.2.desc':     'Detallat, amb el que inclou i el que no. Sense sorpreses al final.',
+    'process.3.title':    'Dissenyem junts',
+    'process.3.desc':     'Revisions obertes. Pots veure el progrés i demanar canvis en tot moment.',
+    'process.4.title':    'Llancem i seguim',
+    'process.4.desc':     'No desapareixem. Seguim disponibles si alguna cosa falla o vols créixer.',
+    'pricing.label':      '03 — Preus',
+    'pricing.intro':      'Sense lletra petita. Hosting inclòs. Canvis bàsics cada mes.',
+    'plan1.name':         'Web Bàsica',
+    'plan1.monthly':      '+ 30€/mes',
+    'plan.f1':            'Disseny 100% a mida',
+    'plan.f2':            'SEO bàsic + alta a Google',
+    'plan.f3':            'Adaptada al mòbil',
+    'plan.f4':            'Formulari de contacte',
+    'plan.f5':            'Hosting i domini inclosos',
+    'plan.f6':            'Actualitzacions de seguretat',
+    'plan.f7':            'Canvis bàsics cada mes',
+    'plan.cta':           'Sol·licitar',
+    'plan.badge':         'Més venut',
+    'plan2.name':         'Web + Panell Admin',
+    'plan2.monthly':      '+ 50€/mes',
+    'plan2.f1':           'Tot el del pla Bàsic',
+    'plan2.f2':           'Panell d\'administració propi',
+    'plan2.f3':           'Publica notícies i articles',
+    'plan2.f4':           'Sistema de reserves online',
+    'plan2.f5':           'Gestió d\'usuaris',
+    'plan2.f6':           'SEO avançat',
+    'plan2.f8':           'Suport prioritari',
+    'plan3.name':         'Botiga Online',
+    'plan3.monthly':      '+ 150€/mes',
+    'plan3.f1':           'Tot el del pla Pro',
+    'plan3.f2':           'Catàleg de productes',
+    'plan3.f3':           'Pagament amb Stripe / PayPal',
+    'plan3.f4':           'Gestió d\'estoc',
+    'plan3.f5':           'Panell de comandes',
+    'plan3.f6':           'Factures automàtiques',
+    'plan3.f7':           'Integració amb enviaments',
+    'pricing.custom.text':'Projecte especial?',
+    'pricing.custom.link':'Demana\'ns pressupost a mida →',
+    'contact.label':      '04 — Contacte',
+    'contact.title':      'Parlem?',
+    'contact.desc':       'Explica\'ns què tens al cap. Et responem en menys de 24 hores.',
+    'contact.name':       'Nom',
+    'contact.select':     'Què necessites?',
+    'contact.msg':        'Explica\'ns el teu projecte...',
+    'contact.send':       'Enviar missatge',
+    'contact.note':       'Responem en menys de 24h — normalment abans',
+    'contact.advice':     'No sé, necessito consell',
+  },
+  en: {
+    'nav.services':       'Services',
+    'nav.process':        'Process',
+    'nav.pricing':        'Pricing',
+    'nav.contact':        'Contact',
+    'nav.cta':            'Talk to us',
+    'hero.tag':           'We build websites for real businesses',
+    'hero.line1':         'Your business,',
+    'hero.line2':         'visible',
+    'hero.line3':         'online.',
+    'hero.p':             'If your website isn\'t bringing in clients, something\'s wrong.<br>We fix it.',
+    'hero.cta':           'Get a free quote',
+    'svc.design':         'Web Design',
+    'svc.design.desc':    'Websites that don\'t look like templates. Designed from scratch with your customers in mind.',
+    'svc.dev':            'Web Development',
+    'svc.dev.desc':       'Fast, secure and mobile-friendly. No cheap website builders.',
+    'svc.seo.tag':        'Most requested',
+    'svc.seo.desc':       'So that when someone searches what you offer on Google, they find you. Not your competition.',
+    'svc.shop':           'Online Store',
+    'svc.shop.desc':      'Your complete shop ready to sell. Payments, stock, orders — all working.',
+    'svc.social':         'Social Media',
+    'svc.social.desc':    'We create and manage your profile. Content that doesn\'t look corporate.',
+    'svc.email.desc':     'Newsletters people actually open. Stay in touch with your clients without being annoying.',
+    'svc.maint':          'Web Maintenance',
+    'svc.maint.desc':     'So your website doesn\'t go down, doesn\'t get hacked, and is always up to date.',
+    'services.label':     '01 — What we do',
+    'process.label':      '02 — How we work',
+    'process.1.title':    'You tell us what you need',
+    'process.1.desc':     'A call or a message is enough. No 30-question forms.',
+    'process.2.title':    'Quote in 24h',
+    'process.2.desc':     'Detailed, with what\'s included and what\'s not. No surprises at the end.',
+    'process.3.title':    'We design together',
+    'process.3.desc':     'Open revisions. You can see the progress and request changes at any time.',
+    'process.4.title':    'We launch and keep going',
+    'process.4.desc':     'We don\'t disappear. We\'re still available if something breaks or you want to grow.',
+    'pricing.label':      '03 — Pricing',
+    'pricing.intro':      'No fine print. Hosting included. Basic changes every month.',
+    'plan1.name':         'Basic Website',
+    'plan1.monthly':      '+ €30/month',
+    'plan.f1':            '100% custom design',
+    'plan.f2':            'Basic SEO + Google listing',
+    'plan.f3':            'Mobile-friendly',
+    'plan.f4':            'Contact form',
+    'plan.f5':            'Hosting and domain included',
+    'plan.f6':            'Security updates',
+    'plan.f7':            'Basic changes every month',
+    'plan.cta':           'Request',
+    'plan.badge':         'Best seller',
+    'plan2.name':         'Website + Admin Panel',
+    'plan2.monthly':      '+ €50/month',
+    'plan2.f1':           'Everything in Basic',
+    'plan2.f2':           'Custom admin panel',
+    'plan2.f3':           'Publish news and articles',
+    'plan2.f4':           'Online booking system',
+    'plan2.f5':           'User management',
+    'plan2.f6':           'Advanced SEO',
+    'plan2.f8':           'Priority support',
+    'plan3.name':         'Online Store',
+    'plan3.monthly':      '+ €150/month',
+    'plan3.f1':           'Everything in Pro',
+    'plan3.f2':           'Product catalog',
+    'plan3.f3':           'Stripe / PayPal payments',
+    'plan3.f4':           'Stock management',
+    'plan3.f5':           'Orders dashboard',
+    'plan3.f6':           'Automatic invoices',
+    'plan3.f7':           'Shipping integration',
+    'pricing.custom.text':'Special project?',
+    'pricing.custom.link':'Ask us for a custom quote →',
+    'contact.label':      '04 — Contact',
+    'contact.title':      'Let\'s talk?',
+    'contact.desc':       'Tell us what you have in mind. We\'ll get back to you in less than 24 hours.',
+    'contact.name':       'Name',
+    'contact.select':     'What do you need?',
+    'contact.msg':        'Tell us about your project...',
+    'contact.send':       'Send message',
+    'contact.note':       'We reply in under 24h — usually sooner',
+    'contact.advice':     'Not sure, I need advice',
+  },
+};
+
+function setLang(lang) {
+  const t = TRANSLATIONS[lang];
+  if (!t) return;
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.dataset.i18n;
+    if (t[key] !== undefined) el.textContent = t[key];
+  });
+
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.dataset.i18nHtml;
+    if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.dataset.i18nPlaceholder;
+    if (t[key] !== undefined) el.placeholder = t[key];
+  });
+
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.lang === lang);
+  });
+
+  document.documentElement.lang = lang;
+}
+
+// ── Contact overlay ────────────────────────────────────────────
+const contactOverlay = document.getElementById('contact-overlay');
+const overlayClose   = document.getElementById('overlay-close');
+
+function openContactOverlay() {
+  contactOverlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  contactOverlay.querySelector('input').focus();
+}
+function closeContactOverlay() {
+  contactOverlay.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.js-contact-overlay').forEach(el => {
+  el.addEventListener('click', e => { e.preventDefault(); openContactOverlay(); });
+});
+overlayClose.addEventListener('click', closeContactOverlay);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeContactOverlay(); });
+
+// ── Mobile services accordion ──────────────────────────────────
+function initAccordion() {
+  if (window.innerWidth >= 900) return;
+  document.querySelectorAll('.svc-row').forEach(row => {
+    if (row.querySelector('.svc-row-toggle')) return;
+    const head = row.querySelector('.svc-head');
+    const desc = row.querySelector('.svc-desc');
+    const chevron = document.createElement('span');
+    chevron.className = 'svc-chevron';
+    chevron.textContent = '↓';
+    const toggle = document.createElement('div');
+    toggle.className = 'svc-row-toggle';
+    toggle.appendChild(head);
+    toggle.appendChild(chevron);
+    row.prepend(toggle);
+    toggle.addEventListener('click', () => row.classList.toggle('expanded'));
+  });
+}
+window.addEventListener('DOMContentLoaded', initAccordion);
+
 // ── Custom cursor ──────────────────────────────────────────────
 const cursor    = document.getElementById('cursor');
 const cursorDot = document.getElementById('cursor-dot');
@@ -83,38 +387,33 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.1 });
 
-// Services rows
 document.querySelectorAll('.svc-row').forEach((el, i) => {
   el.classList.add('sr');
   el.dataset.delay = i * 60;
   observer.observe(el);
 });
 
-// Process cards
 document.querySelectorAll('.process-card').forEach((el, i) => {
   el.classList.add('sr');
   el.dataset.delay = i * 100;
   observer.observe(el);
 });
 
-// Pricing plans
 document.querySelectorAll('.plan').forEach((el, i) => {
   el.classList.add('sr');
   el.dataset.delay = i * 120;
   observer.observe(el);
 });
 
-// Contact halves
 const cl = document.querySelector('.contact-left');
 const cf = document.getElementById('form');
 if (cl) { cl.classList.add('sr', 'sr-left'); observer.observe(cl); }
 if (cf) { cf.classList.add('sr', 'sr-right'); cf.dataset.delay = 150; observer.observe(cf); }
 
-// Footer big text
 const fb = document.querySelector('.footer-big');
 if (fb) { fb.classList.add('sr'); observer.observe(fb); }
 
-// Clock (Europe/Madrid = Barcelona)
+// ── Clock (Europe/Madrid = Barcelona) ─────────────────────────
 const clockEl = document.getElementById('nav-clock');
 function updateClock() {
   if (!clockEl) return;
@@ -123,23 +422,17 @@ function updateClock() {
     timeZone: 'Europe/Madrid',
     hour: '2-digit',
     minute: '2-digit',
-    second: '2-digit',
   });
 }
 updateClock();
 setInterval(updateClock, 1000);
 
-// Language switcher
+// ── Language switcher ──────────────────────────────────────────
 document.querySelectorAll('.lang-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const lang = btn.dataset.lang;
-    document.querySelectorAll('.lang-btn').forEach(b => {
-      b.classList.toggle('active', b.dataset.lang === lang);
-    });
-  });
+  btn.addEventListener('click', () => setLang(btn.dataset.lang));
 });
 
-// Active nav highlight
+// ── Active nav highlight ───────────────────────────────────────
 const sections = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {
   let cur = '';
@@ -152,22 +445,19 @@ window.addEventListener('scroll', () => {
 // ── Contact form → Formspree ───────────────────────────────────
 const FORMSPREE_ID = 'xgoqdkjb';
 
-document.getElementById('form').addEventListener('submit', async function(e) {
-  e.preventDefault();
-  const btn = this.querySelector('button[type="submit"]');
+async function handleFormspree(formEl) {
+  const btn  = formEl.querySelector('button[type="submit"]');
   const orig = btn.textContent;
   btn.textContent = 'Enviando...';
   btn.disabled = true;
-
   try {
     const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
       method: 'POST',
-      body: new FormData(this),
+      body: new FormData(formEl),
       headers: { Accept: 'application/json' },
     });
-
     if (res.ok) {
-      this.innerHTML = `
+      formEl.innerHTML = `
         <div style="padding:2rem 0;text-align:center">
           <div style="font-size:2.5rem;margin-bottom:1rem;color:var(--accent)">✓</div>
           <p style="font-size:1.1rem;font-weight:700;color:var(--fg);margin-bottom:0.5rem">Mensaje recibido</p>
@@ -184,4 +474,12 @@ document.getElementById('form').addEventListener('submit', async function(e) {
     btn.disabled = false;
     alert('Sin conexión. Escríbenos a equip.impulsodigital@gmail.com');
   }
+}
+
+document.getElementById('form').addEventListener('submit', function(e) {
+  e.preventDefault(); handleFormspree(this);
+});
+
+document.getElementById('form-overlay').addEventListener('submit', function(e) {
+  e.preventDefault(); handleFormspree(this);
 });

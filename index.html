@@ -12,43 +12,40 @@
 </head>
 <body>
 
-  <!-- CURSOR -->
   <div id="cursor"></div>
   <div id="cursor-dot"></div>
-
-  <!-- SCROLL PROGRESS -->
   <div id="progress-bar"></div>
 
   <!-- NAV -->
   <nav id="navbar">
     <a href="#" class="logo">Impulso<em>Digital</em></a>
     <ul class="nav-links">
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#como-trabajamos">Proceso</a></li>
-      <li><a href="#precios">Precios</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="#como-trabajamos" data-i18n="nav.process">Proceso</a></li>
+      <li><a href="#precios" data-i18n="nav.pricing">Precios</a></li>
+      <li><a href="#contacto" class="js-contact-overlay" data-i18n="nav.contact">Contacto</a></li>
     </ul>
     <div class="nav-right">
       <span class="nav-clock" id="nav-clock"></span>
       <div class="lang-switcher">
-        <button class="lang-btn active" data-lang="es">ES</button>
         <button class="lang-btn" data-lang="ca">CA</button>
+        <button class="lang-btn active" data-lang="es">ES</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a href="#contacto" class="btn-nav">Hablar con nosotros</a>
+      <a href="#contacto" class="btn-nav js-contact-overlay" data-i18n="nav.cta">Hablar con nosotros</a>
     </div>
     <button class="hamburger" aria-label="Menú"><span></span><span></span></button>
     <div class="nav-drawer">
       <div class="lang-switcher" style="margin-bottom:1.5rem">
-        <button class="lang-btn active" data-lang="es">ES</button>
         <button class="lang-btn" data-lang="ca">CA</button>
+        <button class="lang-btn active" data-lang="es">ES</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
       <ul>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#como-trabajamos">Proceso</a></li>
-        <li><a href="#precios">Precios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+        <li><a href="#como-trabajamos" data-i18n="nav.process">Proceso</a></li>
+        <li><a href="#precios" data-i18n="nav.pricing">Precios</a></li>
+        <li><a href="#contacto" class="js-contact-overlay" data-i18n="nav.contact">Contacto</a></li>
       </ul>
     </div>
   </nav>
@@ -56,15 +53,15 @@
   <!-- HERO -->
   <section id="hero">
     <div class="hero-inner">
-      <div class="hero-tag">Agencia web — Barcelona</div>
+      <div class="hero-tag" data-i18n="hero.tag">Hacemos webs para negocios reales</div>
       <h1>
-        <span class="line"><span class="word">Tu empresa,</span></span>
-        <span class="line"><span class="word accent">visible</span></span>
-        <span class="line"><span class="word">en internet.</span></span>
+        <span class="line"><span class="word" data-i18n="hero.line1">Tu empresa,</span></span>
+        <span class="line"><span class="word accent" data-i18n="hero.line2">visible</span></span>
+        <span class="line"><span class="word" data-i18n="hero.line3">en internet.</span></span>
       </h1>
       <div class="hero-bottom">
-        <p>Si tu web no te trae clientes, algo falla.<br>Nosotros lo arreglamos.</p>
-        <a href="#contacto" class="btn-main magnetic">Pide presupuesto gratis</a>
+        <p data-i18n-html="hero.p">Si tu web no te trae clientes, algo falla.<br>Nosotros lo arreglamos.</p>
+        <a href="#contacto" class="btn-main magnetic" data-i18n="hero.cta">Pide presupuesto gratis</a>
       </div>
     </div>
     <div class="hero-scroll-hint">scroll ↓</div>
@@ -72,77 +69,77 @@
 
   <!-- MARQUEE -->
   <div class="marquee-wrap">
-    <div class="marquee-track">
-      <span>Diseño Web</span><span class="dot">·</span>
-      <span>Desarrollo</span><span class="dot">·</span>
+    <div class="marquee-track" id="marquee-track">
+      <span data-i18n="svc.design">Diseño Web</span><span class="dot">·</span>
+      <span data-i18n="svc.dev">Desarrollo</span><span class="dot">·</span>
       <span>SEO</span><span class="dot">·</span>
-      <span>Tienda Online</span><span class="dot">·</span>
-      <span>Redes Sociales</span><span class="dot">·</span>
+      <span data-i18n="svc.shop">Tienda Online</span><span class="dot">·</span>
+      <span data-i18n="svc.social">Redes Sociales</span><span class="dot">·</span>
       <span>Email Marketing</span><span class="dot">·</span>
-      <span>Mantenimiento</span><span class="dot">·</span>
-      <span>Diseño Web</span><span class="dot">·</span>
-      <span>Desarrollo</span><span class="dot">·</span>
+      <span data-i18n="svc.maint">Mantenimiento</span><span class="dot">·</span>
+      <span data-i18n="svc.design">Diseño Web</span><span class="dot">·</span>
+      <span data-i18n="svc.dev">Desarrollo</span><span class="dot">·</span>
       <span>SEO</span><span class="dot">·</span>
-      <span>Tienda Online</span><span class="dot">·</span>
-      <span>Redes Sociales</span><span class="dot">·</span>
+      <span data-i18n="svc.shop">Tienda Online</span><span class="dot">·</span>
+      <span data-i18n="svc.social">Redes Sociales</span><span class="dot">·</span>
       <span>Email Marketing</span><span class="dot">·</span>
-      <span>Mantenimiento</span><span class="dot">·</span>
+      <span data-i18n="svc.maint">Mantenimiento</span><span class="dot">·</span>
     </div>
   </div>
 
   <!-- SERVICIOS -->
   <section id="servicios">
     <div class="container">
-      <div class="section-label">01 — Qué hacemos</div>
+      <div class="section-label" data-i18n="services.label">01 — Qué hacemos</div>
       <div class="services-list">
         <div class="svc-row">
           <div class="svc-head">
             <span class="svc-num">01</span>
-            <h3>Diseño Web</h3>
+            <h3 data-i18n="svc.design">Diseño Web</h3>
           </div>
-          <p class="svc-desc">Webs que no parecen plantillas. Diseñamos desde cero pensando en tus clientes.</p>
+          <p class="svc-desc" data-i18n="svc.design.desc">Webs que no parecen plantillas. Diseñamos desde cero pensando en tus clientes.</p>
         </div>
         <div class="svc-row">
           <div class="svc-head">
             <span class="svc-num">02</span>
-            <h3>Desarrollo Web</h3>
+            <h3 data-i18n="svc.dev">Desarrollo Web</h3>
           </div>
-          <p class="svc-desc">Rápidas, seguras y que funcionan bien en el móvil. Sin constructores de webs baratos.</p>
+          <p class="svc-desc" data-i18n="svc.dev.desc">Rápidas, seguras y que funcionan bien en el móvil. Sin constructores de webs baratos.</p>
         </div>
         <div class="svc-row highlight">
           <div class="svc-head">
             <span class="svc-num">03</span>
-            <h3>SEO <span class="tag-hot">Lo más pedido</span></h3>
+            <h3>SEO <span class="tag-hot" data-i18n="svc.seo.tag">Lo más pedido</span></h3>
           </div>
-          <p class="svc-desc">Para que cuando alguien busque lo que ofreces en Google, aparezcas tú. No tu competencia.</p>
+          <p class="svc-desc" data-i18n="svc.seo.desc">Para que cuando alguien busque lo que ofreces en Google, aparezcas tú. No tu competencia.</p>
         </div>
         <div class="svc-row">
           <div class="svc-head">
             <span class="svc-num">04</span>
-            <h3>Tienda Online</h3>
+            <h3 data-i18n="svc.shop">Tienda Online</h3>
           </div>
-          <p class="svc-desc">Tu tienda completa lista para vender. Pagos, stock, pedidos — todo funcionando.</p>
+          <p class="svc-desc" data-i18n="svc.shop.desc">Tu tienda completa lista para vender. Pagos, stock, pedidos — todo funcionando.</p>
         </div>
         <div class="svc-row">
           <div class="svc-head">
             <span class="svc-num">05</span>
-            <h3>Redes Sociales</h3>
+            <h3 data-i18n="svc.social">Redes Sociales</h3>
           </div>
-          <p class="svc-desc">Creamos y gestionamos tu perfil. Contenido que no parece corporativo.</p>
+          <p class="svc-desc" data-i18n="svc.social.desc">Creamos y gestionamos tu perfil. Contenido que no parece corporativo.</p>
         </div>
         <div class="svc-row">
           <div class="svc-head">
             <span class="svc-num">06</span>
             <h3>Email Marketing</h3>
           </div>
-          <p class="svc-desc">Newsletters que la gente abre. Mantén el contacto con tus clientes sin molestar.</p>
+          <p class="svc-desc" data-i18n="svc.email.desc">Newsletters que la gente abre. Mantén el contacto con tus clientes sin molestar.</p>
         </div>
         <div class="svc-row">
           <div class="svc-head">
             <span class="svc-num">07</span>
-            <h3>Mantenimiento Web</h3>
+            <h3 data-i18n="svc.maint">Mantenimiento Web</h3>
           </div>
-          <p class="svc-desc">Para que tu web no se caiga, no se hackee y siempre esté actualizada.</p>
+          <p class="svc-desc" data-i18n="svc.maint.desc">Para que tu web no se caiga, no se hackee y siempre esté actualizada.</p>
         </div>
       </div>
     </div>
@@ -151,27 +148,27 @@
   <!-- PROCESO -->
   <section id="como-trabajamos">
     <div class="container">
-      <div class="section-label">02 — Cómo trabajamos</div>
+      <div class="section-label" data-i18n="process.label">02 — Cómo trabajamos</div>
       <div class="process-grid">
         <div class="process-card">
           <span class="pnum">01</span>
-          <h3>Nos cuentas qué necesitas</h3>
-          <p>Una llamada o un mensaje basta. Sin formularios de 30 preguntas.</p>
+          <h3 data-i18n="process.1.title">Nos cuentas qué necesitas</h3>
+          <p data-i18n="process.1.desc">Una llamada o un mensaje basta. Sin formularios de 30 preguntas.</p>
         </div>
         <div class="process-card">
           <span class="pnum">02</span>
-          <h3>Presupuesto en 24h</h3>
-          <p>Detallado, con lo que incluye y lo que no. Sin sorpresas al final.</p>
+          <h3 data-i18n="process.2.title">Presupuesto en 24h</h3>
+          <p data-i18n="process.2.desc">Detallado, con lo que incluye y lo que no. Sin sorpresas al final.</p>
         </div>
         <div class="process-card">
           <span class="pnum">03</span>
-          <h3>Diseñamos juntos</h3>
-          <p>Revisiones abiertas. Puedes ver el avance y pedir cambios en todo momento.</p>
+          <h3 data-i18n="process.3.title">Diseñamos juntos</h3>
+          <p data-i18n="process.3.desc">Revisiones abiertas. Puedes ver el avance y pedir cambios en todo momento.</p>
         </div>
         <div class="process-card">
           <span class="pnum">04</span>
-          <h3>Lanzamos y seguimos</h3>
-          <p>No desaparecemos. Seguimos disponibles si algo falla o quieres crecer.</p>
+          <h3 data-i18n="process.4.title">Lanzamos y seguimos</h3>
+          <p data-i18n="process.4.desc">No desaparecemos. Seguimos disponibles si algo falla o quieres crecer.</p>
         </div>
       </div>
     </div>
@@ -180,63 +177,63 @@
   <!-- PRECIOS -->
   <section id="precios">
     <div class="container">
-      <div class="section-label">03 — Precios</div>
-      <p class="pricing-intro">Sin letra pequeña. Hosting incluido. Cambios básicos cada mes.</p>
+      <div class="section-label" data-i18n="pricing.label">03 — Precios</div>
+      <p class="pricing-intro" data-i18n="pricing.intro">Sin letra pequeña. Hosting incluido. Cambios básicos cada mes.</p>
       <div class="pricing-row">
 
         <div class="plan">
-          <div class="plan-name">Web Básica</div>
+          <div class="plan-name" data-i18n="plan1.name">Web Básica</div>
           <div class="plan-price">399<span>€</span></div>
-          <div class="plan-monthly">+ 30€/mes</div>
+          <div class="plan-monthly" data-i18n="plan1.monthly">+ 30€/mes</div>
           <ul>
-            <li>Diseño 100% a medida</li>
-            <li>SEO básico + alta en Google</li>
-            <li>Adaptada a móvil</li>
-            <li>Formulario de contacto</li>
-            <li>Hosting y dominio incluidos</li>
-            <li>Actualizaciones de seguridad</li>
-            <li>Cambios básicos cada mes</li>
+            <li data-i18n="plan.f1">Diseño 100% a medida</li>
+            <li data-i18n="plan.f2">SEO básico + alta en Google</li>
+            <li data-i18n="plan.f3">Adaptada a móvil</li>
+            <li data-i18n="plan.f4">Formulario de contacto</li>
+            <li data-i18n="plan.f5">Hosting y dominio incluidos</li>
+            <li data-i18n="plan.f6">Actualizaciones de seguridad</li>
+            <li data-i18n="plan.f7">Cambios básicos cada mes</li>
           </ul>
-          <a href="#contacto" class="btn-plan magnetic">Solicitar</a>
+          <a href="#contacto" class="btn-plan magnetic" data-i18n="plan.cta">Solicitar</a>
         </div>
 
         <div class="plan plan-featured">
-          <div class="plan-badge">Más vendido</div>
-          <div class="plan-name">Web + Panel Admin</div>
+          <div class="plan-badge" data-i18n="plan.badge">Más vendido</div>
+          <div class="plan-name" data-i18n="plan2.name">Web + Panel Admin</div>
           <div class="plan-price">549<span>€</span></div>
-          <div class="plan-monthly">+ 50€/mes</div>
+          <div class="plan-monthly" data-i18n="plan2.monthly">+ 50€/mes</div>
           <ul>
-            <li>Todo lo del plan Básico</li>
-            <li>Panel de administración propio</li>
-            <li>Publica noticias y artículos</li>
-            <li>Sistema de reservas online</li>
-            <li>Gestión de usuarios</li>
-            <li>SEO avanzado</li>
-            <li>Cambios básicos cada mes</li>
-            <li>Soporte prioritario</li>
+            <li data-i18n="plan2.f1">Todo lo del plan Básico</li>
+            <li data-i18n="plan2.f2">Panel de administración propio</li>
+            <li data-i18n="plan2.f3">Publica noticias y artículos</li>
+            <li data-i18n="plan2.f4">Sistema de reservas online</li>
+            <li data-i18n="plan2.f5">Gestión de usuarios</li>
+            <li data-i18n="plan2.f6">SEO avanzado</li>
+            <li data-i18n="plan.f7">Cambios básicos cada mes</li>
+            <li data-i18n="plan2.f8">Soporte prioritario</li>
           </ul>
-          <a href="#contacto" class="btn-plan btn-plan-inv magnetic">Solicitar</a>
+          <a href="#contacto" class="btn-plan btn-plan-inv magnetic" data-i18n="plan.cta">Solicitar</a>
         </div>
 
         <div class="plan">
-          <div class="plan-name">Tienda Online</div>
+          <div class="plan-name" data-i18n="plan3.name">Tienda Online</div>
           <div class="plan-price">1.499<span>€</span></div>
-          <div class="plan-monthly">+ 150€/mes</div>
+          <div class="plan-monthly" data-i18n="plan3.monthly">+ 150€/mes</div>
           <ul>
-            <li>Todo lo del plan Pro</li>
-            <li>Catálogo de productos</li>
-            <li>Pago con Stripe / PayPal</li>
-            <li>Gestión de stock</li>
-            <li>Panel de pedidos</li>
-            <li>Facturas automáticas</li>
-            <li>Integración con envíos</li>
-            <li>Cambios básicos cada mes</li>
+            <li data-i18n="plan3.f1">Todo lo del plan Pro</li>
+            <li data-i18n="plan3.f2">Catálogo de productos</li>
+            <li data-i18n="plan3.f3">Pago con Stripe / PayPal</li>
+            <li data-i18n="plan3.f4">Gestión de stock</li>
+            <li data-i18n="plan3.f5">Panel de pedidos</li>
+            <li data-i18n="plan3.f6">Facturas automáticas</li>
+            <li data-i18n="plan3.f7">Integración con envíos</li>
+            <li data-i18n="plan.f7">Cambios básicos cada mes</li>
           </ul>
-          <a href="#contacto" class="btn-plan magnetic">Solicitar</a>
+          <a href="#contacto" class="btn-plan magnetic" data-i18n="plan.cta">Solicitar</a>
         </div>
 
       </div>
-      <p class="pricing-custom">¿Proyecto especial? <a href="#contacto">Pídenos presupuesto a medida →</a></p>
+      <p class="pricing-custom"><span data-i18n="pricing.custom.text">¿Proyecto especial?</span> <a href="#contacto" data-i18n="pricing.custom.link">Pídenos presupuesto a medida →</a></p>
     </div>
   </section>
 
@@ -244,38 +241,38 @@
   <section id="contacto">
     <div class="container contact-wrap">
       <div class="contact-left">
-        <div class="section-label">04 — Contacto</div>
-        <h2>¿Hablamos?</h2>
-        <p>Cuéntanos qué tienes en mente. Te respondemos en menos de 24 horas.</p>
+        <div class="section-label" data-i18n="contact.label">04 — Contacto</div>
+        <h2 data-i18n="contact.title">¿Hablamos?</h2>
+        <p data-i18n="contact.desc">Cuéntanos qué tienes en mente. Te respondemos en menos de 24 horas.</p>
         <a href="mailto:equip.impulsodigital@gmail.com" class="contact-email">
           equip.impulsodigital@gmail.com
         </a>
       </div>
       <form id="form">
         <div class="field">
-          <input type="text" name="nombre" placeholder="Nombre" required />
+          <input type="text" name="nombre" data-i18n-placeholder="contact.name" placeholder="Nombre" required />
         </div>
         <div class="field">
           <input type="email" name="email" placeholder="Email" required />
         </div>
         <div class="field">
-          <select name="servicio">
-            <option value="" disabled selected>¿Qué necesitas?</option>
-            <option>Diseño Web</option>
-            <option>Desarrollo Web</option>
+          <select name="servicio" id="service-select">
+            <option value="" disabled selected data-i18n="contact.select">¿Qué necesitas?</option>
+            <option data-i18n="svc.design">Diseño Web</option>
+            <option data-i18n="svc.dev">Desarrollo Web</option>
             <option>SEO</option>
-            <option>Tienda Online</option>
-            <option>Redes Sociales</option>
+            <option data-i18n="svc.shop">Tienda Online</option>
+            <option data-i18n="svc.social">Redes Sociales</option>
             <option>Email Marketing</option>
-            <option>Mantenimiento Web</option>
-            <option>No sé, necesito consejo</option>
+            <option data-i18n="svc.maint">Mantenimiento Web</option>
+            <option data-i18n="contact.advice">No sé, necesito consejo</option>
           </select>
         </div>
         <div class="field">
-          <textarea name="mensaje" placeholder="Cuéntanos tu proyecto..." rows="4" required></textarea>
+          <textarea name="mensaje" data-i18n-placeholder="contact.msg" placeholder="Cuéntanos tu proyecto..." rows="4" required></textarea>
         </div>
-        <button type="submit" class="btn-main magnetic">Enviar mensaje</button>
-        <p class="form-note">Respondemos en menos de 24h — normalmente antes</p>
+        <button type="submit" class="btn-main magnetic" data-i18n="contact.send">Enviar mensaje</button>
+        <p class="form-note" data-i18n="contact.note">Respondemos en menos de 24h — normalmente antes</p>
       </form>
     </div>
   </section>
@@ -286,12 +283,58 @@
     <div class="footer-bar">
       <span>© 2026 Impulso Digital</span>
       <div class="footer-links">
-        <a href="#servicios">Servicios</a>
-        <a href="#precios">Precios</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#servicios" data-i18n="nav.services">Servicios</a>
+        <a href="#precios" data-i18n="nav.pricing">Precios</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
       </div>
     </div>
   </footer>
+
+  <!-- CONTACT OVERLAY -->
+  <div id="contact-overlay" role="dialog" aria-label="Contacto" aria-modal="true">
+    <div class="overlay-header">
+      <a href="#" class="logo">Impulso<em>Digital</em></a>
+      <button id="overlay-close" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="overlay-body">
+      <div class="container contact-wrap">
+        <div class="contact-left">
+          <div class="section-label" data-i18n="contact.label">04 — Contacto</div>
+          <h2 data-i18n="contact.title">¿Hablamos?</h2>
+          <p data-i18n="contact.desc">Cuéntanos qué tienes en mente. Te respondemos en menos de 24 horas.</p>
+          <a href="mailto:equip.impulsodigital@gmail.com" class="contact-email">
+            equip.impulsodigital@gmail.com
+          </a>
+        </div>
+        <form id="form-overlay">
+          <div class="field">
+            <input type="text" name="nombre" data-i18n-placeholder="contact.name" placeholder="Nombre" required />
+          </div>
+          <div class="field">
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="field">
+            <select name="servicio">
+              <option value="" disabled selected data-i18n="contact.select">¿Qué necesitas?</option>
+              <option data-i18n="svc.design">Diseño Web</option>
+              <option data-i18n="svc.dev">Desarrollo Web</option>
+              <option>SEO</option>
+              <option data-i18n="svc.shop">Tienda Online</option>
+              <option data-i18n="svc.social">Redes Sociales</option>
+              <option>Email Marketing</option>
+              <option data-i18n="svc.maint">Mantenimiento Web</option>
+              <option data-i18n="contact.advice">No sé, necesito consejo</option>
+            </select>
+          </div>
+          <div class="field">
+            <textarea name="mensaje" data-i18n-placeholder="contact.msg" placeholder="Cuéntanos tu proyecto..." rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-main magnetic" data-i18n="contact.send">Enviar mensaje</button>
+          <p class="form-note" data-i18n="contact.note">Respondemos en menos de 24h — normalmente antes</p>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
