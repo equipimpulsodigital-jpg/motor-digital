@@ -1,7 +1,6 @@
 // ── Translations ───────────────────────────────────────────────
 const TRANSLATIONS = {
   es: {
-    'nav.team':           'Equipo',
     'nav.services':       'Servicios',
     'nav.process':        'Proceso',
     'nav.pricing':        'Precios',
@@ -79,21 +78,6 @@ const TRANSLATIONS = {
     'contact.send':       'Enviar mensaje',
     'contact.note':       'Respondemos en menos de 24h — normalmente antes',
     'contact.advice':         'No sé, necesito consejo',
-    'team.label':    '05 — Equipo',
-    'team.headline': 'Cinco universitarios con una empresa real.',
-    'team.sub':      '3er año. Ingeniería Informática (×4) y Empresariales (×1). Hacemos esto porque queremos, no porque toque.',
-    'degree.cs':     'Ing. Informática',
-    'degree.biz':    'CC. Empresariales - Management',
-    'role.frontend': 'Frontend & UX',
-    'role.backend':  'Backend & Bases de datos',
-    'role.seo':      'SEO & Rendimiento',
-    'role.ecommerce':'Full-Stack & E-commerce',
-    'role.strategy': 'Estrategia & Clientes',
-    'bio.joan':   'Convierte diseños en webs rápidas y bonitas. Si la web se ve bien, es suya.',
-    'bio.marc':   'La lógica que no ves. APIs, servidores y todo lo que pasa por detrás sin que nadie lo note.',
-    'bio.pau':    'Si apareces en Google antes que tu competencia, es por él. Obsesionado con las métricas.',
-    'bio.arnau':  'De la base de datos al checkout. Especialista en tiendas que no solo quedan bien, sino que venden.',
-    'bio.laia':   'La que entiende el negocio del cliente, define la estrategia y hace que los cuatro de arriba lleguen a tiempo.',
     'services.overlay.cta.text': '¿Algún servicio te interesa?',
     'services.overlay.cta.btn':  'Hablemos →',
     'overlay.back':              'Volver',
@@ -201,21 +185,6 @@ const TRANSLATIONS = {
     'services.overlay.cta.text': 'Algun servei t\'interessa?',
     'services.overlay.cta.btn':  'Parlem →',
     'overlay.back':              'Tornar',
-    'team.label':    '05 — Equip',
-    'team.headline': 'Cinc universitaris amb una empresa real.',
-    'team.sub':      '3r curs. Enginyeria Informàtica (×4) i Empresarials (×1). Ho fem perquè volem, no perquè toca.',
-    'degree.cs':     'Eng. Informàtica',
-    'degree.biz':    'CC. Empresarials - Management',
-    'role.frontend': 'Frontend & UX',
-    'role.backend':  'Backend & Bases de dades',
-    'role.seo':      'SEO & Rendiment',
-    'role.ecommerce':'Full-Stack & E-commerce',
-    'role.strategy': 'Estratègia & Clients',
-    'bio.joan':   'Converteix dissenys en webs ràpides i boniques. Si la web es veu bé, és seva.',
-    'bio.marc':   'La lògica que no veus. APIs, servidors i tot el que passa per darrere sense que ningú se n\'adoni.',
-    'bio.pau':    'Si apareixes a Google abans que la teva competència, és per ell. Obsessionat amb les mètriques.',
-    'bio.arnau':  'De la base de dades al checkout. Especialista en botigues que no només queden bé, sinó que venen.',
-    'bio.laia':   'La que entén el negoci del client, defineix l\'estratègia i fa que els quatre de dalt arribin a temps.',
     'svc.design.b1': 'Disseny 100% a mida',
     'svc.design.b2': 'Revisions il·limitades',
     'svc.design.b3': 'Llesta en 2–3 setmanes',
@@ -320,21 +289,6 @@ const TRANSLATIONS = {
     'services.overlay.cta.text': 'Interested in a service?',
     'services.overlay.cta.btn':  'Let\'s talk →',
     'overlay.back':              'Back',
-    'team.label':    '05 — Team',
-    'team.headline': 'Five university students with a real company.',
-    'team.sub':      '3rd year. Computer Engineering (×4) and Business Management (×1). We do this because we want to, not because we have to.',
-    'degree.cs':     'Computer Engineering',
-    'degree.biz':    'Business Sciences - Management',
-    'role.frontend': 'Frontend & UX',
-    'role.backend':  'Backend & Databases',
-    'role.seo':      'SEO & Performance',
-    'role.ecommerce':'Full-Stack & E-commerce',
-    'role.strategy': 'Strategy & Clients',
-    'bio.joan':   'Turns designs into fast, beautiful websites. If it looks good, it\'s his work.',
-    'bio.marc':   'The logic you don\'t see. APIs, servers and everything happening in the background without anyone noticing.',
-    'bio.pau':    'If you rank on Google before your competition, thank him. Obsessed with metrics.',
-    'bio.arnau':  'From database to checkout. Specialist in stores that don\'t just look good — they actually sell.',
-    'bio.laia':   'She understands the client\'s business, defines the strategy and makes sure the four above actually deliver on time.',
     'svc.design.b1': '100% custom design',
     'svc.design.b2': 'Unlimited revisions',
     'svc.design.b3': 'Ready in 2–3 weeks',
@@ -397,30 +351,6 @@ function closeOverlay(el) {
   document.body.style.overflow = '';
 }
 
-// ── Team overlay ───────────────────────────────────────────────
-const teamOverlay = document.getElementById('team-overlay');
-
-document.querySelectorAll('.js-team-overlay').forEach(el => {
-  el.addEventListener('click', e => { e.preventDefault(); openOverlay(teamOverlay); });
-});
-document.querySelectorAll('#team-overlay-close, #team-overlay-close-mobile').forEach(btn => {
-  btn.addEventListener('click', () => closeOverlay(teamOverlay));
-});
-document.querySelectorAll('.js-close-team').forEach(el => {
-  el.addEventListener('click', e => {
-    e.preventDefault();
-    closeOverlay(teamOverlay);
-    const target = el.getAttribute('href');
-    if (el.classList.contains('js-services-overlay')) {
-      setTimeout(() => openOverlay(servicesOverlay), 300);
-    } else if (el.classList.contains('js-contact-overlay')) {
-      setTimeout(() => openOverlay(contactOverlay), 300);
-    } else if (target) {
-      setTimeout(() => document.querySelector(target)?.scrollIntoView({ behavior: 'smooth' }), 300);
-    }
-  });
-});
-
 // ── Services overlay ───────────────────────────────────────────
 const servicesOverlay = document.getElementById('services-overlay');
 
@@ -453,7 +383,6 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     closeOverlay(contactOverlay);
     closeOverlay(servicesOverlay);
-    closeOverlay(teamOverlay);
   }
 });
 
