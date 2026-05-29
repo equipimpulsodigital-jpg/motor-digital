@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Garriga Fusta — Mobiliari Artesanal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #fdfaf5; color: #1e1208; overflow-x: hidden; }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2.5rem; height: 64px;
+      background: rgba(253,250,245,0.94); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(100,65,30,0.1);
+    }
+    .logo { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.05em; color: #7a5c3a; transition: color 0.2s; }
+    .nav-links a:hover { color: #1e1208; }
+    .nav-cta {
+      font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+      color: #c4873a; border-bottom: 1px solid rgba(196,135,58,0.4);
+      padding-bottom: 1px; transition: color 0.2s, border-color 0.2s;
+    }
+    .nav-cta:hover { color: #1e1208; border-color: #1e1208; }
+
+    /* HERO */
+    #hero {
+      min-height: 100vh;
+      background: #2c1a0e;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 0 2.5rem 5rem;
+      position: relative; overflow: hidden;
+    }
+    .hero-texture {
+      position: absolute; inset: 0;
+      background:
+        repeating-linear-gradient(90deg, rgba(196,135,58,0.03) 0px, rgba(196,135,58,0.03) 1px, transparent 1px, transparent 80px),
+        repeating-linear-gradient(0deg, rgba(196,135,58,0.02) 0px, rgba(196,135,58,0.02) 1px, transparent 1px, transparent 60px),
+        radial-gradient(ellipse at 80% 20%, rgba(100,65,30,0.4) 0%, transparent 50%);
+    }
+    .hero-inner { position: relative; max-width: 1200px; margin: 0 auto; width: 100%; }
+    .hero-tag { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(196,135,58,0.6); margin-bottom: 2rem; }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3.5rem, 9vw, 8.5rem);
+      font-weight: 700; line-height: 0.92;
+      color: #fdfaf5; letter-spacing: -0.02em;
+      margin-bottom: 3rem;
+    }
+    .hero-title em { font-style: italic; color: #c4873a; }
+    .hero-bottom { display: flex; justify-content: space-between; align-items: flex-end; gap: 3rem; flex-wrap: wrap; }
+    .hero-desc { font-size: 1rem; color: rgba(253,250,245,0.55); line-height: 1.75; max-width: 340px; }
+    .hero-cta {
+      background: #c4873a; color: #fdfaf5;
+      font-size: 0.85rem; font-weight: 700; letter-spacing: 0.04em;
+      padding: 1rem 2.2rem; border-radius: 2px; white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .hero-cta:hover { background: #a86e2a; }
+
+    /* FILOSOFIA */
+    #filosofia { padding: 7rem 2.5rem; background: #fdfaf5; }
+    .fil-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 8rem; align-items: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: #c4873a; margin-bottom: 2rem; }
+    .fil-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.1; color: #1e1208; margin-bottom: 1.5rem; }
+    .fil-title em { font-style: italic; color: #c4873a; }
+    .fil-text { font-size: 0.95rem; color: #7a5c3a; line-height: 1.8; margin-bottom: 1rem; }
+    .fil-right { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .fil-stat { padding: 2rem; background: #f5ede2; border-radius: 4px; }
+    .fil-stat-num { font-size: 2.5rem; font-weight: 900; letter-spacing: -0.05em; color: #2c1a0e; line-height: 1; margin-bottom: 0.5rem; }
+    .fil-stat-text { font-size: 0.82rem; color: #7a5c3a; line-height: 1.5; }
+
+    /* TREBALLS */
+    #treballs { padding: 7rem 2.5rem; background: #2c1a0e; }
+    .treballs-inner { max-width: 1200px; margin: 0 auto; }
+    .treballs-inner .section-label { color: rgba(196,135,58,0.6); }
+    .treballs-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); color: #fdfaf5; margin-bottom: 3rem; }
+    .treballs-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; }
+    .treball-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(196,135,58,0.12); border-radius: 4px; padding: 2.5rem; }
+    .treball-card.big { grid-row: span 2; display: flex; flex-direction: column; justify-content: flex-end; min-height: 400px;
+      background: linear-gradient(160deg, rgba(100,65,30,0.3) 0%, rgba(44,26,14,0.9) 70%); }
+    .treball-num { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; color: rgba(196,135,58,0.4); margin-bottom: 1rem; }
+    .treball-name { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: #fdfaf5; margin-bottom: 0.5rem; }
+    .treball-type { font-size: 0.78rem; color: rgba(253,250,245,0.4); }
+
+    /* CONTACTE */
+    #contacte { padding: 7rem 2.5rem; background: #fdfaf5; }
+    .contacte-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; }
+    .contacte-left .section-label { margin-bottom: 1.5rem; }
+    .contacte-title { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.05; color: #1e1208; margin-bottom: 1.5rem; }
+    .contacte-text { font-size: 0.95rem; color: #7a5c3a; line-height: 1.75; margin-bottom: 2rem; }
+    .contacte-email { font-size: 0.9rem; font-weight: 600; color: #c4873a; border-bottom: 1px solid rgba(196,135,58,0.3); padding-bottom: 2px; transition: border-color 0.2s; }
+    .contacte-email:hover { border-color: #c4873a; }
+    .contacte-form { display: flex; flex-direction: column; gap: 1rem; }
+    .form-field input, .form-field textarea {
+      width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(100,65,30,0.2);
+      padding: 1rem 0; font-family: 'Inter', sans-serif; font-size: 0.95rem; color: #1e1208; outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-field input:focus, .form-field textarea:focus { border-color: #c4873a; }
+    .form-field input::placeholder, .form-field textarea::placeholder { color: #b0926a; }
+    .form-field textarea { resize: none; min-height: 100px; }
+    .btn-submit {
+      background: #2c1a0e; color: #fdfaf5;
+      font-size: 0.85rem; font-weight: 700; padding: 1rem 2rem;
+      border: none; border-radius: 2px; cursor: pointer;
+      transition: background 0.2s; align-self: flex-start;
+    }
+    .btn-submit:hover { background: #1e1208; }
+
+    /* FOOTER */
+    footer { background: #1e1208; padding: 2rem 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-logo { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(253,250,245,0.5); }
+    footer p { font-size: 0.72rem; color: rgba(253,250,245,0.25); }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 1.5rem; }
+      .nav-links { display: none; }
+      #hero { padding: 0 1.5rem 4rem; }
+      #filosofia, #treballs, #contacte { padding: 5rem 1.5rem; }
+      .fil-inner, .contacte-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .treballs-grid { grid-template-columns: 1fr; }
+      .treball-card.big { min-height: 220px; }
+      footer { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#" class="logo">Garriga Fusta</a>
+    <ul class="nav-links">
+      <li><a href="#filosofia">Filosofia</a></li>
+      <li><a href="#treballs">Treballs</a></li>
+      <li><a href="#contacte">Contacte</a></li>
+    </ul>
+    <a href="#contacte" class="nav-cta">Demanar pressupost</a>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-texture"></div>
+    <div class="hero-inner">
+      <div class="hero-tag">Mobiliari artesanal · Fetes a mà · Sant Cugat del Vallès</div>
+      <h1 class="hero-title">Fusta i<br><em>cura,</em><br>per a<br>sempre.</h1>
+      <div class="hero-bottom">
+        <p class="hero-desc">Mobles únics dissenyats i fabricats a mà. Materials nobles, acabats impecables i un tracte directe amb l'artesà que ho fa.</p>
+        <a href="#contacte" class="hero-cta">Demanar pressupost</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="filosofia">
+    <div class="fil-inner">
+      <div>
+        <div class="section-label">La nostra manera</div>
+        <h2 class="fil-title">No fem mobles en sèrie. Fem el teu <em>moble.</em></h2>
+        <p class="fil-text">Cada peça comença amb una conversa. Escoltem el que necessites, l'espai que tens i com vols viure-hi. Llavors dissenyem i construïm.</p>
+        <p class="fil-text">Treballem amb fusta massissa de bosc gestionat, metalls forjats i acabats naturals. Sense MDF. Sense vernissos tòxics.</p>
+      </div>
+      <div class="fil-right">
+        <div class="fil-stat"><div class="fil-stat-num">14</div><div class="fil-stat-text">Anys fent mobles a mà</div></div>
+        <div class="fil-stat"><div class="fil-stat-num">+400</div><div class="fil-stat-text">Peces úniques entregades</div></div>
+        <div class="fil-stat"><div class="fil-stat-num">6–8</div><div class="fil-stat-text">Setmanes de temps mig</div></div>
+        <div class="fil-stat"><div class="fil-stat-num">100%</div><div class="fil-stat-text">Materials de proximitat</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="treballs">
+    <div class="treballs-inner">
+      <div class="section-label">Alguns treballs</div>
+      <h2 class="treballs-title">Peces recents</h2>
+      <div class="treballs-grid">
+        <div class="treball-card big">
+          <div class="treball-num">01</div>
+          <div class="treball-name">Taula de menjador en roure</div>
+          <div class="treball-type">Casa particular · Sarrià-Sant Gervasi</div>
+        </div>
+        <div class="treball-card">
+          <div class="treball-num">02</div>
+          <div class="treball-name">Estanteria a mida</div>
+          <div class="treball-type">Oficina · Poblenou</div>
+        </div>
+        <div class="treball-card">
+          <div class="treball-num">03</div>
+          <div class="treball-name">Capçal i tauletes</div>
+          <div class="treball-type">Dormitori · Gràcia</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacte">
+    <div class="contacte-inner">
+      <div class="contacte-left">
+        <div class="section-label">Parlem</div>
+        <h2 class="contacte-title">Tens un projecte al cap?</h2>
+        <p class="contacte-text">Explica'ns el que necessites. Sense compromís. Et respondrem amb un pressupost detallat en 48 hores.</p>
+        <a href="mailto:hola@garrigafusta.cat" class="contacte-email">hola@garrigafusta.cat</a>
+      </div>
+      <form class="contacte-form" onsubmit="return false">
+        <div class="form-field"><input type="text" placeholder="El teu nom" /></div>
+        <div class="form-field"><input type="email" placeholder="Email" /></div>
+        <div class="form-field"><textarea placeholder="Descriu el moble que vols..." rows="4"></textarea></div>
+        <button type="submit" class="btn-submit">Enviar missatge</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <span class="footer-logo">Garriga Fusta</span>
+    <p>© 2026 Garriga Fusta · Sant Cugat del Vallès</p>
+  </footer>
+
+</body>
+</html>

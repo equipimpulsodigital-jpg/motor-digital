@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forma Studio — Pilates & Yoga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #faf8f5; color: #1c1410; overflow-x: hidden; }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2.5rem; height: 64px;
+      background: rgba(250,248,245,0.94); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(193,142,108,0.15);
+    }
+    .logo { font-size: 1rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #1c1410; }
+    .logo em { font-style: normal; color: #c18e6c; }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06em; color: #7a6a5a; transition: color 0.2s; }
+    .nav-links a:hover { color: #1c1410; }
+    .nav-cta {
+      border: 1.5px solid #1c1410; color: #1c1410;
+      font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em;
+      padding: 0.55rem 1.4rem; border-radius: 2px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .nav-cta:hover { background: #1c1410; color: #faf8f5; }
+
+    /* HERO */
+    #hero {
+      min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr;
+      padding-top: 64px; overflow: hidden;
+    }
+    .hero-left {
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 5rem 3rem 5rem 2.5rem;
+    }
+    .hero-tag { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: #c18e6c; margin-bottom: 2.5rem; }
+    .hero-title { font-size: clamp(2.8rem, 6vw, 5.5rem); font-weight: 900; letter-spacing: -0.04em; line-height: 0.95; color: #1c1410; margin-bottom: 2rem; }
+    .hero-title em { font-style: italic; font-weight: 300; color: #c18e6c; }
+    .hero-desc { font-size: 1rem; color: #7a6a5a; line-height: 1.75; margin-bottom: 2.5rem; max-width: 340px; }
+    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-primary {
+      background: #1c1410; color: #faf8f5;
+      font-size: 0.85rem; font-weight: 700; padding: 0.9rem 2rem;
+      border-radius: 2px; transition: background 0.2s;
+    }
+    .btn-primary:hover { background: #3d2c1e; }
+    .btn-secondary {
+      color: #7a6a5a; font-size: 0.85rem; font-weight: 600;
+      display: flex; align-items: center; gap: 0.4rem;
+      border-bottom: 1px solid rgba(122,106,90,0.3); padding-bottom: 1px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .btn-secondary:hover { color: #1c1410; border-color: #1c1410; }
+    .hero-right {
+      background: #e8ddd4;
+      display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .hero-right::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, #e8ddd4 0%, #d4c4b4 50%, #c8b49e 100%);
+    }
+    .hero-right-text {
+      position: relative; z-index: 1;
+      font-size: 8rem; font-weight: 900; letter-spacing: -0.06em;
+      color: rgba(193,142,108,0.15); line-height: 1;
+      text-align: center;
+    }
+    .hero-stats {
+      position: absolute; bottom: 2.5rem; left: 2.5rem; right: 2.5rem;
+      display: flex; gap: 2rem;
+    }
+    .stat { }
+    .stat-num { font-size: 1.8rem; font-weight: 900; color: #1c1410; letter-spacing: -0.04em; line-height: 1; }
+    .stat-label { font-size: 0.72rem; color: #7a6a5a; margin-top: 0.25rem; }
+
+    /* CLASES */
+    #clases { padding: 7rem 2.5rem; background: #faf8f5; }
+    .clases-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #c18e6c; margin-bottom: 4rem; }
+    .clases-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid rgba(193,142,108,0.2); border-radius: 4px; overflow: hidden; }
+    .clase-card { padding: 2.5rem; border-right: 1px solid rgba(193,142,108,0.2); transition: background 0.2s; }
+    .clase-card:last-child { border-right: none; }
+    .clase-card:hover { background: rgba(193,142,108,0.05); }
+    .clase-icon { font-size: 1.5rem; margin-bottom: 1.5rem; }
+    .clase-name { font-size: 1.1rem; font-weight: 700; color: #1c1410; margin-bottom: 0.75rem; letter-spacing: -0.01em; }
+    .clase-desc { font-size: 0.88rem; color: #7a6a5a; line-height: 1.65; margin-bottom: 1.5rem; }
+    .clase-detail { font-size: 0.78rem; font-weight: 600; color: #c18e6c; text-transform: uppercase; letter-spacing: 0.06em; }
+
+    /* HORARIOS */
+    #horarios { padding: 7rem 2.5rem; background: #1c1410; }
+    .horarios-inner { max-width: 1200px; margin: 0 auto; }
+    .horarios-inner .section-label { color: rgba(193,142,108,0.7); }
+    .horarios-title { font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; letter-spacing: -0.03em; color: #faf8f5; margin-bottom: 3rem; }
+    .horario-row { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .horario-row:last-child { border-bottom: none; }
+    .horario-day { font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(250,248,245,0.5); width: 120px; }
+    .horario-clases { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .horario-tag { font-size: 0.78rem; font-weight: 600; background: rgba(193,142,108,0.15); color: #c18e6c; padding: 0.3rem 0.8rem; border-radius: 2px; }
+    .horario-spots { font-size: 0.78rem; color: rgba(250,248,245,0.35); }
+
+    /* CTA */
+    #cta { padding: 7rem 2.5rem; text-align: center; background: #faf8f5; }
+    .cta-inner { max-width: 550px; margin: 0 auto; }
+    .cta-inner .section-label { margin-bottom: 1.5rem; }
+    .cta-title { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; letter-spacing: -0.04em; color: #1c1410; margin-bottom: 1.5rem; line-height: 1; }
+    .cta-sub { font-size: 1rem; color: #7a6a5a; line-height: 1.7; margin-bottom: 2.5rem; }
+    .cta-price { font-size: 0.85rem; color: #7a6a5a; margin-top: 1rem; }
+    .cta-price strong { color: #1c1410; }
+
+    /* FOOTER */
+    footer { background: #1c1410; padding: 2rem 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-logo { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(250,248,245,0.6); }
+    footer p { font-size: 0.75rem; color: rgba(250,248,245,0.3); }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 1.5rem; }
+      .nav-links { display: none; }
+      #hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 3rem 1.5rem; }
+      .hero-right { height: 300px; }
+      #clases, #horarios, #cta { padding: 5rem 1.5rem; }
+      .clases-grid { grid-template-columns: 1fr; }
+      .clase-card { border-right: none; border-bottom: 1px solid rgba(193,142,108,0.2); }
+      .clase-card:last-child { border-bottom: none; }
+      footer { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#" class="logo">Forma<em>Studio</em></a>
+    <ul class="nav-links">
+      <li><a href="#clases">Clases</a></li>
+      <li><a href="#horarios">Horarios</a></li>
+      <li><a href="#cta">Precios</a></li>
+    </ul>
+    <a href="#cta" class="nav-cta">Primera clase gratis</a>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-left">
+      <div class="hero-tag">Pilates · Yoga · Movimiento consciente</div>
+      <h1 class="hero-title">Encuentra<br>tu <em>centro.</em></h1>
+      <p class="hero-desc">Clases pequeñas, atención personalizada y un espacio pensado para que te muevas mejor. En el Eixample.</p>
+      <div class="hero-btns">
+        <a href="#cta" class="btn-primary">Primera clase gratis</a>
+        <a href="#clases" class="btn-secondary">Ver clases →</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-right-text">F</div>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-num">8</div><div class="stat-label">Personas máx. por clase</div></div>
+        <div class="stat"><div class="stat-num">6</div><div class="stat-label">Tipos de clase</div></div>
+        <div class="stat"><div class="stat-num">5★</div><div class="stat-label">Valoración media</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="clases">
+    <div class="clases-inner">
+      <div class="section-label">Lo que ofrecemos</div>
+      <div class="clases-grid">
+        <div class="clase-card">
+          <div class="clase-icon">◯</div>
+          <div class="clase-name">Pilates Mat</div>
+          <p class="clase-desc">Trabajo de core, postura y control. Para todos los niveles. El punto de partida ideal.</p>
+          <div class="clase-detail">50 min · Todos los niveles</div>
+        </div>
+        <div class="clase-card">
+          <div class="clase-icon">△</div>
+          <div class="clase-name">Yoga Vinyasa</div>
+          <p class="clase-desc">Flujo dinámico sincronizado con la respiración. Fuerza, flexibilidad y presencia.</p>
+          <div class="clase-detail">60 min · Nivel medio</div>
+        </div>
+        <div class="clase-card">
+          <div class="clase-icon">□</div>
+          <div class="clase-name">Reformer</div>
+          <p class="clase-desc">Pilates con máquina para mayor resistencia y precisión. Resultados visibles desde el primer mes.</p>
+          <div class="clase-detail">55 min · Previo nivel mat</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="horarios">
+    <div class="horarios-inner">
+      <div class="section-label">Esta semana</div>
+      <h2 class="horarios-title">Horarios</h2>
+      <div class="horario-row">
+        <span class="horario-day">Lunes</span>
+        <div class="horario-clases">
+          <span class="horario-tag">Pilates Mat 9:00</span>
+          <span class="horario-tag">Vinyasa 19:00</span>
+          <span class="horario-tag">Reformer 20:30</span>
+        </div>
+        <span class="horario-spots">2 plazas</span>
+      </div>
+      <div class="horario-row">
+        <span class="horario-day">Miércoles</span>
+        <div class="horario-clases">
+          <span class="horario-tag">Pilates Mat 8:30</span>
+          <span class="horario-tag">Reformer 10:00</span>
+          <span class="horario-tag">Vinyasa 18:30</span>
+        </div>
+        <span class="horario-spots">4 plazas</span>
+      </div>
+      <div class="horario-row">
+        <span class="horario-day">Viernes</span>
+        <div class="horario-clases">
+          <span class="horario-tag">Pilates Mat 9:00</span>
+          <span class="horario-tag">Reformer 11:00</span>
+        </div>
+        <span class="horario-spots">Completo</span>
+      </div>
+      <div class="horario-row">
+        <span class="horario-day">Sábado</span>
+        <div class="horario-clases">
+          <span class="horario-tag">Vinyasa 10:00</span>
+          <span class="horario-tag">Pilates Mat 11:30</span>
+        </div>
+        <span class="horario-spots">5 plazas</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta">
+    <div class="cta-inner">
+      <div class="section-label">Empieza hoy</div>
+      <h2 class="cta-title">Primera clase gratis.</h2>
+      <p class="cta-sub">Ven a probar sin compromiso. Si te quedas, los bonos empiezan en 65€/mes.</p>
+      <a href="mailto:hola@formastudio.es" class="btn-primary">Reservar clase de prueba</a>
+      <p class="cta-price">Bono mensual desde <strong>65€</strong> · Clase suelta <strong>18€</strong></p>
+    </div>
+  </section>
+
+  <footer>
+    <span class="footer-logo">Forma Studio</span>
+    <p>© 2026 Forma Studio · Carrer de Provença 218, Barcelona</p>
+  </footer>
+
+</body>
+</html>

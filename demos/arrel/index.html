@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arrel — Cuina de Temporada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #f5f0e8; color: #1a1208; overflow-x: hidden; }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2.5rem; height: 64px;
+      background: rgba(245,240,232,0.92); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(45,90,39,0.12);
+    }
+    .logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: #2d5a27; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #5a4a2a; transition: color 0.2s; }
+    .nav-links a:hover { color: #2d5a27; }
+    .nav-cta {
+      background: #2d5a27; color: #f5f0e8;
+      font-size: 0.82rem; font-weight: 700;
+      padding: 0.6rem 1.4rem; border-radius: 3px;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: #1e3d1a; }
+
+    /* HERO */
+    #hero {
+      min-height: 100vh; display: flex; align-items: flex-end;
+      padding: 0 2.5rem 5rem;
+      background: #2d5a27;
+      position: relative; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 70% 40%, rgba(74,120,48,0.6) 0%, transparent 60%),
+                  radial-gradient(ellipse at 20% 80%, rgba(20,50,15,0.8) 0%, transparent 50%);
+    }
+    .hero-inner { position: relative; max-width: 1200px; margin: 0 auto; width: 100%; }
+    .hero-tag {
+      font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.14em; color: rgba(245,240,232,0.6); margin-bottom: 2rem;
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3.5rem, 9vw, 8rem);
+      font-weight: 700; line-height: 0.95;
+      color: #f5f0e8; letter-spacing: -0.02em;
+      margin-bottom: 2.5rem;
+    }
+    .hero-title em { font-style: italic; color: #a8d08a; }
+    .hero-bottom { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+    .hero-desc { font-size: 1.05rem; color: rgba(245,240,232,0.75); line-height: 1.7; max-width: 360px; }
+    .hero-scroll { font-size: 0.72rem; letter-spacing: 0.1em; color: rgba(245,240,232,0.4); writing-mode: vertical-rl; }
+
+    /* SOBRE */
+    #sobre {
+      padding: 7rem 2.5rem;
+      background: #f5f0e8;
+    }
+    .sobre-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+    .sobre-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #2d5a27; margin-bottom: 2rem; }
+    .sobre-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.1; color: #1a1208; margin-bottom: 1.5rem; }
+    .sobre-text { font-size: 1rem; color: #5a4a2a; line-height: 1.75; margin-bottom: 1.5rem; }
+    .sobre-img {
+      aspect-ratio: 3/4; background: #2d5a27; border-radius: 4px;
+      display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .sobre-img::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: repeating-linear-gradient(135deg, rgba(168,208,138,0.05) 0px, rgba(168,208,138,0.05) 1px, transparent 1px, transparent 12px);
+    }
+    .sobre-img-text { font-family: 'Playfair Display', serif; font-size: 3rem; color: rgba(245,240,232,0.15); font-style: italic; }
+
+    /* CARTA */
+    #carta { padding: 7rem 2.5rem; background: #1e3d1a; }
+    .carta-inner { max-width: 1200px; margin: 0 auto; }
+    .carta-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #a8d08a; margin-bottom: 1rem; }
+    .carta-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); color: #f5f0e8; margin-bottom: 3.5rem; }
+    .carta-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .carta-card { border-top: 1px solid rgba(168,208,138,0.2); padding-top: 1.5rem; }
+    .carta-num { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; color: rgba(168,208,138,0.5); margin-bottom: 0.75rem; }
+    .carta-name { font-family: 'Playfair Display', serif; font-size: 1.25rem; color: #f5f0e8; margin-bottom: 0.5rem; }
+    .carta-desc { font-size: 0.88rem; color: rgba(245,240,232,0.55); line-height: 1.65; margin-bottom: 1rem; }
+    .carta-price { font-size: 1rem; font-weight: 700; color: #a8d08a; }
+
+    /* RESERVA */
+    #reserva { padding: 7rem 2.5rem; background: #f5f0e8; text-align: center; }
+    .reserva-inner { max-width: 600px; margin: 0 auto; }
+    .reserva-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #2d5a27; margin-bottom: 1.5rem; }
+    .reserva-title { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; color: #1a1208; margin-bottom: 1.5rem; }
+    .reserva-sub { font-size: 1rem; color: #5a4a2a; line-height: 1.7; margin-bottom: 2.5rem; }
+    .btn-reserva {
+      display: inline-block; background: #2d5a27; color: #f5f0e8;
+      font-weight: 700; font-size: 0.9rem; padding: 1.1rem 2.5rem;
+      border-radius: 3px; text-transform: uppercase; letter-spacing: 0.06em;
+      transition: background 0.2s;
+    }
+    .btn-reserva:hover { background: #1e3d1a; }
+
+    /* FOOTER */
+    footer { background: #1a1208; padding: 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #f5f0e8; }
+    footer p { font-size: 0.78rem; color: rgba(245,240,232,0.35); }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 1.5rem; }
+      .nav-links { display: none; }
+      #hero { padding: 0 1.5rem 4rem; }
+      #sobre, #carta, #reserva { padding: 5rem 1.5rem; }
+      .sobre-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .sobre-img { display: none; }
+      .carta-grid { grid-template-columns: 1fr; }
+      footer { padding: 2rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#" class="logo">Arrel</a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre nosaltres</a></li>
+      <li><a href="#carta">La carta</a></li>
+      <li><a href="#reserva">Reserva</a></li>
+    </ul>
+    <a href="#reserva" class="nav-cta">Reservar taula</a>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <div class="hero-tag">Restaurant ecològic · Gràcia, Barcelona</div>
+      <h1 class="hero-title">Cuina de<br>temporada,<br><em>arrels</em><br>de sempre.</h1>
+      <div class="hero-bottom">
+        <p class="hero-desc">Productes locals i ecològics. Cuina honesta que respecta la terra i les persones que la treballen.</p>
+        <span class="hero-scroll">scroll ↓</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="sobre-inner">
+      <div>
+        <div class="sobre-label">Qui som</div>
+        <h2 class="sobre-title">Menjar bé és un acte polític.</h2>
+        <p class="sobre-text">A Arrel treballem directament amb productors locals del Maresme i el Vallès. Res de cadenes. Res de congelats. Cada plat neix de conèixer d'on ve el que mengem.</p>
+        <p class="sobre-text">Obert des de 2019, el nostre restaurant ha servit milers de comensals que comparteixen una cosa: ganes de menjar honestament.</p>
+      </div>
+      <div class="sobre-img">
+        <span class="sobre-img-text">Arrel</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="carta">
+    <div class="carta-inner">
+      <div class="carta-label">La carta</div>
+      <h2 class="carta-title">Plats del dia</h2>
+      <div class="carta-grid">
+        <div class="carta-card">
+          <div class="carta-num">01</div>
+          <div class="carta-name">Escudella de temporada</div>
+          <p class="carta-desc">Verdures del Maresme, llegums de proximitat i un brou que porta hores a foc lent.</p>
+          <div class="carta-price">12€</div>
+        </div>
+        <div class="carta-card">
+          <div class="carta-num">02</div>
+          <div class="carta-name">Calaix de mar a la planxa</div>
+          <p class="carta-desc">Peix fresc de llotja amb all negre fermentat i oli d'oliva de l'Empordà.</p>
+          <div class="carta-price">18€</div>
+        </div>
+        <div class="carta-card">
+          <div class="carta-num">03</div>
+          <div class="carta-name">Galetes de civada i mel</div>
+          <p class="carta-desc">Postres del dia elaborades al moment. Mel del Pallars i fruita de temporada.</p>
+          <div class="carta-price">6€</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reserva">
+    <div class="reserva-inner">
+      <div class="reserva-label">Vine a trobar-nos</div>
+      <h2 class="reserva-title">Reserva la teva taula</h2>
+      <p class="reserva-sub">Obert de dimarts a diumenge, migdia i nit. Carrer de les Carolines 14, Gràcia.</p>
+      <a href="mailto:hola@arrel.cat" class="btn-reserva">Reservar ara</a>
+    </div>
+  </section>
+
+  <footer>
+    <span class="footer-logo">Arrel</span>
+    <p>© 2026 Arrel Restaurant · Carrer de les Carolines 14, Barcelona</p>
+  </footer>
+
+</body>
+</html>

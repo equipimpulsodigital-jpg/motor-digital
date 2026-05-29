@@ -433,6 +433,108 @@ a { text-decoration: none; color: inherit; }
   line-height: 1.65;
 }
 
+/* ===== PROYECTOS ===== */
+#proyectos {
+  border-top: 1px solid var(--border);
+  padding-bottom: 6rem;
+}
+
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.proj-card { display: flex; flex-direction: column; gap: 1.2rem; }
+
+.proj-preview {
+  display: block;
+  border-radius: 6px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  flex-direction: column;
+  transition: transform 0.3s cubic-bezier(.16,1,.3,1), box-shadow 0.3s;
+  cursor: pointer;
+}
+.proj-preview:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.18);
+}
+
+.proj-browser-bar {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  flex-shrink: 0;
+}
+.proj-browser-bar span {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  display: block;
+}
+
+.proj-preview-body {
+  flex: 1;
+  padding: 1rem 1.2rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: calc(100% - 28px);
+}
+
+.proj-preview-nav-mock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.proj-preview-hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.proj-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.proj-meta h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--fg);
+  margin-bottom: 0.2rem;
+}
+
+.proj-type {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.proj-link {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent);
+  white-space: nowrap;
+  transition: letter-spacing 0.2s;
+}
+.proj-link:hover { letter-spacing: 0.02em; }
+
+@media (max-width: 900px) {
+  .proj-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .proj-preview { aspect-ratio: 16/9; }
+}
+
 /* ===== PRECIOS ===== */
 #precios {
   border-top: 1px solid var(--border);
