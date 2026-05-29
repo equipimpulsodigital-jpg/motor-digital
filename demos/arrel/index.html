@@ -1,210 +1,362 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arrel — Cuina de Temporada</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; background: #f5f0e8; color: #1a1208; overflow-x: hidden; }
-    a { text-decoration: none; color: inherit; }
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Arrel — Cuina de Temporada · Gràcia, Barcelona</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0b1c10;--mid:#142a19;--soft:#1e3d24;--gold:#c8a45a;--cream:#f2ead8;--muted:rgba(242,234,216,0.45);--border:rgba(200,164,90,0.15)}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--cream);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
 
-    /* NAV */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 2.5rem; height: 64px;
-      background: rgba(245,240,232,0.92); backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(45,90,39,0.12);
-    }
-    .logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: #2d5a27; }
-    .nav-links { display: flex; gap: 2rem; list-style: none; }
-    .nav-links a { font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #5a4a2a; transition: color 0.2s; }
-    .nav-links a:hover { color: #2d5a27; }
-    .nav-cta {
-      background: #2d5a27; color: #f5f0e8;
-      font-size: 0.82rem; font-weight: 700;
-      padding: 0.6rem 1.4rem; border-radius: 3px;
-      text-transform: uppercase; letter-spacing: 0.06em;
-      transition: background 0.2s;
-    }
-    .nav-cta:hover { background: #1e3d1a; }
+/* ── NAV ── */
+#nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;height:70px;transition:background .4s,border-color .4s;border-bottom:1px solid transparent}
+#nav.stuck{background:rgba(11,28,16,.95);backdrop-filter:blur(16px);border-color:var(--border)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;letter-spacing:.06em;color:var(--cream)}
+.nav-logo em{font-style:italic;color:var(--gold)}
+.nav-links{display:flex;gap:2.5rem;list-style:none}
+.nav-links a{font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);transition:color .2s}
+.nav-links a:hover{color:var(--cream)}
+.nav-res{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);padding:.5rem 1.4rem;border-radius:2px;transition:background .2s,color .2s}
+.nav-res:hover{background:var(--gold);color:var(--bg)}
 
-    /* HERO */
-    #hero {
-      min-height: 100vh; display: flex; align-items: flex-end;
-      padding: 0 2.5rem 5rem;
-      background: #2d5a27;
-      position: relative; overflow: hidden;
-    }
-    .hero-bg {
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse at 70% 40%, rgba(74,120,48,0.6) 0%, transparent 60%),
-                  radial-gradient(ellipse at 20% 80%, rgba(20,50,15,0.8) 0%, transparent 50%);
-    }
-    .hero-inner { position: relative; max-width: 1200px; margin: 0 auto; width: 100%; }
-    .hero-tag {
-      font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
-      letter-spacing: 0.14em; color: rgba(245,240,232,0.6); margin-bottom: 2rem;
-    }
-    .hero-title {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(3.5rem, 9vw, 8rem);
-      font-weight: 700; line-height: 0.95;
-      color: #f5f0e8; letter-spacing: -0.02em;
-      margin-bottom: 2.5rem;
-    }
-    .hero-title em { font-style: italic; color: #a8d08a; }
-    .hero-bottom { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
-    .hero-desc { font-size: 1.05rem; color: rgba(245,240,232,0.75); line-height: 1.7; max-width: 360px; }
-    .hero-scroll { font-size: 0.72rem; letter-spacing: 0.1em; color: rgba(245,240,232,0.4); writing-mode: vertical-rl; }
+/* ── HERO ── */
+#hero{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 3rem 4rem;overflow:hidden}
+.hero-visual{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 60% 30%,#2a5c30 0%,#0b1c10 65%),repeating-linear-gradient(125deg,rgba(200,164,90,.04) 0,rgba(200,164,90,.04) 1px,transparent 1px,transparent 40px)}
+.hero-visual::after{content:'';position:absolute;bottom:0;left:0;right:0;height:40%;background:linear-gradient(to top,var(--bg),transparent)}
+.hero-season{position:absolute;top:70px;right:3rem;writing-mode:vertical-rl;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);opacity:.7;padding-top:1.5rem}
+.hero-content{position:relative;z-index:1;max-width:1100px}
+.hero-pre{font-size:.7rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(4.5rem,11vw,10rem);font-weight:300;line-height:.9;letter-spacing:-.02em;color:var(--cream);margin-bottom:2.5rem}
+.hero-title em{font-style:italic;color:var(--gold)}
+.hero-title strong{font-weight:600}
+.hero-row{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.hero-desc{font-size:1rem;color:var(--muted);line-height:1.8;max-width:380px}
+.hero-btns{display:flex;gap:1rem;align-items:center}
+.btn-gold{background:var(--gold);color:var(--bg);font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.9rem 2.2rem;border-radius:2px;transition:opacity .2s}
+.btn-gold:hover{opacity:.88}
+.btn-ghost{font-size:.8rem;font-weight:500;letter-spacing:.06em;color:var(--muted);border-bottom:1px solid var(--border);padding-bottom:1px;transition:color .2s}
+.btn-ghost:hover{color:var(--cream)}
+.hero-scroll{position:absolute;bottom:2.5rem;right:3rem;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(200,164,90,.4)}
 
-    /* SOBRE */
-    #sobre {
-      padding: 7rem 2.5rem;
-      background: #f5f0e8;
-    }
-    .sobre-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
-    .sobre-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #2d5a27; margin-bottom: 2rem; }
-    .sobre-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.1; color: #1a1208; margin-bottom: 1.5rem; }
-    .sobre-text { font-size: 1rem; color: #5a4a2a; line-height: 1.75; margin-bottom: 1.5rem; }
-    .sobre-img {
-      aspect-ratio: 3/4; background: #2d5a27; border-radius: 4px;
-      display: flex; align-items: center; justify-content: center;
-      position: relative; overflow: hidden;
-    }
-    .sobre-img::after {
-      content: '';
-      position: absolute; inset: 0;
-      background: repeating-linear-gradient(135deg, rgba(168,208,138,0.05) 0px, rgba(168,208,138,0.05) 1px, transparent 1px, transparent 12px);
-    }
-    .sobre-img-text { font-family: 'Playfair Display', serif; font-size: 3rem; color: rgba(245,240,232,0.15); font-style: italic; }
+/* ── MANIFESTO ── */
+#manifesto{padding:8rem 3rem;border-top:1px solid var(--border)}
+.manifesto-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 2fr;gap:8rem;align-items:start}
+.manifesto-label{font-size:.65rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);padding-top:.35rem}
+.manifesto-body h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4.5vw,4rem);font-weight:300;line-height:1.15;color:var(--cream);margin-bottom:2rem}
+.manifesto-body h2 em{font-style:italic;color:var(--gold)}
+.manifesto-body p{font-size:.95rem;color:var(--muted);line-height:1.9;margin-bottom:1.2rem;max-width:560px}
+.manifesto-stats{display:flex;gap:4rem;margin-top:3rem;padding-top:3rem;border-top:1px solid var(--border)}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:var(--gold);line-height:1;display:block}
+.stat-text{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:.25rem}
 
-    /* CARTA */
-    #carta { padding: 7rem 2.5rem; background: #1e3d1a; }
-    .carta-inner { max-width: 1200px; margin: 0 auto; }
-    .carta-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #a8d08a; margin-bottom: 1rem; }
-    .carta-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); color: #f5f0e8; margin-bottom: 3.5rem; }
-    .carta-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-    .carta-card { border-top: 1px solid rgba(168,208,138,0.2); padding-top: 1.5rem; }
-    .carta-num { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; color: rgba(168,208,138,0.5); margin-bottom: 0.75rem; }
-    .carta-name { font-family: 'Playfair Display', serif; font-size: 1.25rem; color: #f5f0e8; margin-bottom: 0.5rem; }
-    .carta-desc { font-size: 0.88rem; color: rgba(245,240,232,0.55); line-height: 1.65; margin-bottom: 1rem; }
-    .carta-price { font-size: 1rem; font-weight: 700; color: #a8d08a; }
+/* ── CARTA ── */
+#carta{padding:8rem 3rem;background:var(--mid)}
+.carta-inner{max-width:1100px;margin:0 auto}
+.carta-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:5rem;padding-bottom:2rem;border-bottom:1px solid var(--border)}
+.carta-header h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4.5rem);font-weight:300;color:var(--cream)}
+.carta-header p{font-size:.82rem;color:var(--muted);max-width:220px;line-height:1.7;text-align:right}
+.carta-cat{margin-bottom:4rem}
+.carta-cat-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:2rem;display:flex;align-items:center;gap:1.5rem}
+.carta-cat-title::after{content:'';flex:1;height:1px;background:var(--border)}
+.carta-items{display:grid;gap:0}
+.carta-item{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:baseline;padding:1.2rem 0;border-bottom:1px solid rgba(200,164,90,.08)}
+.carta-item:last-child{border-bottom:none}
+.carta-item-left h3{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;color:var(--cream);margin-bottom:.3rem}
+.carta-item-left p{font-size:.8rem;color:var(--muted);line-height:1.6;max-width:480px}
+.carta-item-left .tag{display:inline-block;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;background:rgba(200,164,90,.12);color:var(--gold);padding:.2rem .6rem;border-radius:2px;margin-top:.4rem}
+.carta-price{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:300;color:var(--gold);white-space:nowrap}
 
-    /* RESERVA */
-    #reserva { padding: 7rem 2.5rem; background: #f5f0e8; text-align: center; }
-    .reserva-inner { max-width: 600px; margin: 0 auto; }
-    .reserva-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #2d5a27; margin-bottom: 1.5rem; }
-    .reserva-title { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; color: #1a1208; margin-bottom: 1.5rem; }
-    .reserva-sub { font-size: 1rem; color: #5a4a2a; line-height: 1.7; margin-bottom: 2.5rem; }
-    .btn-reserva {
-      display: inline-block; background: #2d5a27; color: #f5f0e8;
-      font-weight: 700; font-size: 0.9rem; padding: 1.1rem 2.5rem;
-      border-radius: 3px; text-transform: uppercase; letter-spacing: 0.06em;
-      transition: background 0.2s;
-    }
-    .btn-reserva:hover { background: #1e3d1a; }
+/* ── QUOTE ── */
+#quote{padding:8rem 3rem;background:var(--soft);text-align:center;position:relative;overflow:hidden}
+#quote::before{content:'"';position:absolute;top:-2rem;left:50%;transform:translateX(-50%);font-family:'Cormorant Garamond',serif;font-size:20rem;font-weight:300;color:rgba(200,164,90,.04);line-height:1;user-select:none}
+.quote-inner{position:relative;z-index:1;max-width:760px;margin:0 auto}
+.quote-text{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,3.5vw,2.5rem);font-weight:300;font-style:italic;line-height:1.5;color:var(--cream);margin-bottom:2rem}
+.quote-text strong{font-style:normal;font-weight:600;color:var(--gold)}
+.quote-author{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
 
-    /* FOOTER */
-    footer { background: #1a1208; padding: 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
-    .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #f5f0e8; }
-    footer p { font-size: 0.78rem; color: rgba(245,240,232,0.35); }
+/* ── HORARIS & ON SOM ── */
+#info{padding:8rem 3rem;border-top:1px solid var(--border)}
+.info-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:6rem}
+.info-block h3{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--cream);margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.horari-row{display:flex;justify-content:space-between;padding:.9rem 0;border-bottom:1px solid rgba(200,164,90,.07);font-size:.88rem}
+.horari-day{color:var(--muted);font-weight:300}
+.horari-time{color:var(--cream);font-weight:400}
+.horari-closed{color:rgba(200,164,90,.35);font-style:italic}
+.adress-block{margin-top:2rem}
+.adress-block p{font-size:.9rem;color:var(--muted);line-height:1.9}
+.adress-block a{color:var(--gold);border-bottom:1px solid var(--border);transition:border-color .2s}
+.adress-block a:hover{border-color:var(--gold)}
+.map-placeholder{margin-top:2rem;aspect-ratio:16/9;background:var(--soft);border-radius:4px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border)}
+.map-placeholder span{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 
-    @media (max-width: 768px) {
-      nav { padding: 0 1.5rem; }
-      .nav-links { display: none; }
-      #hero { padding: 0 1.5rem 4rem; }
-      #sobre, #carta, #reserva { padding: 5rem 1.5rem; }
-      .sobre-inner { grid-template-columns: 1fr; gap: 3rem; }
-      .sobre-img { display: none; }
-      .carta-grid { grid-template-columns: 1fr; }
-      footer { padding: 2rem 1.5rem; }
-    }
-  </style>
+/* ── RESERVA ── */
+#reserva{padding:8rem 3rem;background:var(--gold)}
+.res-inner{max-width:700px;margin:0 auto;text-align:center}
+.res-inner h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:300;color:var(--bg);margin-bottom:1rem}
+.res-inner p{font-size:.95rem;color:rgba(11,28,16,.65);line-height:1.8;margin-bottom:2.5rem}
+.res-form{display:grid;grid-template-columns:1fr 1fr;gap:1rem;text-align:left}
+.res-form input,.res-form select,.res-form textarea{width:100%;background:rgba(11,28,16,.08);border:1px solid rgba(11,28,16,.2);padding:.9rem 1rem;font-family:'Inter',sans-serif;font-size:.88rem;color:var(--bg);border-radius:2px;outline:none;transition:border-color .2s}
+.res-form input:focus,.res-form select:focus,.res-form textarea:focus{border-color:var(--bg)}
+.res-form input::placeholder,.res-form textarea::placeholder{color:rgba(11,28,16,.45)}
+.res-form .full{grid-column:1/-1}
+.btn-dark{background:var(--bg);color:var(--gold);font-size:.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:1rem 2.5rem;border:none;border-radius:2px;cursor:pointer;transition:opacity .2s}
+.btn-dark:hover{opacity:.85}
+
+/* ── FOOTER ── */
+footer{padding:3rem;border-top:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem;align-items:start}
+.foot-logo{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;color:var(--cream)}
+.foot-logo em{font-style:italic;color:var(--gold)}
+.foot-col h4{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.foot-col p,.foot-col a{font-size:.82rem;color:var(--muted);line-height:2}
+.foot-col a{display:block;transition:color .2s}
+.foot-col a:hover{color:var(--cream)}
+.foot-bottom{grid-column:1/-1;padding-top:2rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:.72rem;color:rgba(200,164,90,.35)}
+
+/* ── SCROLL REVEAL ── */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:900px){
+  #nav{padding:0 1.5rem}
+  .nav-links{display:none}
+  #hero{padding:0 1.5rem 3rem}
+  #manifesto,#carta,#quote,#info,#reserva{padding:5rem 1.5rem}
+  .manifesto-inner{grid-template-columns:1fr;gap:2rem}
+  .info-inner{grid-template-columns:1fr;gap:4rem}
+  .res-form{grid-template-columns:1fr}
+  footer{grid-template-columns:1fr;padding:2rem 1.5rem}
+  .foot-bottom{flex-direction:column;gap:.5rem}
+}
+</style>
 </head>
 <body>
 
-  <nav>
-    <a href="#" class="logo">Arrel</a>
-    <ul class="nav-links">
-      <li><a href="#sobre">Sobre nosaltres</a></li>
-      <li><a href="#carta">La carta</a></li>
-      <li><a href="#reserva">Reserva</a></li>
-    </ul>
-    <a href="#reserva" class="nav-cta">Reservar taula</a>
-  </nav>
+<nav id="nav">
+  <a href="#" class="nav-logo">Arrel<em>.</em></a>
+  <ul class="nav-links">
+    <li><a href="#manifesto">Qui som</a></li>
+    <li><a href="#carta">La carta</a></li>
+    <li><a href="#info">Horaris</a></li>
+    <li><a href="#reserva">Reserva</a></li>
+  </ul>
+  <a href="#reserva" class="nav-res">Reservar taula</a>
+</nav>
 
-  <section id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-inner">
-      <div class="hero-tag">Restaurant ecològic · Gràcia, Barcelona</div>
-      <h1 class="hero-title">Cuina de<br>temporada,<br><em>arrels</em><br>de sempre.</h1>
-      <div class="hero-bottom">
-        <p class="hero-desc">Productes locals i ecològics. Cuina honesta que respecta la terra i les persones que la treballen.</p>
-        <span class="hero-scroll">scroll ↓</span>
+<section id="hero">
+  <div class="hero-visual"></div>
+  <span class="hero-season">Temporada primavera · 2026</span>
+  <div class="hero-content">
+    <div class="hero-pre">Restaurant ecològic · Carrer de les Carolines · Gràcia</div>
+    <h1 class="hero-title">
+      Cuina<br>
+      de <em>terra</em><br>
+      <strong>i de temps.</strong>
+    </h1>
+    <div class="hero-row">
+      <p class="hero-desc">Productes locals, temporada real i productors que coneixem pel nom. Res de congelats. Res de cadenes. Cuina honesta que respecta d'on ve el menjar.</p>
+      <div class="hero-btns">
+        <a href="#reserva" class="btn-gold">Reservar taula</a>
+        <a href="#carta" class="btn-ghost">Veure la carta</a>
       </div>
     </div>
-  </section>
+  </div>
+  <span class="hero-scroll">scroll ↓</span>
+</section>
 
-  <section id="sobre">
-    <div class="sobre-inner">
-      <div>
-        <div class="sobre-label">Qui som</div>
-        <h2 class="sobre-title">Menjar bé és un acte polític.</h2>
-        <p class="sobre-text">A Arrel treballem directament amb productors locals del Maresme i el Vallès. Res de cadenes. Res de congelats. Cada plat neix de conèixer d'on ve el que mengem.</p>
-        <p class="sobre-text">Obert des de 2019, el nostre restaurant ha servit milers de comensals que comparteixen una cosa: ganes de menjar honestament.</p>
-      </div>
-      <div class="sobre-img">
-        <span class="sobre-img-text">Arrel</span>
+<section id="manifesto">
+  <div class="manifesto-inner">
+    <div class="manifesto-label">La nostra manera</div>
+    <div class="manifesto-body reveal">
+      <h2>Menjar bé<br>és un acte <em>polític.</em></h2>
+      <p>Cada plat que surte de la nostra cuina ha passat per mans de pagesos que coneixem, de mercats de barri, d'animals criats amb llibertat. No perquè estigui de moda sinó perquè és l'única manera de cuinar amb coherència.</p>
+      <p>Treballem amb una llista de proveïdors curta i de proximitat: la cooperativa La Fageda, les hortalisses de Can Casals del Maresme, el peix de llotja de Vilanova. La carta canvia setmanalment. Si no és de temporada, no hi és.</p>
+      <div class="manifesto-stats">
+        <div><span class="stat-num">+40</span><span class="stat-text">Productors locals</span></div>
+        <div><span class="stat-num">100%</span><span class="stat-text">Ingredients ecològics</span></div>
+        <div><span class="stat-num">7</span><span class="stat-text">Anys oberts</span></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="carta">
-    <div class="carta-inner">
-      <div class="carta-label">La carta</div>
-      <h2 class="carta-title">Plats del dia</h2>
-      <div class="carta-grid">
-        <div class="carta-card">
-          <div class="carta-num">01</div>
-          <div class="carta-name">Escudella de temporada</div>
-          <p class="carta-desc">Verdures del Maresme, llegums de proximitat i un brou que porta hores a foc lent.</p>
-          <div class="carta-price">12€</div>
+<section id="carta">
+  <div class="carta-inner">
+    <div class="carta-header reveal">
+      <h2>La Carta</h2>
+      <p>Canvia amb la temporada. Els preus inclouen IVA i servei.</p>
+    </div>
+
+    <div class="carta-cat reveal">
+      <div class="carta-cat-title">Per compartir</div>
+      <div class="carta-items">
+        <div class="carta-item">
+          <div class="carta-item-left">
+            <h3>Pa de pagès amb tomàquet i anxoves del Cantàbric</h3>
+            <p>Massa mare, tomàquet de penjar de l'Empordà, oli verge extra i anxoves en salaó.</p>
+          </div>
+          <div class="carta-price">9€</div>
         </div>
-        <div class="carta-card">
-          <div class="carta-num">02</div>
-          <div class="carta-name">Calaix de mar a la planxa</div>
-          <p class="carta-desc">Peix fresc de llotja amb all negre fermentat i oli d'oliva de l'Empordà.</p>
-          <div class="carta-price">18€</div>
+        <div class="carta-item">
+          <div class="carta-item-left">
+            <h3>Croquetes de bacallà i patata blava</h3>
+            <p>Bechamel lleugera amb bacallà desalat, patata blava de Prades i aioli de romaní.</p>
+            <span class="tag">Sense gluten disponible</span>
+          </div>
+          <div class="carta-price">11€</div>
         </div>
-        <div class="carta-card">
-          <div class="carta-num">03</div>
-          <div class="carta-name">Galetes de civada i mel</div>
-          <p class="carta-desc">Postres del dia elaborades al moment. Mel del Pallars i fruita de temporada.</p>
-          <div class="carta-price">6€</div>
+        <div class="carta-item">
+          <div class="carta-item-left">
+            <h3>Gazpacho de tomàquet i maduixa</h3>
+            <p>Tomàquet de penjoll, maduixa de l'hort, xerès vell i oli de picual.</p>
+            <span class="tag">Temporada</span>
+          </div>
+          <div class="carta-price">10€</div>
         </div>
       </div>
     </div>
-  </section>
 
-  <section id="reserva">
-    <div class="reserva-inner">
-      <div class="reserva-label">Vine a trobar-nos</div>
-      <h2 class="reserva-title">Reserva la teva taula</h2>
-      <p class="reserva-sub">Obert de dimarts a diumenge, migdia i nit. Carrer de les Carolines 14, Gràcia.</p>
-      <a href="mailto:hola@arrel.cat" class="btn-reserva">Reservar ara</a>
+    <div class="carta-cat reveal">
+      <div class="carta-cat-title">Plats principals</div>
+      <div class="carta-items">
+        <div class="carta-item">
+          <div class="carta-item-left">
+            <h3>Lluç de palangre a la planxa</h3>
+            <p>Peix de llotja de Vilanova, guarnit amb salsa verde d'herbes fresques i patates rosées.</p>
+          </div>
+          <div class="carta-price">22€</div>
+        </div>
+        <div class="carta-item">
+          <div class="carta-item-left">
+            <h3>Pollastre de pagès al forn amb prunes i pi</h3>
+            <p>Pollastre de Can Rovira, dues hores al forn de llenya, prunes seques del Priorat i agulles de pi.</p>
+            <span class="tag">Signature</span>
+          </div>
+          <div class="carta-price">19€</div>
+        </div>
+        <div class="carta-item">
+          <div class="carta-item-left">
+            <h3>Risotto d'espàrrecs verds i parmesà</h3>
+            <p>Arròs carnaroli, brou de verdures de temporada, espàrrecs del Baix Llobregat i parmesà 24 mesos.</p>
+            <span class="tag">Vegetarià</span>
+          </div>
+          <div class="carta-price">17€</div>
+        </div>
+        <div class="carta-item">
+          <div class="carta-item-left">
+            <h3>Escudella de temporada</h3>
+            <p>Verdures del mercat, llegums de proximitat i un brou que porta sis hores a foc lent. Sempre a la carta.</p>
+          </div>
+          <div class="carta-price">14€</div>
+        </div>
+      </div>
     </div>
-  </section>
 
-  <footer>
-    <span class="footer-logo">Arrel</span>
-    <p>© 2026 Arrel Restaurant · Carrer de les Carolines 14, Barcelona</p>
-  </footer>
+    <div class="carta-cat reveal">
+      <div class="carta-cat-title">Postres</div>
+      <div class="carta-items">
+        <div class="carta-item">
+          <div class="carta-item-left">
+            <h3>Crema catalana de vainilla de Madagascar</h3>
+            <p>Recepta de la iaia. Cremada al moment.</p>
+          </div>
+          <div class="carta-price">7€</div>
+        </div>
+        <div class="carta-item">
+          <div class="carta-item-left">
+            <h3>Formatge La Fageda amb melmelada de figa</h3>
+            <p>Formatge fresc i curat de la cooperativa La Fageda, melmelada casolana de figues de temporada.</p>
+          </div>
+          <div class="carta-price">8€</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section id="quote">
+  <div class="quote-inner reveal">
+    <p class="quote-text">"La cuina no és màgia. És <strong>temps, honradesa</strong> i saber d'on ve el que poses al plat. La resta és màrqueting."</p>
+    <span class="quote-author">Miquel Arrel · Cap de cuina</span>
+  </div>
+</section>
+
+<section id="info">
+  <div class="info-inner">
+    <div class="info-block reveal">
+      <h3>Horaris</h3>
+      <div class="horari-row"><span class="horari-day">Dilluns</span><span class="horari-closed">Tancat</span></div>
+      <div class="horari-row"><span class="horari-day">Dimarts — Dijous</span><span class="horari-time">13:00 – 15:30 · 20:00 – 22:30</span></div>
+      <div class="horari-row"><span class="horari-day">Divendres</span><span class="horari-time">13:00 – 15:30 · 20:00 – 23:00</span></div>
+      <div class="horari-row"><span class="horari-day">Dissabte</span><span class="horari-time">13:00 – 16:00 · 20:00 – 23:00</span></div>
+      <div class="horari-row"><span class="horari-day">Diumenge</span><span class="horari-time">13:00 – 16:00</span></div>
+    </div>
+    <div class="info-block reveal">
+      <h3>On som</h3>
+      <div class="adress-block">
+        <p>Carrer de les Carolines, 14<br>08012 Barcelona · Gràcia</p>
+        <p style="margin-top:1rem"><a href="tel:+34932101234">+34 932 10 12 34</a><br><a href="mailto:hola@arrel.cat">hola@arrel.cat</a></p>
+        <p style="margin-top:1rem;font-size:.78rem">Metro L3 Fontana · Autobús 22, 24, 87<br>Aparcament: Plaça de la Vila de Gràcia</p>
+      </div>
+      <div class="map-placeholder"><span>Mapa · Google Maps</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="reserva">
+  <div class="res-inner">
+    <h2>Reserva la teva taula</h2>
+    <p>Reserva en línia o truca'ns al +34 932 10 12 34. Et confirmem en menys d'una hora.</p>
+    <form class="res-form" onsubmit="return false">
+      <input type="text" placeholder="Nom i cognoms"/>
+      <input type="tel" placeholder="Telèfon de contacte"/>
+      <input type="date" style="color-scheme:dark"/>
+      <select><option value="">Nombre de comensals</option><option>1 persona</option><option>2 persones</option><option>3 persones</option><option>4 persones</option><option>5 o més</option></select>
+      <select><option value="">Torn</option><option>Migdia (13:00–15:30)</option><option>Nit (20:00–22:30)</option></select>
+      <input type="email" placeholder="Email de confirmació"/>
+      <textarea class="full" placeholder="Al·lèrgies, intoleràncies o algun comentari..." rows="3"></textarea>
+      <div class="full" style="text-align:center;margin-top:1rem"><button type="submit" class="btn-dark">Confirmar reserva</button></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <div class="foot-logo">Arrel<em>.</em></div>
+    <p style="font-size:.8rem;color:var(--muted);margin-top:.5rem;line-height:1.7">Cuina de temporada<br>Gràcia, Barcelona</p>
+  </div>
+  <div class="foot-col">
+    <h4>Enllaços</h4>
+    <a href="#manifesto">Qui som</a>
+    <a href="#carta">La carta</a>
+    <a href="#info">Horaris</a>
+    <a href="#reserva">Reserva</a>
+  </div>
+  <div class="foot-col">
+    <h4>Contacte</h4>
+    <p>Carrer de les Carolines, 14<br>Gràcia, Barcelona</p>
+    <a href="tel:+34932101234">+34 932 10 12 34</a>
+    <a href="mailto:hola@arrel.cat">hola@arrel.cat</a>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 Arrel Restaurant · Tots els drets reservats</span>
+    <span>Web by Impulso Digital</span>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('stuck',scrollY>60);
+  document.querySelectorAll('.reveal').forEach(el=>{
+    if(el.getBoundingClientRect().top<window.innerHeight*.88)el.classList.add('in');
+  });
+},{passive:true});
+</script>
 </body>
 </html>
