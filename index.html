@@ -20,7 +20,7 @@
   <nav id="navbar">
     <a href="#" class="logo">Impulso<em>Digital</em></a>
     <ul class="nav-links">
-      <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="#servicios" class="js-services-overlay" data-i18n="nav.services">Servicios</a></li>
       <li><a href="#como-trabajamos" data-i18n="nav.process">Proceso</a></li>
       <li><a href="#precios" data-i18n="nav.pricing">Precios</a></li>
       <li><a href="#contacto" class="js-contact-overlay" data-i18n="nav.contact">Contacto</a></li>
@@ -43,7 +43,7 @@
       <button class="lang-btn" data-lang="en">EN</button>
     </div>
     <ul>
-      <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="#servicios" class="js-services-overlay" data-i18n="nav.services">Servicios</a></li>
       <li><a href="#como-trabajamos" data-i18n="nav.process">Proceso</a></li>
       <li><a href="#precios" data-i18n="nav.pricing">Precios</a></li>
       <li><a href="#contacto" class="js-contact-overlay" data-i18n="nav.contact">Contacto</a></li>
@@ -61,7 +61,10 @@
       </h1>
       <div class="hero-bottom">
         <p data-i18n-html="hero.p">Si tu web no te trae clientes, algo falla.<br>Nosotros lo arreglamos.</p>
-        <a href="#contacto" class="btn-main magnetic" data-i18n="hero.cta">Pide presupuesto gratis</a>
+        <div class="hero-cta-group">
+          <a href="#contacto" class="btn-main magnetic js-contact-overlay" data-i18n="hero.cta">Pide presupuesto gratis</a>
+          <span class="hero-demo-tag" data-i18n="hero.demo">Demo gratuita incluida</span>
+        </div>
       </div>
     </div>
     <div class="hero-scroll-hint">scroll ↓</div>
@@ -289,6 +292,74 @@
       </div>
     </div>
   </footer>
+
+  <!-- SERVICES OVERLAY -->
+  <div id="services-overlay" role="dialog" aria-label="Servicios" aria-modal="true">
+    <div class="overlay-header">
+      <a href="#" class="logo">Impulso<em>Digital</em></a>
+      <button id="svc-overlay-close" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="overlay-body">
+      <div class="container">
+        <div class="section-label" data-i18n="services.label">01 — Qué hacemos</div>
+        <div class="services-list svc-overlay-list">
+          <div class="svc-row">
+            <div class="svc-head">
+              <span class="svc-num">01</span>
+              <h3 data-i18n="svc.design">Diseño Web</h3>
+            </div>
+            <p class="svc-desc" data-i18n="svc.design.desc">Webs que no parecen plantillas. Diseñamos desde cero pensando en tus clientes.</p>
+          </div>
+          <div class="svc-row">
+            <div class="svc-head">
+              <span class="svc-num">02</span>
+              <h3 data-i18n="svc.dev">Desarrollo Web</h3>
+            </div>
+            <p class="svc-desc" data-i18n="svc.dev.desc">Rápidas, seguras y que funcionan bien en el móvil. Sin constructores de webs baratos.</p>
+          </div>
+          <div class="svc-row highlight">
+            <div class="svc-head">
+              <span class="svc-num">03</span>
+              <h3>SEO <span class="tag-hot" data-i18n="svc.seo.tag">Lo más pedido</span></h3>
+            </div>
+            <p class="svc-desc" data-i18n="svc.seo.desc">Para que cuando alguien busque lo que ofreces en Google, aparezcas tú. No tu competencia.</p>
+          </div>
+          <div class="svc-row">
+            <div class="svc-head">
+              <span class="svc-num">04</span>
+              <h3 data-i18n="svc.shop">Tienda Online</h3>
+            </div>
+            <p class="svc-desc" data-i18n="svc.shop.desc">Tu tienda completa lista para vender. Pagos, stock, pedidos — todo funcionando.</p>
+          </div>
+          <div class="svc-row">
+            <div class="svc-head">
+              <span class="svc-num">05</span>
+              <h3 data-i18n="svc.social">Redes Sociales</h3>
+            </div>
+            <p class="svc-desc" data-i18n="svc.social.desc">Creamos y gestionamos tu perfil. Contenido que no parece corporativo.</p>
+          </div>
+          <div class="svc-row">
+            <div class="svc-head">
+              <span class="svc-num">06</span>
+              <h3>Email Marketing</h3>
+            </div>
+            <p class="svc-desc" data-i18n="svc.email.desc">Newsletters que la gente abre. Mantén el contacto con tus clientes sin molestar.</p>
+          </div>
+          <div class="svc-row">
+            <div class="svc-head">
+              <span class="svc-num">07</span>
+              <h3 data-i18n="svc.maint">Mantenimiento Web</h3>
+            </div>
+            <p class="svc-desc" data-i18n="svc.maint.desc">Para que tu web no se caiga, no se hackee y siempre esté actualizada.</p>
+          </div>
+        </div>
+        <div class="svc-overlay-cta">
+          <p data-i18n="services.overlay.cta.text">¿Algún servicio te interesa?</p>
+          <a href="#" class="btn-main js-contact-overlay" data-i18n="services.overlay.cta.btn">Hablemos →</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- CONTACT OVERLAY -->
   <div id="contact-overlay" role="dialog" aria-label="Contacto" aria-modal="true">

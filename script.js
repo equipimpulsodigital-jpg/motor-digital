@@ -12,6 +12,7 @@ const TRANSLATIONS = {
     'hero.line3':         'en internet.',
     'hero.p':             'Si tu web no te trae clientes, algo falla.<br>Nosotros lo arreglamos.',
     'hero.cta':           'Pide presupuesto gratis',
+    'hero.demo':          'Demo gratuita incluida',
     'svc.design':         'Diseño Web',
     'svc.design.desc':    'Webs que no parecen plantillas. Diseñamos desde cero pensando en tus clientes.',
     'svc.dev':            'Desarrollo Web',
@@ -76,7 +77,9 @@ const TRANSLATIONS = {
     'contact.msg':        'Cuéntanos tu proyecto...',
     'contact.send':       'Enviar mensaje',
     'contact.note':       'Respondemos en menos de 24h — normalmente antes',
-    'contact.advice':     'No sé, necesito consejo',
+    'contact.advice':         'No sé, necesito consejo',
+    'services.overlay.cta.text': '¿Algún servicio te interesa?',
+    'services.overlay.cta.btn':  'Hablemos →',
   },
   ca: {
     'nav.services':       'Serveis',
@@ -90,6 +93,7 @@ const TRANSLATIONS = {
     'hero.line3':         'a internet.',
     'hero.p':             'Si la teva web no et porta clients, alguna cosa falla.<br>Nosaltres ho arreglem.',
     'hero.cta':           'Demana pressupost gratis',
+    'hero.demo':          'Demo gratuïta inclosa',
     'svc.design':         'Disseny Web',
     'svc.design.desc':    'Webs que no semblen plantilles. Dissenyem des de zero pensant en els teus clients.',
     'svc.dev':            'Desenvolupament Web',
@@ -154,7 +158,9 @@ const TRANSLATIONS = {
     'contact.msg':        'Explica\'ns el teu projecte...',
     'contact.send':       'Enviar missatge',
     'contact.note':       'Responem en menys de 24h — normalment abans',
-    'contact.advice':     'No sé, necessito consell',
+    'contact.advice':         'No sé, necessito consell',
+    'services.overlay.cta.text': 'Algun servei t\'interessa?',
+    'services.overlay.cta.btn':  'Parlem →',
   },
   en: {
     'nav.services':       'Services',
@@ -168,6 +174,7 @@ const TRANSLATIONS = {
     'hero.line3':         'online.',
     'hero.p':             'If your website isn\'t bringing in clients, something\'s wrong.<br>We fix it.',
     'hero.cta':           'Get a free quote',
+    'hero.demo':          'Free demo included',
     'svc.design':         'Web Design',
     'svc.design.desc':    'Websites that don\'t look like templates. Designed from scratch with your customers in mind.',
     'svc.dev':            'Web Development',
@@ -232,7 +239,9 @@ const TRANSLATIONS = {
     'contact.msg':        'Tell us about your project...',
     'contact.send':       'Send message',
     'contact.note':       'We reply in under 24h — usually sooner',
-    'contact.advice':     'Not sure, I need advice',
+    'contact.advice':         'Not sure, I need advice',
+    'services.overlay.cta.text': 'Interested in a service?',
+    'services.overlay.cta.btn':  'Let\'s talk →',
   },
 };
 
@@ -262,30 +271,46 @@ function setLang(lang) {
   document.documentElement.lang = lang;
 }
 
+// ── Overlay helpers ────────────────────────────────────────────
+function openOverlay(el) {
+  el.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  const first = el.querySelector('input, button:not([id$="close"])');
+  if (first) first.focus();
+}
+function closeOverlay(el) {
+  el.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// ── Services overlay ───────────────────────────────────────────
+const servicesOverlay   = document.getElementById('services-overlay');
+const svcOverlayClose   = document.getElementById('svc-overlay-close');
+
+document.querySelectorAll('.js-services-overlay').forEach(el => {
+  el.addEventListener('click', e => { e.preventDefault(); openOverlay(servicesOverlay); });
+});
+svcOverlayClose.addEventListener('click', () => closeOverlay(servicesOverlay));
+
 // ── Contact overlay ────────────────────────────────────────────
 const contactOverlay = document.getElementById('contact-overlay');
 const overlayClose   = document.getElementById('overlay-close');
 
-function openContactOverlay() {
-  contactOverlay.classList.add('open');
-  document.body.style.overflow = 'hidden';
-  contactOverlay.querySelector('input').focus();
-}
-function closeContactOverlay() {
-  contactOverlay.classList.remove('open');
-  document.body.style.overflow = '';
-}
-
 document.querySelectorAll('.js-contact-overlay').forEach(el => {
-  el.addEventListener('click', e => { e.preventDefault(); openContactOverlay(); });
+  el.addEventListener('click', e => { e.preventDefault(); openOverlay(contactOverlay); });
 });
-overlayClose.addEventListener('click', closeContactOverlay);
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeContactOverlay(); });
+overlayClose.addEventListener('click', () => closeOverlay(contactOverlay));
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closeOverlay(contactOverlay);
+    closeOverlay(servicesOverlay);
+  }
+});
 
 // ── Mobile services accordion ──────────────────────────────────
 function initAccordion() {
   if (window.innerWidth >= 900) return;
-  document.querySelectorAll('.svc-row').forEach(row => {
+  document.querySelectorAll('#servicios .svc-row').forEach(row => {
     if (row.querySelector('.svc-row-toggle')) return;
     const head = row.querySelector('.svc-head');
     const desc = row.querySelector('.svc-desc');
@@ -387,7 +412,7 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.svc-row').forEach((el, i) => {
+document.querySelectorAll('#servicios .svc-row').forEach((el, i) => {
   el.classList.add('sr');
   el.dataset.delay = i * 60;
   observer.observe(el);

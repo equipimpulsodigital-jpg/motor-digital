@@ -266,6 +266,29 @@ a { text-decoration: none; color: inherit; }
 }
 .btn-main:hover { background: #6d28d9; }
 
+.hero-cta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.hero-demo-tag {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  padding-left: 1.2rem;
+  position: relative;
+}
+.hero-demo-tag::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.75rem;
+}
+
 /* ===== MARQUEE ===== */
 .marquee-wrap {
   overflow: hidden;
@@ -785,8 +808,9 @@ footer:hover .footer-big { color: #d8d0ff; }
   .footer-bar { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
 }
 
-/* ===== CONTACT OVERLAY ===== */
-#contact-overlay {
+/* ===== OVERLAYS (servicios + contacto) ===== */
+#contact-overlay,
+#services-overlay {
   position: fixed;
   inset: 0;
   z-index: 400;
@@ -797,7 +821,47 @@ footer:hover .footer-big { color: #d8d0ff; }
   flex-direction: column;
   overflow-y: auto;
 }
-#contact-overlay.open { transform: translateY(0); }
+#contact-overlay.open,
+#services-overlay.open { transform: translateY(0); }
+
+/* Services overlay specific */
+#svc-overlay-close {
+  background: none;
+  border: 1.5px solid var(--border);
+  color: var(--fg);
+  font-size: 1rem;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, color 0.2s, transform 0.2s;
+}
+#svc-overlay-close:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: rotate(90deg);
+}
+
+.svc-overlay-list .svc-desc { display: block; }
+
+.svc-overlay-cta {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.svc-overlay-cta p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--fg);
+}
+
+/* ===== CONTACT OVERLAY ===== */
 
 .overlay-header {
   position: sticky;
@@ -848,4 +912,9 @@ footer:hover .footer-big { color: #d8d0ff; }
   .overlay-header { padding: 0 1.5rem; }
   .overlay-body { padding: 2.5rem 0; align-items: flex-start; }
   .overlay-body .contact-wrap { grid-template-columns: 1fr; gap: 2rem; }
+  /* Descriptions always visible in services overlay (no accordion) */
+  .svc-overlay-list .svc-desc { max-height: none !important; overflow: visible; padding-bottom: 1rem; }
+  .svc-overlay-list .svc-row { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 2rem; padding: 1.4rem 0; }
+  .svc-overlay-cta { margin-top: 2rem; padding-top: 2rem; gap: 1.2rem; }
+  .svc-overlay-cta p { font-size: 1rem; }
 }
