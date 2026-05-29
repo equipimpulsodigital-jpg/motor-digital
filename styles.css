@@ -824,28 +824,182 @@ footer:hover .footer-big { color: #d8d0ff; }
 #contact-overlay.open,
 #services-overlay.open { transform: translateY(0); }
 
-/* Services overlay specific */
-#svc-overlay-close {
+/* ── Services overlay nav ── */
+.svc-overlay-nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  height: 64px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(12px);
+  flex-shrink: 0;
+  z-index: 1;
+  gap: 1.5rem;
+}
+
+.svc-overlay-navlinks {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+.svc-overlay-navlinks a {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.svc-overlay-navlinks a:hover { color: var(--fg); }
+
+.svc-overlay-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.svc-back-btn {
   background: none;
-  border: 1.5px solid var(--border);
-  color: var(--fg);
-  font-size: 1rem;
-  width: 36px; height: 36px;
-  border-radius: 50%;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--muted);
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
-  transition: border-color 0.2s, color 0.2s, transform 0.2s;
+  gap: 0.4rem;
+  transition: color 0.2s;
+  white-space: nowrap;
 }
-#svc-overlay-close:hover {
+.svc-back-btn:hover { color: var(--accent); }
+
+.svc-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.svc-hamburger span {
+  display: block;
+  width: 24px; height: 1.5px;
+  background: var(--fg);
+}
+
+/* ── Services overlay body ── */
+.svc-overlay-body {
+  flex: 1;
+  padding: 3rem 0 5rem;
+  overflow-y: auto;
+}
+
+.svc-overlay-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.svc-overlay-intro .section-label {
+  padding-top: 0;
+  margin-bottom: 0;
+}
+.svc-back-mobile { display: none; }
+
+/* ── Service cards grid ── */
+.svc-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.svc-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  cursor: default;
+}
+.svc-card:hover {
   border-color: var(--accent);
-  color: var(--accent);
-  transform: rotate(90deg);
+  box-shadow: 0 8px 32px rgba(124,58,237,0.08);
+  transform: translateY(-2px);
+}
+.svc-card-featured {
+  border-color: var(--accent);
+  background: #faf8ff;
 }
 
-.svc-overlay-list .svc-desc { display: block; }
+.svc-card-num {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+}
 
+.svc-card h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+  line-height: 1.2;
+}
+
+.svc-card > p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.svc-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+  margin-top: auto;
+}
+.svc-card ul li {
+  font-size: 0.85rem;
+  color: var(--fg);
+  font-weight: 500;
+  padding-left: 1.1rem;
+  position: relative;
+}
+.svc-card ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.75rem;
+}
+
+.svc-card-badge {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  font-size: 0.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.25rem 0.6rem;
+  border-radius: 3px;
+}
+
+/* ── Services overlay CTA ── */
 .svc-overlay-cta {
   display: flex;
   align-items: center;
@@ -908,13 +1062,29 @@ footer:hover .footer-big { color: #d8d0ff; }
 }
 .overlay-body .section-label { padding-top: 0; margin-bottom: 2rem; }
 
+@media (max-width: 1100px) {
+  .svc-cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 900px) {
   .overlay-header { padding: 0 1.5rem; }
   .overlay-body { padding: 2.5rem 0; align-items: flex-start; }
   .overlay-body .contact-wrap { grid-template-columns: 1fr; gap: 2rem; }
-  /* Descriptions always visible in services overlay (no accordion) */
-  .svc-overlay-list .svc-desc { max-height: none !important; overflow: visible; padding-bottom: 1rem; }
-  .svc-overlay-list .svc-row { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 2rem; padding: 1.4rem 0; }
+
+  /* Services overlay nav */
+  .svc-overlay-nav { padding: 0 1.5rem; }
+  .svc-overlay-navlinks { display: none; }
+  .svc-overlay-nav-right { display: none; }
+  .svc-hamburger { display: flex; }
+  .svc-back-mobile { display: flex; }
+  .svc-overlay-intro { margin-bottom: 2rem; }
+
+  /* Cards */
+  .svc-cards-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .svc-card { padding: 1.5rem; }
+  .svc-card h3 { font-size: 1.15rem; }
+  .svc-overlay-body { padding: 2rem 0 4rem; }
+
   .svc-overlay-cta { margin-top: 2rem; padding-top: 2rem; gap: 1.2rem; }
   .svc-overlay-cta p { font-size: 1rem; }
 }

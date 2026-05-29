@@ -80,6 +80,28 @@ const TRANSLATIONS = {
     'contact.advice':         'No sé, necesito consejo',
     'services.overlay.cta.text': '¿Algún servicio te interesa?',
     'services.overlay.cta.btn':  'Hablemos →',
+    'overlay.back':              'Volver',
+    'svc.design.b1': 'Diseño 100% a medida',
+    'svc.design.b2': 'Revisiones ilimitadas',
+    'svc.design.b3': 'Lista en 2–3 semanas',
+    'svc.dev.b1':    'Código limpio y optimizado',
+    'svc.dev.b2':    'Carga ultrarrápida',
+    'svc.dev.b3':    'SSL y seguridad incluida',
+    'svc.seo.b1':    'Auditoría inicial gratuita',
+    'svc.seo.b2':    'Alta en Google Search Console',
+    'svc.seo.b3':    'Seguimiento mensual',
+    'svc.shop.b1':   'Pago con Stripe / PayPal',
+    'svc.shop.b2':   'Gestión de stock y pedidos',
+    'svc.shop.b3':   'Facturas automáticas',
+    'svc.social.b1': 'Estrategia de contenido',
+    'svc.social.b2': 'Diseño de publicaciones',
+    'svc.social.b3': 'Gestión y publicación',
+    'svc.email.b1':  'Diseño de newsletters',
+    'svc.email.b2':  'Automatizaciones básicas',
+    'svc.email.b3':  'Analíticas de apertura',
+    'svc.maint.b1':  'Copias de seguridad diarias',
+    'svc.maint.b2':  'Actualizaciones de seguridad',
+    'svc.maint.b3':  'Monitorización 24/7',
   },
   ca: {
     'nav.services':       'Serveis',
@@ -161,6 +183,28 @@ const TRANSLATIONS = {
     'contact.advice':         'No sé, necessito consell',
     'services.overlay.cta.text': 'Algun servei t\'interessa?',
     'services.overlay.cta.btn':  'Parlem →',
+    'overlay.back':              'Tornar',
+    'svc.design.b1': 'Disseny 100% a mida',
+    'svc.design.b2': 'Revisions il·limitades',
+    'svc.design.b3': 'Llesta en 2–3 setmanes',
+    'svc.dev.b1':    'Codi net i optimitzat',
+    'svc.dev.b2':    'Càrrega ultraràpida',
+    'svc.dev.b3':    'SSL i seguretat inclosa',
+    'svc.seo.b1':    'Auditoria inicial gratuïta',
+    'svc.seo.b2':    'Alta a Google Search Console',
+    'svc.seo.b3':    'Seguiment mensual',
+    'svc.shop.b1':   'Pagament amb Stripe / PayPal',
+    'svc.shop.b2':   'Gestió d\'estoc i comandes',
+    'svc.shop.b3':   'Factures automàtiques',
+    'svc.social.b1': 'Estratègia de contingut',
+    'svc.social.b2': 'Disseny de publicacions',
+    'svc.social.b3': 'Gestió i publicació',
+    'svc.email.b1':  'Disseny de newsletters',
+    'svc.email.b2':  'Automatitzacions bàsiques',
+    'svc.email.b3':  'Analítiques d\'obertura',
+    'svc.maint.b1':  'Còpies de seguretat diàries',
+    'svc.maint.b2':  'Actualitzacions de seguretat',
+    'svc.maint.b3':  'Monitorització 24/7',
   },
   en: {
     'nav.services':       'Services',
@@ -242,6 +286,28 @@ const TRANSLATIONS = {
     'contact.advice':         'Not sure, I need advice',
     'services.overlay.cta.text': 'Interested in a service?',
     'services.overlay.cta.btn':  'Let\'s talk →',
+    'overlay.back':              'Back',
+    'svc.design.b1': '100% custom design',
+    'svc.design.b2': 'Unlimited revisions',
+    'svc.design.b3': 'Ready in 2–3 weeks',
+    'svc.dev.b1':    'Clean, optimized code',
+    'svc.dev.b2':    'Ultra-fast loading',
+    'svc.dev.b3':    'SSL and security included',
+    'svc.seo.b1':    'Free initial audit',
+    'svc.seo.b2':    'Google Search Console setup',
+    'svc.seo.b3':    'Monthly tracking',
+    'svc.shop.b1':   'Stripe / PayPal payments',
+    'svc.shop.b2':   'Stock and order management',
+    'svc.shop.b3':   'Automatic invoices',
+    'svc.social.b1': 'Content strategy',
+    'svc.social.b2': 'Post design',
+    'svc.social.b3': 'Publishing and management',
+    'svc.email.b1':  'Newsletter design',
+    'svc.email.b2':  'Basic automations',
+    'svc.email.b3':  'Open rate analytics',
+    'svc.maint.b1':  'Daily backups',
+    'svc.maint.b2':  'Security updates',
+    'svc.maint.b3':  '24/7 monitoring',
   },
 };
 
@@ -284,13 +350,24 @@ function closeOverlay(el) {
 }
 
 // ── Services overlay ───────────────────────────────────────────
-const servicesOverlay   = document.getElementById('services-overlay');
-const svcOverlayClose   = document.getElementById('svc-overlay-close');
+const servicesOverlay = document.getElementById('services-overlay');
 
 document.querySelectorAll('.js-services-overlay').forEach(el => {
   el.addEventListener('click', e => { e.preventDefault(); openOverlay(servicesOverlay); });
 });
-svcOverlayClose.addEventListener('click', () => closeOverlay(servicesOverlay));
+document.querySelectorAll('#svc-overlay-close, #svc-overlay-close-mobile').forEach(btn => {
+  btn.addEventListener('click', () => closeOverlay(servicesOverlay));
+});
+document.querySelectorAll('.js-close-svc').forEach(el => {
+  el.addEventListener('click', e => {
+    e.preventDefault();
+    closeOverlay(servicesOverlay);
+    const target = el.getAttribute('href');
+    if (target && !el.classList.contains('js-contact-overlay')) {
+      setTimeout(() => document.querySelector(target)?.scrollIntoView({ behavior: 'smooth' }), 300);
+    }
+  });
+});
 
 // ── Contact overlay ────────────────────────────────────────────
 const contactOverlay = document.getElementById('contact-overlay');

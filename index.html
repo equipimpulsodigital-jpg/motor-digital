@@ -295,64 +295,117 @@
 
   <!-- SERVICES OVERLAY -->
   <div id="services-overlay" role="dialog" aria-label="Servicios" aria-modal="true">
-    <div class="overlay-header">
+    <nav class="svc-overlay-nav">
       <a href="#" class="logo">Impulso<em>Digital</em></a>
-      <button id="svc-overlay-close" aria-label="Cerrar">✕</button>
-    </div>
-    <div class="overlay-body">
-      <div class="container">
-        <div class="section-label" data-i18n="services.label">01 — Qué hacemos</div>
-        <div class="services-list svc-overlay-list">
-          <div class="svc-row">
-            <div class="svc-head">
-              <span class="svc-num">01</span>
-              <h3 data-i18n="svc.design">Diseño Web</h3>
-            </div>
-            <p class="svc-desc" data-i18n="svc.design.desc">Webs que no parecen plantillas. Diseñamos desde cero pensando en tus clientes.</p>
-          </div>
-          <div class="svc-row">
-            <div class="svc-head">
-              <span class="svc-num">02</span>
-              <h3 data-i18n="svc.dev">Desarrollo Web</h3>
-            </div>
-            <p class="svc-desc" data-i18n="svc.dev.desc">Rápidas, seguras y que funcionan bien en el móvil. Sin constructores de webs baratos.</p>
-          </div>
-          <div class="svc-row highlight">
-            <div class="svc-head">
-              <span class="svc-num">03</span>
-              <h3>SEO <span class="tag-hot" data-i18n="svc.seo.tag">Lo más pedido</span></h3>
-            </div>
-            <p class="svc-desc" data-i18n="svc.seo.desc">Para que cuando alguien busque lo que ofreces en Google, aparezcas tú. No tu competencia.</p>
-          </div>
-          <div class="svc-row">
-            <div class="svc-head">
-              <span class="svc-num">04</span>
-              <h3 data-i18n="svc.shop">Tienda Online</h3>
-            </div>
-            <p class="svc-desc" data-i18n="svc.shop.desc">Tu tienda completa lista para vender. Pagos, stock, pedidos — todo funcionando.</p>
-          </div>
-          <div class="svc-row">
-            <div class="svc-head">
-              <span class="svc-num">05</span>
-              <h3 data-i18n="svc.social">Redes Sociales</h3>
-            </div>
-            <p class="svc-desc" data-i18n="svc.social.desc">Creamos y gestionamos tu perfil. Contenido que no parece corporativo.</p>
-          </div>
-          <div class="svc-row">
-            <div class="svc-head">
-              <span class="svc-num">06</span>
-              <h3>Email Marketing</h3>
-            </div>
-            <p class="svc-desc" data-i18n="svc.email.desc">Newsletters que la gente abre. Mantén el contacto con tus clientes sin molestar.</p>
-          </div>
-          <div class="svc-row">
-            <div class="svc-head">
-              <span class="svc-num">07</span>
-              <h3 data-i18n="svc.maint">Mantenimiento Web</h3>
-            </div>
-            <p class="svc-desc" data-i18n="svc.maint.desc">Para que tu web no se caiga, no se hackee y siempre esté actualizada.</p>
-          </div>
+      <ul class="svc-overlay-navlinks">
+        <li><a href="#como-trabajamos" class="js-close-svc js-section-link" data-i18n="nav.process">Proceso</a></li>
+        <li><a href="#precios" class="js-close-svc js-section-link" data-i18n="nav.pricing">Precios</a></li>
+        <li><a href="#contacto" class="js-close-svc js-contact-overlay" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <div class="svc-overlay-nav-right">
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="ca">CA</button>
+          <button class="lang-btn active" data-lang="es">ES</button>
+          <button class="lang-btn" data-lang="en">EN</button>
         </div>
+        <button id="svc-overlay-close" class="svc-back-btn">
+          <span>←</span> <span data-i18n="overlay.back">Volver</span>
+        </button>
+      </div>
+      <button class="svc-hamburger" id="svc-hamburger" aria-label="Menú"><span></span><span></span></button>
+    </nav>
+
+    <div class="svc-overlay-body">
+      <div class="container">
+        <div class="svc-overlay-intro">
+          <span class="section-label" data-i18n="services.label">01 — Qué hacemos</span>
+          <button class="svc-back-btn svc-back-mobile" id="svc-overlay-close-mobile">
+            ← <span data-i18n="overlay.back">Volver</span>
+          </button>
+        </div>
+
+        <div class="svc-cards-grid">
+
+          <div class="svc-card">
+            <span class="svc-card-num">01</span>
+            <h3 data-i18n="svc.design">Diseño Web</h3>
+            <p data-i18n="svc.design.desc">Webs que no parecen plantillas. Diseñamos desde cero pensando en tus clientes.</p>
+            <ul>
+              <li data-i18n="svc.design.b1">Diseño 100% a medida</li>
+              <li data-i18n="svc.design.b2">Revisiones ilimitadas</li>
+              <li data-i18n="svc.design.b3">Lista en 2–3 semanas</li>
+            </ul>
+          </div>
+
+          <div class="svc-card">
+            <span class="svc-card-num">02</span>
+            <h3 data-i18n="svc.dev">Desarrollo Web</h3>
+            <p data-i18n="svc.dev.desc">Rápidas, seguras y que funcionan bien en el móvil. Sin constructores de webs baratos.</p>
+            <ul>
+              <li data-i18n="svc.dev.b1">Código limpio y optimizado</li>
+              <li data-i18n="svc.dev.b2">Carga ultrarrápida</li>
+              <li data-i18n="svc.dev.b3">SSL y seguridad incluida</li>
+            </ul>
+          </div>
+
+          <div class="svc-card svc-card-featured">
+            <span class="svc-card-badge" data-i18n="svc.seo.tag">Lo más pedido</span>
+            <span class="svc-card-num">03</span>
+            <h3>SEO</h3>
+            <p data-i18n="svc.seo.desc">Para que cuando alguien busque lo que ofreces en Google, aparezcas tú. No tu competencia.</p>
+            <ul>
+              <li data-i18n="svc.seo.b1">Auditoría inicial gratuita</li>
+              <li data-i18n="svc.seo.b2">Alta en Google Search Console</li>
+              <li data-i18n="svc.seo.b3">Seguimiento mensual</li>
+            </ul>
+          </div>
+
+          <div class="svc-card">
+            <span class="svc-card-num">04</span>
+            <h3 data-i18n="svc.shop">Tienda Online</h3>
+            <p data-i18n="svc.shop.desc">Tu tienda completa lista para vender. Pagos, stock, pedidos — todo funcionando.</p>
+            <ul>
+              <li data-i18n="svc.shop.b1">Pago con Stripe / PayPal</li>
+              <li data-i18n="svc.shop.b2">Gestión de stock y pedidos</li>
+              <li data-i18n="svc.shop.b3">Facturas automáticas</li>
+            </ul>
+          </div>
+
+          <div class="svc-card">
+            <span class="svc-card-num">05</span>
+            <h3 data-i18n="svc.social">Redes Sociales</h3>
+            <p data-i18n="svc.social.desc">Creamos y gestionamos tu perfil. Contenido que no parece corporativo.</p>
+            <ul>
+              <li data-i18n="svc.social.b1">Estrategia de contenido</li>
+              <li data-i18n="svc.social.b2">Diseño de publicaciones</li>
+              <li data-i18n="svc.social.b3">Gestión y publicación</li>
+            </ul>
+          </div>
+
+          <div class="svc-card">
+            <span class="svc-card-num">06</span>
+            <h3>Email Marketing</h3>
+            <p data-i18n="svc.email.desc">Newsletters que la gente abre. Mantén el contacto con tus clientes sin molestar.</p>
+            <ul>
+              <li data-i18n="svc.email.b1">Diseño de newsletters</li>
+              <li data-i18n="svc.email.b2">Automatizaciones básicas</li>
+              <li data-i18n="svc.email.b3">Analíticas de apertura</li>
+            </ul>
+          </div>
+
+          <div class="svc-card">
+            <span class="svc-card-num">07</span>
+            <h3 data-i18n="svc.maint">Mantenimiento Web</h3>
+            <p data-i18n="svc.maint.desc">Para que tu web no se caiga, no se hackee y siempre esté actualizada.</p>
+            <ul>
+              <li data-i18n="svc.maint.b1">Copias de seguridad diarias</li>
+              <li data-i18n="svc.maint.b2">Actualizaciones de seguridad</li>
+              <li data-i18n="svc.maint.b3">Monitorización 24/7</li>
+            </ul>
+          </div>
+
+        </div>
+
         <div class="svc-overlay-cta">
           <p data-i18n="services.overlay.cta.text">¿Algún servicio te interesa?</p>
           <a href="#" class="btn-main js-contact-overlay" data-i18n="services.overlay.cta.btn">Hablemos →</a>
