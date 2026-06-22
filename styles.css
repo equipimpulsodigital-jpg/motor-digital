@@ -1,6 +1,6 @@
 /* ===== RESET ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 19px; }
 
 :root {
   --bg:     #ffffff;
@@ -60,7 +60,7 @@ a { text-decoration: none; color: inherit; }
 }
 .logo em { font-style: normal; color: var(--accent); }
 .logo-img {
-  height: 26px;
+  height: 40px;
   width: auto;
   display: block;
 }
@@ -619,6 +619,7 @@ a { text-decoration: none; color: inherit; }
 /* ===== CONTACTO ===== */
 #contacto {
   border-top: 1px solid var(--border);
+  padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
