@@ -494,6 +494,8 @@ async function handleFormspree(formEl) {
       headers: { Accept: 'application/json' },
     });
     if (res.ok) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'contact_form_submit' });
       formEl.innerHTML = `
         <div style="padding:2rem 0;text-align:center">
           <div style="font-size:2.5rem;margin-bottom:1rem;color:var(--accent)">✓</div>
