@@ -42,38 +42,9 @@ const TRANSLATIONS = {
     'work.type.craft':    'Mobiliari artesanal',
     'work.see':           'Ver demo →',
     'pricing.label':      '04 — Precios',
-    'pricing.intro':      'Sin letra pequeña. Hosting incluido. Cambios básicos cada mes.',
-    'plan1.name':         'Web Básica',
-    'plan1.monthly':      '+ 30€/mes',
-    'plan.f1':            'Diseño 100% a medida',
-    'plan.f2':            'SEO básico + alta en Google',
-    'plan.f3':            'Adaptada a móvil',
-    'plan.f4':            'Formulario de contacto',
-    'plan.f5':            'Hosting incluido',
-    'plan.f6':            'Actualizaciones de seguridad',
-    'plan.f7':            'Cambios básicos cada mes',
-    'plan.cta':           'Solicitar',
-    'plan.badge':         'Más vendido',
-    'plan2.name':         'Web + Panel Admin',
-    'plan2.monthly':      '+ 45€/mes',
-    'plan2.f1':           'Todo lo del plan Básico',
-    'plan2.f2':           'Panel de administración propio',
-    'plan2.f3':           'Publica noticias y artículos',
-    'plan2.f4':           'Sistema de reservas online',
-    'plan2.f5':           'Gestión de usuarios',
-    'plan2.f6':           'SEO avanzado',
-    'plan2.f8':           'Soporte prioritario',
-    'plan3.name':         'Tienda Online',
-    'plan3.monthly':      '+ 150€/mes',
-    'plan3.f1':           'Todo lo del plan Pro',
-    'plan3.f2':           'Catálogo de productos',
-    'plan3.f3':           'Pago con Stripe / PayPal',
-    'plan3.f4':           'Gestión de stock',
-    'plan3.f5':           'Panel de pedidos',
-    'plan3.f6':           'Facturas automáticas',
-    'plan3.f7':           'Integración con envíos',
-    'pricing.custom.text':'¿Proyecto especial?',
-    'pricing.custom.link':'Pídenos presupuesto a medida →',
+    'pricing.cta.price':  'Webs desde <span>299€</span>',
+    'pricing.cta.sub':    'Cada negocio es diferente, así que el precio final depende de lo que necesites. Cuéntanos tu proyecto y te mandamos un presupuesto sin compromiso.',
+    'pricing.cta.btn':    'Pide tu presupuesto gratis',
     'contact.label':      '05 — Contacto',
     'contact.title':      '¿Hablamos?',
     'contact.desc':       'Cuéntanos qué tienes en mente. Te respondemos en menos de 24 horas.',
@@ -151,38 +122,9 @@ const TRANSLATIONS = {
     'work.type.craft':    'Mobiliari artesanal',
     'work.see':           'Veure demo →',
     'pricing.label':      '04 — Preus',
-    'pricing.intro':      'Sense lletra petita. Hosting inclòs. Canvis bàsics cada mes.',
-    'plan1.name':         'Web Bàsica',
-    'plan1.monthly':      '+ 30€/mes',
-    'plan.f1':            'Disseny 100% a mida',
-    'plan.f2':            'SEO bàsic + alta a Google',
-    'plan.f3':            'Adaptada al mòbil',
-    'plan.f4':            'Formulari de contacte',
-    'plan.f5':            'Hosting inclòs',
-    'plan.f6':            'Actualitzacions de seguretat',
-    'plan.f7':            'Canvis bàsics cada mes',
-    'plan.cta':           'Sol·licitar',
-    'plan.badge':         'Més venut',
-    'plan2.name':         'Web + Panell Admin',
-    'plan2.monthly':      '+ 45€/mes',
-    'plan2.f1':           'Tot el del pla Bàsic',
-    'plan2.f2':           'Panell d\'administració propi',
-    'plan2.f3':           'Publica notícies i articles',
-    'plan2.f4':           'Sistema de reserves online',
-    'plan2.f5':           'Gestió d\'usuaris',
-    'plan2.f6':           'SEO avançat',
-    'plan2.f8':           'Suport prioritari',
-    'plan3.name':         'Botiga Online',
-    'plan3.monthly':      '+ 150€/mes',
-    'plan3.f1':           'Tot el del pla Pro',
-    'plan3.f2':           'Catàleg de productes',
-    'plan3.f3':           'Pagament amb Stripe / PayPal',
-    'plan3.f4':           'Gestió d\'estoc',
-    'plan3.f5':           'Panell de comandes',
-    'plan3.f6':           'Factures automàtiques',
-    'plan3.f7':           'Integració amb enviaments',
-    'pricing.custom.text':'Projecte especial?',
-    'pricing.custom.link':'Demana\'ns pressupost a mida →',
+    'pricing.cta.price':  'Webs des de <span>299€</span>',
+    'pricing.cta.sub':    'Cada negoci és diferent, per això el preu final depèn del que necessitis. Explica\'ns el teu projecte i t\'enviem un pressupost sense compromís.',
+    'pricing.cta.btn':    'Demana el teu pressupost gratis',
     'contact.label':      '05 — Contacte',
     'contact.title':      'Parlem?',
     'contact.desc':       'Explica\'ns què tens al cap. Et responem en menys de 24 hores.',
@@ -260,38 +202,9 @@ const TRANSLATIONS = {
     'work.type.craft':    'Artisan furniture',
     'work.see':           'View demo →',
     'pricing.label':      '04 — Pricing',
-    'pricing.intro':      'No fine print. Hosting included. Basic changes every month.',
-    'plan1.name':         'Basic Website',
-    'plan1.monthly':      '+ €30/month',
-    'plan.f1':            '100% custom design',
-    'plan.f2':            'Basic SEO + Google listing',
-    'plan.f3':            'Mobile-friendly',
-    'plan.f4':            'Contact form',
-    'plan.f5':            'Hosting included',
-    'plan.f6':            'Security updates',
-    'plan.f7':            'Basic changes every month',
-    'plan.cta':           'Request',
-    'plan.badge':         'Best seller',
-    'plan2.name':         'Website + Admin Panel',
-    'plan2.monthly':      '+ €45/month',
-    'plan2.f1':           'Everything in Basic',
-    'plan2.f2':           'Custom admin panel',
-    'plan2.f3':           'Publish news and articles',
-    'plan2.f4':           'Online booking system',
-    'plan2.f5':           'User management',
-    'plan2.f6':           'Advanced SEO',
-    'plan2.f8':           'Priority support',
-    'plan3.name':         'Online Store',
-    'plan3.monthly':      '+ €150/month',
-    'plan3.f1':           'Everything in Pro',
-    'plan3.f2':           'Product catalog',
-    'plan3.f3':           'Stripe / PayPal payments',
-    'plan3.f4':           'Stock management',
-    'plan3.f5':           'Orders dashboard',
-    'plan3.f6':           'Automatic invoices',
-    'plan3.f7':           'Shipping integration',
-    'pricing.custom.text':'Special project?',
-    'pricing.custom.link':'Ask us for a custom quote →',
+    'pricing.cta.price':  'Websites from <span>€299</span>',
+    'pricing.cta.sub':    'Every business is different, so the final price depends on what you need. Tell us about your project and we\'ll send you a no-obligation quote.',
+    'pricing.cta.btn':    'Get your free quote',
     'contact.label':      '05 — Contact',
     'contact.title':      'Let\'s talk?',
     'contact.desc':       'Tell us what you have in mind. We\'ll get back to you in less than 24 hours.',
@@ -421,31 +334,6 @@ function initAccordion() {
 }
 window.addEventListener('DOMContentLoaded', initAccordion);
 
-// ── Custom cursor ──────────────────────────────────────────────
-const cursor    = document.getElementById('cursor');
-const cursorDot = document.getElementById('cursor-dot');
-
-if (cursor) {
-  let cx = 0, cy = 0, tx = 0, ty = 0;
-
-  document.addEventListener('mousemove', e => { tx = e.clientX; ty = e.clientY; });
-
-  (function loop() {
-    cx += (tx - cx) * 0.12;
-    cy += (ty - cy) * 0.12;
-    cursor.style.left    = cx + 'px';
-    cursor.style.top     = cy + 'px';
-    cursorDot.style.left = tx + 'px';
-    cursorDot.style.top  = ty + 'px';
-    requestAnimationFrame(loop);
-  })();
-
-  document.querySelectorAll('a, button, .svc-row, .plan, input, select, textarea').forEach(el => {
-    el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-    el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-  });
-}
-
 // ── Scroll progress bar ────────────────────────────────────────
 const progressBar = document.getElementById('progress-bar');
 window.addEventListener('scroll', () => {
@@ -478,6 +366,35 @@ window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('#hero h1 .word').forEach((w, i) => {
     setTimeout(() => w.classList.add('visible'), 200 + i * 180);
   });
+});
+
+// ── Hero pop box ───────────────────────────────────────────────
+const POP_TEXTS = {
+  es: ['Desde 299€', 'Las mejores webs de Catalunya'],
+  ca: ['Des de 299€', 'Les millors webs de Catalunya'],
+  en: ['From €299', 'The best websites in Catalonia'],
+};
+
+window.addEventListener('DOMContentLoaded', () => {
+  const popWrap = document.getElementById('hero-pop-wrap');
+  const popText = document.getElementById('hero-pop-text');
+  if (!popWrap || !popText) return;
+
+  let popIndex = 0;
+
+  setTimeout(() => {
+    popWrap.classList.add('pop');
+
+    setInterval(() => {
+      popText.classList.add('swap');
+      setTimeout(() => {
+        const texts = POP_TEXTS[document.documentElement.lang] || POP_TEXTS.ca;
+        popIndex = (popIndex + 1) % texts.length;
+        popText.textContent = texts[popIndex];
+        popText.classList.remove('swap');
+      }, 250);
+    }, 3000);
+  }, 2200);
 });
 
 // ── Magnetic buttons ───────────────────────────────────────────
@@ -550,6 +467,7 @@ setInterval(updateClock, 1000);
 document.querySelectorAll('.lang-btn').forEach(btn => {
   btn.addEventListener('click', () => setLang(btn.dataset.lang));
 });
+setLang('ca');
 
 // ── Active nav highlight ───────────────────────────────────────
 const sections = document.querySelectorAll('section[id]');

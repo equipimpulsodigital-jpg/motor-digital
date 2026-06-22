@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Impulso Digital – Hacemos webs para negocios reales. Diseño, desarrollo, SEO y más." />
-  <title>Impulso Digital</title>
+  <meta name="description" content="Motor Digital – Fem webs per a negocis reals. Disseny, desenvolupament, SEO i més." />
+  <title>Motor Digital</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,59 +12,63 @@
 </head>
 <body>
 
-  <div id="cursor"></div>
-  <div id="cursor-dot"></div>
   <div id="progress-bar"></div>
 
   <!-- NAV -->
   <nav id="navbar">
-    <a href="#" class="logo">Impulso<em>Digital</em></a>
+    <a href="#" class="logo">Motor<em>Digital</em></a>
     <ul class="nav-links">
-      <li><a href="#servicios" class="js-services-overlay" data-i18n="nav.services">Servicios</a></li>
-      <li><a href="#como-trabajamos" data-i18n="nav.process">Proceso</a></li>
-      <li><a href="#precios" data-i18n="nav.pricing">Precios</a></li>
-      <li><a href="#contacto" class="js-contact-overlay" data-i18n="nav.contact">Contacto</a></li>
+      <li><a href="#servicios" class="js-services-overlay" data-i18n="nav.services">Serveis</a></li>
+      <li><a href="#como-trabajamos" data-i18n="nav.process">Procés</a></li>
+      <li><a href="#precios" data-i18n="nav.pricing">Preus</a></li>
+      <li><a href="#contacto" class="js-contact-overlay" data-i18n="nav.contact">Contacte</a></li>
     </ul>
     <div class="nav-right">
       <span class="nav-clock" id="nav-clock"></span>
       <div class="lang-switcher">
-        <button class="lang-btn" data-lang="ca">CA</button>
-        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn active" data-lang="ca">CA</button>
+        <button class="lang-btn" data-lang="es">ES</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a href="#contacto" class="btn-nav js-contact-overlay" data-i18n="nav.cta">Hablar con nosotros</a>
+      <a href="#contacto" class="btn-nav js-contact-overlay" data-i18n="nav.cta">Parlem-ne</a>
     </div>
     <button class="hamburger" aria-label="Menú"><span></span><span></span></button>
   </nav>
   <div class="nav-drawer">
     <div class="lang-switcher" style="margin-bottom:1.5rem">
-      <button class="lang-btn" data-lang="ca">CA</button>
-      <button class="lang-btn active" data-lang="es">ES</button>
+      <button class="lang-btn active" data-lang="ca">CA</button>
+      <button class="lang-btn" data-lang="es">ES</button>
       <button class="lang-btn" data-lang="en">EN</button>
     </div>
     <ul>
-      <li><a href="#servicios" class="js-services-overlay" data-i18n="nav.services">Servicios</a></li>
-      <li><a href="#como-trabajamos" data-i18n="nav.process">Proceso</a></li>
-      <li><a href="#precios" data-i18n="nav.pricing">Precios</a></li>
-      <li><a href="#contacto" class="js-contact-overlay" data-i18n="nav.contact">Contacto</a></li>
+      <li><a href="#servicios" class="js-services-overlay" data-i18n="nav.services">Serveis</a></li>
+      <li><a href="#como-trabajamos" data-i18n="nav.process">Procés</a></li>
+      <li><a href="#precios" data-i18n="nav.pricing">Preus</a></li>
+      <li><a href="#contacto" class="js-contact-overlay" data-i18n="nav.contact">Contacte</a></li>
     </ul>
   </div>
 
   <!-- HERO -->
   <section id="hero">
     <div class="hero-inner">
-      <div class="hero-tag" data-i18n="hero.tag">Hacemos webs para negocios reales</div>
+      <div class="hero-tag" data-i18n="hero.tag">Fem webs per a negocis reals</div>
       <h1>
-        <span class="line"><span class="word" data-i18n="hero.line1">Tu empresa,</span></span>
+        <span class="line"><span class="word" data-i18n="hero.line1">La teva empresa,</span></span>
         <span class="line"><span class="word accent" data-i18n="hero.line2">visible</span></span>
-        <span class="line"><span class="word" data-i18n="hero.line3">en internet.</span></span>
+        <span class="line"><span class="word" data-i18n="hero.line3">a internet.</span></span>
       </h1>
       <div class="hero-bottom">
-        <p data-i18n-html="hero.p">Si tu web no te trae clientes, algo falla.<br>Nosotros lo arreglamos.</p>
+        <p data-i18n-html="hero.p">Si la teva web no et porta clients, alguna cosa falla.<br>Nosaltres ho arreglem.</p>
         <div class="hero-cta-group">
-          <a href="#contacto" class="btn-main magnetic js-contact-overlay" data-i18n="hero.cta">Pide presupuesto gratis</a>
-          <span class="hero-demo-tag" data-i18n="hero.demo">Demo gratuita incluida</span>
+          <a href="#contacto" class="btn-main magnetic js-contact-overlay" data-i18n="hero.cta">Demana pressupost gratis</a>
+          <span class="hero-demo-tag" data-i18n="hero.demo">Demo gratuïta inclosa</span>
         </div>
+      </div>
+    </div>
+    <div class="hero-pop-wrap" id="hero-pop-wrap">
+      <div class="hero-pop-smoke"></div>
+      <div class="hero-pop-box">
+        <span class="hero-pop-text" id="hero-pop-text">Des de 299€</span>
       </div>
     </div>
     <div class="hero-scroll-hint">scroll ↓</div>
@@ -73,76 +77,76 @@
   <!-- MARQUEE -->
   <div class="marquee-wrap">
     <div class="marquee-track" id="marquee-track">
-      <span data-i18n="svc.design">Diseño Web</span><span class="dot">·</span>
-      <span data-i18n="svc.dev">Desarrollo</span><span class="dot">·</span>
+      <span data-i18n="svc.design">Disseny Web</span><span class="dot">·</span>
+      <span data-i18n="svc.dev">Desenvolupament</span><span class="dot">·</span>
       <span>SEO</span><span class="dot">·</span>
-      <span data-i18n="svc.shop">Tienda Online</span><span class="dot">·</span>
-      <span data-i18n="svc.social">Redes Sociales</span><span class="dot">·</span>
+      <span data-i18n="svc.shop">Botiga Online</span><span class="dot">·</span>
+      <span data-i18n="svc.social">Xarxes Socials</span><span class="dot">·</span>
       <span>Email Marketing</span><span class="dot">·</span>
-      <span data-i18n="svc.maint">Mantenimiento</span><span class="dot">·</span>
-      <span data-i18n="svc.design">Diseño Web</span><span class="dot">·</span>
-      <span data-i18n="svc.dev">Desarrollo</span><span class="dot">·</span>
+      <span data-i18n="svc.maint">Manteniment</span><span class="dot">·</span>
+      <span data-i18n="svc.design">Disseny Web</span><span class="dot">·</span>
+      <span data-i18n="svc.dev">Desenvolupament</span><span class="dot">·</span>
       <span>SEO</span><span class="dot">·</span>
-      <span data-i18n="svc.shop">Tienda Online</span><span class="dot">·</span>
-      <span data-i18n="svc.social">Redes Sociales</span><span class="dot">·</span>
+      <span data-i18n="svc.shop">Botiga Online</span><span class="dot">·</span>
+      <span data-i18n="svc.social">Xarxes Socials</span><span class="dot">·</span>
       <span>Email Marketing</span><span class="dot">·</span>
-      <span data-i18n="svc.maint">Mantenimiento</span><span class="dot">·</span>
+      <span data-i18n="svc.maint">Manteniment</span><span class="dot">·</span>
     </div>
   </div>
 
   <!-- SERVICIOS -->
   <section id="servicios">
     <div class="container">
-      <div class="section-label" data-i18n="services.label">01 — Qué hacemos</div>
+      <div class="section-label" data-i18n="services.label">01 — Què fem</div>
       <div class="services-list">
         <div class="svc-row">
           <div class="svc-head">
             <span class="svc-num">01</span>
-            <h3 data-i18n="svc.design">Diseño Web</h3>
+            <h3 data-i18n="svc.design">Disseny Web</h3>
           </div>
-          <p class="svc-desc" data-i18n="svc.design.desc">Webs que no parecen plantillas. Diseñamos desde cero pensando en tus clientes.</p>
+          <p class="svc-desc" data-i18n="svc.design.desc">Webs que no semblen plantilles. Dissenyem des de zero pensant en els teus clients.</p>
         </div>
         <div class="svc-row">
           <div class="svc-head">
             <span class="svc-num">02</span>
-            <h3 data-i18n="svc.dev">Desarrollo Web</h3>
+            <h3 data-i18n="svc.dev">Desenvolupament Web</h3>
           </div>
-          <p class="svc-desc" data-i18n="svc.dev.desc">Rápidas, seguras y que funcionan bien en el móvil. Sin constructores de webs baratos.</p>
+          <p class="svc-desc" data-i18n="svc.dev.desc">Ràpides, segures i que funcionen bé al mòbil. Sense constructors de webs barats.</p>
         </div>
         <div class="svc-row highlight">
           <div class="svc-head">
             <span class="svc-num">03</span>
-            <h3>SEO <span class="tag-hot" data-i18n="svc.seo.tag">Lo más pedido</span></h3>
+            <h3>SEO <span class="tag-hot" data-i18n="svc.seo.tag">El més demanat</span></h3>
           </div>
-          <p class="svc-desc" data-i18n="svc.seo.desc">Para que cuando alguien busque lo que ofreces en Google, aparezcas tú. No tu competencia.</p>
+          <p class="svc-desc" data-i18n="svc.seo.desc">Perquè quan algú busqui el que ofereixes a Google, apareguis tu. No la teva competència.</p>
         </div>
         <div class="svc-row">
           <div class="svc-head">
             <span class="svc-num">04</span>
-            <h3 data-i18n="svc.shop">Tienda Online</h3>
+            <h3 data-i18n="svc.shop">Botiga Online</h3>
           </div>
-          <p class="svc-desc" data-i18n="svc.shop.desc">Tu tienda completa lista para vender. Pagos, stock, pedidos — todo funcionando.</p>
+          <p class="svc-desc" data-i18n="svc.shop.desc">La teva botiga completa llesta per vendre. Pagaments, estoc, comandes — tot funcionant.</p>
         </div>
         <div class="svc-row">
           <div class="svc-head">
             <span class="svc-num">05</span>
-            <h3 data-i18n="svc.social">Redes Sociales</h3>
+            <h3 data-i18n="svc.social">Xarxes Socials</h3>
           </div>
-          <p class="svc-desc" data-i18n="svc.social.desc">Creamos y gestionamos tu perfil. Contenido que no parece corporativo.</p>
+          <p class="svc-desc" data-i18n="svc.social.desc">Creem i gestionem el teu perfil. Contingut que no sembla corporatiu.</p>
         </div>
         <div class="svc-row">
           <div class="svc-head">
             <span class="svc-num">06</span>
             <h3>Email Marketing</h3>
           </div>
-          <p class="svc-desc" data-i18n="svc.email.desc">Newsletters que la gente abre. Mantén el contacto con tus clientes sin molestar.</p>
+          <p class="svc-desc" data-i18n="svc.email.desc">Newsletters que la gent obre. Mantén el contacte amb els teus clients sense molestar.</p>
         </div>
         <div class="svc-row">
           <div class="svc-head">
             <span class="svc-num">07</span>
-            <h3 data-i18n="svc.maint">Mantenimiento Web</h3>
+            <h3 data-i18n="svc.maint">Manteniment Web</h3>
           </div>
-          <p class="svc-desc" data-i18n="svc.maint.desc">Para que tu web no se caiga, no se hackee y siempre esté actualizada.</p>
+          <p class="svc-desc" data-i18n="svc.maint.desc">Perquè la teva web no caigui, no es hackegi i sempre estigui actualitzada.</p>
         </div>
       </div>
     </div>
@@ -151,27 +155,27 @@
   <!-- PROCESO -->
   <section id="como-trabajamos">
     <div class="container">
-      <div class="section-label" data-i18n="process.label">02 — Cómo trabajamos</div>
+      <div class="section-label" data-i18n="process.label">02 — Com treballem</div>
       <div class="process-grid">
         <div class="process-card">
           <span class="pnum">01</span>
-          <h3 data-i18n="process.1.title">Nos cuentas qué necesitas</h3>
-          <p data-i18n="process.1.desc">Una llamada o un mensaje basta. Sin formularios de 30 preguntas.</p>
+          <h3 data-i18n="process.1.title">Ens expliques què necessites</h3>
+          <p data-i18n="process.1.desc">Una trucada o un missatge és suficient. Sense formularis de 30 preguntes.</p>
         </div>
         <div class="process-card">
           <span class="pnum">02</span>
-          <h3 data-i18n="process.2.title">Presupuesto en 24h</h3>
-          <p data-i18n="process.2.desc">Detallado, con lo que incluye y lo que no. Sin sorpresas al final.</p>
+          <h3 data-i18n="process.2.title">Pressupost en 24h</h3>
+          <p data-i18n="process.2.desc">Detallat, amb el que inclou i el que no. Sense sorpreses al final.</p>
         </div>
         <div class="process-card">
           <span class="pnum">03</span>
-          <h3 data-i18n="process.3.title">Diseñamos juntos</h3>
-          <p data-i18n="process.3.desc">Revisiones abiertas. Puedes ver el avance y pedir cambios en todo momento.</p>
+          <h3 data-i18n="process.3.title">Dissenyem junts</h3>
+          <p data-i18n="process.3.desc">Revisions obertes. Pots veure el progrés i demanar canvis en tot moment.</p>
         </div>
         <div class="process-card">
           <span class="pnum">04</span>
-          <h3 data-i18n="process.4.title">Lanzamos y seguimos</h3>
-          <p data-i18n="process.4.desc">No desaparecemos. Seguimos disponibles si algo falla o quieres crecer.</p>
+          <h3 data-i18n="process.4.title">Llancem i seguim</h3>
+          <p data-i18n="process.4.desc">No desapareixem. Seguim disponibles si alguna cosa falla o vols créixer.</p>
         </div>
       </div>
     </div>
@@ -180,11 +184,11 @@
   <!-- PROYECTOS -->
   <section id="proyectos">
     <div class="container">
-      <div class="section-label" data-i18n="work.label">03 — Proyectos</div>
+      <div class="section-label" data-i18n="work.label">03 — Projectes</div>
       <div class="proj-grid">
 
         <div class="proj-card">
-          <a href="/demos/arrel/" target="_blank" class="proj-preview" style="background:#2d5a27">
+          <a href="demos/arrel/index.html" target="_blank" class="proj-preview" style="background:#2d5a27">
             <div class="proj-browser-bar"><span></span><span></span><span></span></div>
             <div class="proj-preview-body">
               <div class="proj-preview-nav-mock" style="border-color:rgba(168,208,138,0.2)">
@@ -204,14 +208,14 @@
           <div class="proj-info">
             <div class="proj-meta">
               <h3>Arrel</h3>
-              <span class="proj-type" data-i18n="work.type.restaurant">Restaurant ecológico</span>
+              <span class="proj-type" data-i18n="work.type.restaurant">Restaurant ecològic</span>
             </div>
-            <a href="/demos/arrel/" target="_blank" class="proj-link" data-i18n="work.see">Ver demo →</a>
+            <a href="demos/arrel/index.html" target="_blank" class="proj-link" data-i18n="work.see">Veure demo →</a>
           </div>
         </div>
 
         <div class="proj-card">
-          <a href="/demos/forma-studio/" target="_blank" class="proj-preview" style="background:#e8ddd4">
+          <a href="demos/forma-studio/index.html" target="_blank" class="proj-preview" style="background:#e8ddd4">
             <div class="proj-browser-bar" style="border-color:rgba(193,142,108,0.2)"><span style="background:rgba(193,142,108,0.3)"></span><span style="background:rgba(193,142,108,0.3)"></span><span style="background:rgba(193,142,108,0.3)"></span></div>
             <div class="proj-preview-body">
               <div class="proj-preview-nav-mock" style="border-color:rgba(193,142,108,0.15)">
@@ -231,14 +235,14 @@
           <div class="proj-info">
             <div class="proj-meta">
               <h3>Forma Studio</h3>
-              <span class="proj-type" data-i18n="work.type.studio">Estudio de pilates y yoga</span>
+              <span class="proj-type" data-i18n="work.type.studio">Estudi de pilates i ioga</span>
             </div>
-            <a href="/demos/forma-studio/" target="_blank" class="proj-link" data-i18n="work.see">Ver demo →</a>
+            <a href="demos/forma-studio/index.html" target="_blank" class="proj-link" data-i18n="work.see">Veure demo →</a>
           </div>
         </div>
 
         <div class="proj-card">
-          <a href="/demos/garriga-fusta/" target="_blank" class="proj-preview" style="background:#2c1a0e">
+          <a href="demos/garriga-fusta/index.html" target="_blank" class="proj-preview" style="background:#2c1a0e">
             <div class="proj-browser-bar"><span></span><span></span><span></span></div>
             <div class="proj-preview-body">
               <div class="proj-preview-nav-mock" style="border-color:rgba(196,135,58,0.15)">
@@ -256,7 +260,7 @@
               <h3>Garriga Fusta</h3>
               <span class="proj-type" data-i18n="work.type.craft">Mobiliari artesanal</span>
             </div>
-            <a href="/demos/garriga-fusta/" target="_blank" class="proj-link" data-i18n="work.see">Ver demo →</a>
+            <a href="demos/garriga-fusta/index.html" target="_blank" class="proj-link" data-i18n="work.see">Veure demo →</a>
           </div>
         </div>
 
@@ -267,63 +271,12 @@
   <!-- PRECIOS -->
   <section id="precios">
     <div class="container">
-      <div class="section-label" data-i18n="pricing.label">04 — Precios</div>
-      <p class="pricing-intro" data-i18n="pricing.intro">Sin letra pequeña. Hosting incluido. Cambios básicos cada mes.</p>
-      <div class="pricing-row">
-
-        <div class="plan">
-          <div class="plan-name" data-i18n="plan1.name">Web Básica</div>
-          <div class="plan-price">399<span>€</span></div>
-          <div class="plan-monthly" data-i18n="plan1.monthly">+ 30€/mes</div>
-          <ul>
-            <li data-i18n="plan.f1">Diseño 100% a medida</li>
-            <li data-i18n="plan.f2">SEO básico + alta en Google</li>
-            <li data-i18n="plan.f3">Adaptada a móvil</li>
-            <li data-i18n="plan.f4">Formulario de contacto</li>
-            <li data-i18n="plan.f5">Hosting incluido</li>
-            <li data-i18n="plan.f6">Actualizaciones de seguridad</li>
-            <li data-i18n="plan.f7">Cambios básicos cada mes</li>
-          </ul>
-          <a href="#contacto" class="btn-plan magnetic" data-i18n="plan.cta">Solicitar</a>
-        </div>
-
-        <div class="plan plan-featured">
-          <div class="plan-badge" data-i18n="plan.badge">Más vendido</div>
-          <div class="plan-name" data-i18n="plan2.name">Web + Panel Admin</div>
-          <div class="plan-price">549<span>€</span></div>
-          <div class="plan-monthly" data-i18n="plan2.monthly">+ 45€/mes</div>
-          <ul>
-            <li data-i18n="plan2.f1">Todo lo del plan Básico</li>
-            <li data-i18n="plan2.f2">Panel de administración propio</li>
-            <li data-i18n="plan2.f3">Publica noticias y artículos</li>
-            <li data-i18n="plan2.f4">Sistema de reservas online</li>
-            <li data-i18n="plan2.f5">Gestión de usuarios</li>
-            <li data-i18n="plan2.f6">SEO avanzado</li>
-            <li data-i18n="plan.f7">Cambios básicos cada mes</li>
-            <li data-i18n="plan2.f8">Soporte prioritario</li>
-          </ul>
-          <a href="#contacto" class="btn-plan btn-plan-inv magnetic" data-i18n="plan.cta">Solicitar</a>
-        </div>
-
-        <div class="plan">
-          <div class="plan-name" data-i18n="plan3.name">Tienda Online</div>
-          <div class="plan-price">1.499<span>€</span></div>
-          <div class="plan-monthly" data-i18n="plan3.monthly">+ 150€/mes</div>
-          <ul>
-            <li data-i18n="plan3.f1">Todo lo del plan Pro</li>
-            <li data-i18n="plan3.f2">Catálogo de productos</li>
-            <li data-i18n="plan3.f3">Pago con Stripe / PayPal</li>
-            <li data-i18n="plan3.f4">Gestión de stock</li>
-            <li data-i18n="plan3.f5">Panel de pedidos</li>
-            <li data-i18n="plan3.f6">Facturas automáticas</li>
-            <li data-i18n="plan3.f7">Integración con envíos</li>
-            <li data-i18n="plan.f7">Cambios básicos cada mes</li>
-          </ul>
-          <a href="#contacto" class="btn-plan magnetic" data-i18n="plan.cta">Solicitar</a>
-        </div>
-
+      <div class="section-label" data-i18n="pricing.label">04 — Preus</div>
+      <div class="pricing-cta">
+        <div class="pricing-cta-price" data-i18n-html="pricing.cta.price">Webs des de <span>299€</span></div>
+        <p class="pricing-cta-sub" data-i18n="pricing.cta.sub">Cada negoci és diferent, per això el preu final depèn del que necessitis. Explica'ns el teu projecte i t'enviem un pressupost sense compromís.</p>
+        <a href="#contacto" class="btn-main magnetic js-contact-overlay" data-i18n="pricing.cta.btn">Demana el teu pressupost gratis</a>
       </div>
-      <p class="pricing-custom"><span data-i18n="pricing.custom.text">¿Proyecto especial?</span> <a href="#contacto" data-i18n="pricing.custom.link">Pídenos presupuesto a medida →</a></p>
     </div>
   </section>
 
@@ -331,72 +284,72 @@
   <section id="contacto">
     <div class="container contact-wrap">
       <div class="contact-left">
-        <div class="section-label" data-i18n="contact.label">05 — Contacto</div>
-        <h2 data-i18n="contact.title">¿Hablamos?</h2>
-        <p data-i18n="contact.desc">Cuéntanos qué tienes en mente. Te respondemos en menos de 24 horas.</p>
+        <div class="section-label" data-i18n="contact.label">05 — Contacte</div>
+        <h2 data-i18n="contact.title">Parlem?</h2>
+        <p data-i18n="contact.desc">Explica'ns què tens al cap. Et responem en menys de 24 hores.</p>
         <a href="mailto:equip.impulsodigital@gmail.com" class="contact-email">
           equip.impulsodigital@gmail.com
         </a>
       </div>
       <form id="form">
         <div class="field">
-          <input type="text" name="nombre" data-i18n-placeholder="contact.name" placeholder="Nombre" required />
+          <input type="text" name="nombre" data-i18n-placeholder="contact.name" placeholder="Nom" required />
         </div>
         <div class="field">
           <input type="email" name="email" placeholder="Email" required />
         </div>
         <div class="field">
           <select name="servicio" id="service-select">
-            <option value="" disabled selected data-i18n="contact.select">¿Qué necesitas?</option>
-            <option data-i18n="svc.design">Diseño Web</option>
-            <option data-i18n="svc.dev">Desarrollo Web</option>
+            <option value="" disabled selected data-i18n="contact.select">Què necessites?</option>
+            <option data-i18n="svc.design">Disseny Web</option>
+            <option data-i18n="svc.dev">Desenvolupament Web</option>
             <option>SEO</option>
-            <option data-i18n="svc.shop">Tienda Online</option>
-            <option data-i18n="svc.social">Redes Sociales</option>
+            <option data-i18n="svc.shop">Botiga Online</option>
+            <option data-i18n="svc.social">Xarxes Socials</option>
             <option>Email Marketing</option>
-            <option data-i18n="svc.maint">Mantenimiento Web</option>
-            <option data-i18n="contact.advice">No sé, necesito consejo</option>
+            <option data-i18n="svc.maint">Manteniment Web</option>
+            <option data-i18n="contact.advice">No sé, necessito consell</option>
           </select>
         </div>
         <div class="field">
-          <textarea name="mensaje" data-i18n-placeholder="contact.msg" placeholder="Cuéntanos tu proyecto..." rows="4" required></textarea>
+          <textarea name="mensaje" data-i18n-placeholder="contact.msg" placeholder="Explica'ns el teu projecte..." rows="4" required></textarea>
         </div>
-        <button type="submit" class="btn-main magnetic" data-i18n="contact.send">Enviar mensaje</button>
-        <p class="form-note" data-i18n="contact.note">Respondemos en menos de 24h — normalmente antes</p>
+        <button type="submit" class="btn-main magnetic" data-i18n="contact.send">Enviar missatge</button>
+        <p class="form-note" data-i18n="contact.note">Responem en menys de 24h — normalment abans</p>
       </form>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-big">ImpulsoDigital</div>
+    <div class="footer-big">MotorDigital</div>
     <div class="footer-bar">
-      <span>© 2026 Impulso Digital</span>
+      <span>© 2026 Motor Digital</span>
       <div class="footer-links">
-        <a href="#servicios" data-i18n="nav.services">Servicios</a>
-        <a href="#precios" data-i18n="nav.pricing">Precios</a>
-        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+        <a href="#servicios" data-i18n="nav.services">Serveis</a>
+        <a href="#precios" data-i18n="nav.pricing">Preus</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacte</a>
       </div>
     </div>
   </footer>
 
   <!-- SERVICES OVERLAY -->
-  <div id="services-overlay" role="dialog" aria-label="Servicios" aria-modal="true">
+  <div id="services-overlay" role="dialog" aria-label="Serveis" aria-modal="true">
     <nav class="svc-overlay-nav">
-      <a href="#" class="logo">Impulso<em>Digital</em></a>
+      <a href="#" class="logo">Motor<em>Digital</em></a>
       <ul class="svc-overlay-navlinks">
-        <li><a href="#como-trabajamos" class="js-close-svc js-section-link" data-i18n="nav.process">Proceso</a></li>
-        <li><a href="#precios" class="js-close-svc js-section-link" data-i18n="nav.pricing">Precios</a></li>
-        <li><a href="#contacto" class="js-close-svc js-contact-overlay" data-i18n="nav.contact">Contacto</a></li>
+        <li><a href="#como-trabajamos" class="js-close-svc js-section-link" data-i18n="nav.process">Procés</a></li>
+        <li><a href="#precios" class="js-close-svc js-section-link" data-i18n="nav.pricing">Preus</a></li>
+        <li><a href="#contacto" class="js-close-svc js-contact-overlay" data-i18n="nav.contact">Contacte</a></li>
       </ul>
       <div class="svc-overlay-nav-right">
         <div class="lang-switcher">
-          <button class="lang-btn" data-lang="ca">CA</button>
-          <button class="lang-btn active" data-lang="es">ES</button>
+          <button class="lang-btn active" data-lang="ca">CA</button>
+          <button class="lang-btn" data-lang="es">ES</button>
           <button class="lang-btn" data-lang="en">EN</button>
         </div>
         <button id="svc-overlay-close" class="svc-back-btn">
-          <span>←</span> <span data-i18n="overlay.back">Volver</span>
+          <span>←</span> <span data-i18n="overlay.back">Tornar</span>
         </button>
       </div>
       <button class="svc-hamburger" id="svc-hamburger" aria-label="Menú"><span></span><span></span></button>
@@ -405,9 +358,9 @@
     <div class="svc-overlay-body">
       <div class="container">
         <div class="svc-overlay-intro">
-          <span class="section-label" data-i18n="services.label">01 — Qué hacemos</span>
+          <span class="section-label" data-i18n="services.label">01 — Què fem</span>
           <button class="svc-back-btn svc-back-mobile" id="svc-overlay-close-mobile">
-            ← <span data-i18n="overlay.back">Volver</span>
+            ← <span data-i18n="overlay.back">Tornar</span>
           </button>
         </div>
 
@@ -415,133 +368,133 @@
 
           <div class="svc-card">
             <span class="svc-card-num">01</span>
-            <h3 data-i18n="svc.design">Diseño Web</h3>
-            <p data-i18n="svc.design.desc">Webs que no parecen plantillas. Diseñamos desde cero pensando en tus clientes.</p>
+            <h3 data-i18n="svc.design">Disseny Web</h3>
+            <p data-i18n="svc.design.desc">Webs que no semblen plantilles. Dissenyem des de zero pensant en els teus clients.</p>
             <ul>
-              <li data-i18n="svc.design.b1">Diseño 100% a medida</li>
-              <li data-i18n="svc.design.b2">Revisiones ilimitadas</li>
-              <li data-i18n="svc.design.b3">Lista en 2–3 semanas</li>
+              <li data-i18n="svc.design.b1">Disseny 100% a mida</li>
+              <li data-i18n="svc.design.b2">Revisions il·limitades</li>
+              <li data-i18n="svc.design.b3">Llesta en 2–3 setmanes</li>
             </ul>
           </div>
 
           <div class="svc-card">
             <span class="svc-card-num">02</span>
-            <h3 data-i18n="svc.dev">Desarrollo Web</h3>
-            <p data-i18n="svc.dev.desc">Rápidas, seguras y que funcionan bien en el móvil. Sin constructores de webs baratos.</p>
+            <h3 data-i18n="svc.dev">Desenvolupament Web</h3>
+            <p data-i18n="svc.dev.desc">Ràpides, segures i que funcionen bé al mòbil. Sense constructors de webs barats.</p>
             <ul>
-              <li data-i18n="svc.dev.b1">Código limpio y optimizado</li>
-              <li data-i18n="svc.dev.b2">Carga ultrarrápida</li>
-              <li data-i18n="svc.dev.b3">SSL y seguridad incluida</li>
+              <li data-i18n="svc.dev.b1">Codi net i optimitzat</li>
+              <li data-i18n="svc.dev.b2">Càrrega ultraràpida</li>
+              <li data-i18n="svc.dev.b3">SSL i seguretat inclosa</li>
             </ul>
           </div>
 
           <div class="svc-card svc-card-featured">
-            <span class="svc-card-badge" data-i18n="svc.seo.tag">Lo más pedido</span>
+            <span class="svc-card-badge" data-i18n="svc.seo.tag">El més demanat</span>
             <span class="svc-card-num">03</span>
             <h3>SEO</h3>
-            <p data-i18n="svc.seo.desc">Para que cuando alguien busque lo que ofreces en Google, aparezcas tú. No tu competencia.</p>
+            <p data-i18n="svc.seo.desc">Perquè quan algú busqui el que ofereixes a Google, apareguis tu. No la teva competència.</p>
             <ul>
-              <li data-i18n="svc.seo.b1">Auditoría inicial gratuita</li>
-              <li data-i18n="svc.seo.b2">Alta en Google Search Console</li>
-              <li data-i18n="svc.seo.b3">Seguimiento mensual</li>
+              <li data-i18n="svc.seo.b1">Auditoria inicial gratuïta</li>
+              <li data-i18n="svc.seo.b2">Alta a Google Search Console</li>
+              <li data-i18n="svc.seo.b3">Seguiment mensual</li>
             </ul>
           </div>
 
           <div class="svc-card">
             <span class="svc-card-num">04</span>
-            <h3 data-i18n="svc.shop">Tienda Online</h3>
-            <p data-i18n="svc.shop.desc">Tu tienda completa lista para vender. Pagos, stock, pedidos — todo funcionando.</p>
+            <h3 data-i18n="svc.shop">Botiga Online</h3>
+            <p data-i18n="svc.shop.desc">La teva botiga completa llesta per vendre. Pagaments, estoc, comandes — tot funcionant.</p>
             <ul>
-              <li data-i18n="svc.shop.b1">Pago con Stripe / PayPal</li>
-              <li data-i18n="svc.shop.b2">Gestión de stock y pedidos</li>
-              <li data-i18n="svc.shop.b3">Facturas automáticas</li>
+              <li data-i18n="svc.shop.b1">Pagament amb Stripe / PayPal</li>
+              <li data-i18n="svc.shop.b2">Gestió d'estoc i comandes</li>
+              <li data-i18n="svc.shop.b3">Factures automàtiques</li>
             </ul>
           </div>
 
           <div class="svc-card">
             <span class="svc-card-num">05</span>
-            <h3 data-i18n="svc.social">Redes Sociales</h3>
-            <p data-i18n="svc.social.desc">Creamos y gestionamos tu perfil. Contenido que no parece corporativo.</p>
+            <h3 data-i18n="svc.social">Xarxes Socials</h3>
+            <p data-i18n="svc.social.desc">Creem i gestionem el teu perfil. Contingut que no sembla corporatiu.</p>
             <ul>
-              <li data-i18n="svc.social.b1">Estrategia de contenido</li>
-              <li data-i18n="svc.social.b2">Diseño de publicaciones</li>
-              <li data-i18n="svc.social.b3">Gestión y publicación</li>
+              <li data-i18n="svc.social.b1">Estratègia de contingut</li>
+              <li data-i18n="svc.social.b2">Disseny de publicacions</li>
+              <li data-i18n="svc.social.b3">Gestió i publicació</li>
             </ul>
           </div>
 
           <div class="svc-card">
             <span class="svc-card-num">06</span>
             <h3>Email Marketing</h3>
-            <p data-i18n="svc.email.desc">Newsletters que la gente abre. Mantén el contacto con tus clientes sin molestar.</p>
+            <p data-i18n="svc.email.desc">Newsletters que la gent obre. Mantén el contacte amb els teus clients sense molestar.</p>
             <ul>
-              <li data-i18n="svc.email.b1">Diseño de newsletters</li>
-              <li data-i18n="svc.email.b2">Automatizaciones básicas</li>
-              <li data-i18n="svc.email.b3">Analíticas de apertura</li>
+              <li data-i18n="svc.email.b1">Disseny de newsletters</li>
+              <li data-i18n="svc.email.b2">Automatitzacions bàsiques</li>
+              <li data-i18n="svc.email.b3">Analítiques d'obertura</li>
             </ul>
           </div>
 
           <div class="svc-card">
             <span class="svc-card-num">07</span>
-            <h3 data-i18n="svc.maint">Mantenimiento Web</h3>
-            <p data-i18n="svc.maint.desc">Para que tu web no se caiga, no se hackee y siempre esté actualizada.</p>
+            <h3 data-i18n="svc.maint">Manteniment Web</h3>
+            <p data-i18n="svc.maint.desc">Perquè la teva web no caigui, no es hackegi i sempre estigui actualitzada.</p>
             <ul>
-              <li data-i18n="svc.maint.b1">Copias de seguridad diarias</li>
-              <li data-i18n="svc.maint.b2">Actualizaciones de seguridad</li>
-              <li data-i18n="svc.maint.b3">Monitorización 24/7</li>
+              <li data-i18n="svc.maint.b1">Còpies de seguretat diàries</li>
+              <li data-i18n="svc.maint.b2">Actualitzacions de seguretat</li>
+              <li data-i18n="svc.maint.b3">Monitorització 24/7</li>
             </ul>
           </div>
 
         </div>
 
         <div class="svc-overlay-cta">
-          <p data-i18n="services.overlay.cta.text">¿Algún servicio te interesa?</p>
-          <a href="#" class="btn-main js-contact-overlay" data-i18n="services.overlay.cta.btn">Hablemos →</a>
+          <p data-i18n="services.overlay.cta.text">Algun servei t'interessa?</p>
+          <a href="#" class="btn-main js-contact-overlay" data-i18n="services.overlay.cta.btn">Parlem →</a>
         </div>
       </div>
     </div>
   </div>
 
   <!-- CONTACT OVERLAY -->
-  <div id="contact-overlay" role="dialog" aria-label="Contacto" aria-modal="true">
+  <div id="contact-overlay" role="dialog" aria-label="Contacte" aria-modal="true">
     <div class="overlay-header">
-      <a href="#" class="logo">Impulso<em>Digital</em></a>
-      <button id="overlay-close" aria-label="Cerrar">✕</button>
+      <a href="#" class="logo">Motor<em>Digital</em></a>
+      <button id="overlay-close" aria-label="Tancar">✕</button>
     </div>
     <div class="overlay-body">
       <div class="container contact-wrap">
         <div class="contact-left">
-          <div class="section-label" data-i18n="contact.label">05 — Contacto</div>
-          <h2 data-i18n="contact.title">¿Hablamos?</h2>
-          <p data-i18n="contact.desc">Cuéntanos qué tienes en mente. Te respondemos en menos de 24 horas.</p>
+          <div class="section-label" data-i18n="contact.label">05 — Contacte</div>
+          <h2 data-i18n="contact.title">Parlem?</h2>
+          <p data-i18n="contact.desc">Explica'ns què tens al cap. Et responem en menys de 24 hores.</p>
           <a href="mailto:equip.impulsodigital@gmail.com" class="contact-email">
             equip.impulsodigital@gmail.com
           </a>
         </div>
         <form id="form-overlay">
           <div class="field">
-            <input type="text" name="nombre" data-i18n-placeholder="contact.name" placeholder="Nombre" required />
+            <input type="text" name="nombre" data-i18n-placeholder="contact.name" placeholder="Nom" required />
           </div>
           <div class="field">
             <input type="email" name="email" placeholder="Email" required />
           </div>
           <div class="field">
             <select name="servicio">
-              <option value="" disabled selected data-i18n="contact.select">¿Qué necesitas?</option>
-              <option data-i18n="svc.design">Diseño Web</option>
-              <option data-i18n="svc.dev">Desarrollo Web</option>
+              <option value="" disabled selected data-i18n="contact.select">Què necessites?</option>
+              <option data-i18n="svc.design">Disseny Web</option>
+              <option data-i18n="svc.dev">Desenvolupament Web</option>
               <option>SEO</option>
-              <option data-i18n="svc.shop">Tienda Online</option>
-              <option data-i18n="svc.social">Redes Sociales</option>
+              <option data-i18n="svc.shop">Botiga Online</option>
+              <option data-i18n="svc.social">Xarxes Socials</option>
               <option>Email Marketing</option>
-              <option data-i18n="svc.maint">Mantenimiento Web</option>
-              <option data-i18n="contact.advice">No sé, necesito consejo</option>
+              <option data-i18n="svc.maint">Manteniment Web</option>
+              <option data-i18n="contact.advice">No sé, necessito consell</option>
             </select>
           </div>
           <div class="field">
-            <textarea name="mensaje" data-i18n-placeholder="contact.msg" placeholder="Cuéntanos tu proyecto..." rows="4" required></textarea>
+            <textarea name="mensaje" data-i18n-placeholder="contact.msg" placeholder="Explica'ns el teu projecte..." rows="4" required></textarea>
           </div>
-          <button type="submit" class="btn-main magnetic" data-i18n="contact.send">Enviar mensaje</button>
-          <p class="form-note" data-i18n="contact.note">Respondemos en menos de 24h — normalmente antes</p>
+          <button type="submit" class="btn-main magnetic" data-i18n="contact.send">Enviar missatge</button>
+          <p class="form-note" data-i18n="contact.note">Responem en menys de 24h — normalment abans</p>
         </form>
       </div>
     </div>
