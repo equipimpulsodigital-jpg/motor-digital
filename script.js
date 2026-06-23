@@ -306,7 +306,7 @@ const overlayClose   = document.getElementById('overlay-close');
 document.querySelectorAll('.js-contact-overlay').forEach(el => {
   el.addEventListener('click', e => { e.preventDefault(); openOverlay(contactOverlay); });
 });
-overlayClose.addEventListener('click', () => closeOverlay(contactOverlay));
+overlayClose?.addEventListener('click', () => closeOverlay(contactOverlay));
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     closeOverlay(contactOverlay);
@@ -344,17 +344,17 @@ window.addEventListener('scroll', () => {
 // ── Navbar scroll ──────────────────────────────────────────────
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 40);
+  navbar?.classList.toggle('scrolled', window.scrollY > 40);
 }, { passive: true });
 
 // ── Hamburger ─────────────────────────────────────────────────
 const hamburger = document.querySelector('.hamburger');
 const drawer    = document.querySelector('.nav-drawer');
-hamburger.addEventListener('click', () => {
+hamburger?.addEventListener('click', () => {
   hamburger.classList.toggle('open');
   drawer.classList.toggle('open');
 });
-drawer.querySelectorAll('a').forEach(a => {
+drawer?.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => {
     hamburger.classList.remove('open');
     drawer.classList.remove('open');
@@ -515,10 +515,10 @@ async function handleFormspree(formEl) {
   }
 }
 
-document.getElementById('form').addEventListener('submit', function(e) {
+document.getElementById('form')?.addEventListener('submit', function(e) {
   e.preventDefault(); handleFormspree(this);
 });
 
-document.getElementById('form-overlay').addEventListener('submit', function(e) {
+document.getElementById('form-overlay')?.addEventListener('submit', function(e) {
   e.preventDefault(); handleFormspree(this);
 });
