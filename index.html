@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-W4JN857N');</script>
+  <!-- Google Tag Manager (carregat després d'interacció per no bloquejar render) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function loadGTM() {
+      if (window._gtmLoaded) return;
+      window._gtmLoaded = true;
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(w,d,s,l,i);
+    }
+    ['scroll','click','keydown','touchstart'].forEach(function(e) {
+      window.addEventListener(e, loadGTM, { once: true, passive: true });
+    });
+    setTimeout(loadGTM, 5000);
+  </script>
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -67,7 +78,7 @@
 
   <!-- NAV -->
   <nav id="navbar">
-    <a href="#" class="logo"><img src="logo.png" alt="Motor Digital" class="logo-img"></a>
+    <a href="#" class="logo"><img src="logo.png" alt="Motor Digital" class="logo-img" width="686" height="160"></a>
     <ul class="nav-links">
       <li><a href="#servicios" class="js-services-overlay" data-i18n="nav.services">Serveis</a></li>
       <li><a href="#precios" data-i18n="nav.pricing">Preus</a></li>
@@ -398,7 +409,7 @@
   <!-- SERVICES OVERLAY -->
   <div id="services-overlay" role="dialog" aria-label="Serveis" aria-modal="true">
     <nav class="svc-overlay-nav">
-      <a href="#" class="logo"><img src="logo.png" alt="Motor Digital" class="logo-img"></a>
+      <a href="#" class="logo"><img src="logo.png" alt="Motor Digital" class="logo-img" width="686" height="160"></a>
       <ul class="svc-overlay-navlinks">
         <li><a href="#como-trabajamos" class="js-close-svc js-section-link" data-i18n="nav.process">Procés</a></li>
         <li><a href="#precios" class="js-close-svc js-section-link" data-i18n="nav.pricing">Preus</a></li>
@@ -519,7 +530,7 @@
   <!-- CONTACT OVERLAY -->
   <div id="contact-overlay" role="dialog" aria-label="Contacte" aria-modal="true">
     <div class="overlay-header">
-      <a href="#" class="logo"><img src="logo.png" alt="Motor Digital" class="logo-img"></a>
+      <a href="#" class="logo"><img src="logo.png" alt="Motor Digital" class="logo-img" width="686" height="160"></a>
       <button id="overlay-close" aria-label="Tancar">✕</button>
     </div>
     <div class="overlay-body">
