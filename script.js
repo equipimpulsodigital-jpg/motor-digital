@@ -479,6 +479,25 @@ window.addEventListener('scroll', () => {
   });
 }, { passive: true });
 
+// ── Cookie consent ────────────────────────────────────────────
+const cookieBanner = document.getElementById('cookie-banner');
+const cookieConsent = localStorage.getItem('cookie-consent');
+
+if (!cookieConsent && cookieBanner) {
+  setTimeout(() => cookieBanner.classList.add('visible'), 1200);
+}
+
+document.getElementById('cookie-accept')?.addEventListener('click', () => {
+  localStorage.setItem('cookie-consent', 'accepted');
+  cookieBanner?.classList.remove('visible');
+  loadGTM();
+});
+
+document.getElementById('cookie-reject')?.addEventListener('click', () => {
+  localStorage.setItem('cookie-consent', 'rejected');
+  cookieBanner?.classList.remove('visible');
+});
+
 // ── Contact form → Formspree ───────────────────────────────────
 const FORMSPREE_ID = 'xgoqdkjb';
 

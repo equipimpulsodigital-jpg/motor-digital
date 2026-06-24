@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-  <!-- Google Tag Manager (carregat després d'interacció per no bloquejar render) -->
+  <!-- Google Tag Manager (només si s'accepten cookies) -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function loadGTM() {
       if (window._gtmLoaded) return;
+      if (localStorage.getItem('cookie-consent') !== 'accepted') return;
       window._gtmLoaded = true;
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -13,10 +14,12 @@
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(w,d,s,l,i);
     }
-    ['scroll','click','keydown','touchstart'].forEach(function(e) {
-      window.addEventListener(e, loadGTM, { once: true, passive: true });
-    });
-    setTimeout(loadGTM, 5000);
+    if (localStorage.getItem('cookie-consent') === 'accepted') {
+      ['scroll','click','keydown','touchstart'].forEach(function(e) {
+        window.addEventListener(e, loadGTM, { once: true, passive: true });
+      });
+      setTimeout(loadGTM, 5000);
+    }
   </script>
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
@@ -395,6 +398,7 @@
         <a href="#servicios" data-i18n="nav.services">Serveis</a>
         <a href="#precios" data-i18n="nav.pricing">Preus</a>
         <a href="#contacto" data-i18n="nav.contact">Contacte</a>
+        <a href="/politica-privacitat">Privacitat</a>
       </div>
     </div>
     <div class="footer-areas">
@@ -572,6 +576,15 @@
           <p class="form-note" data-i18n="contact.note">Responem en menys de 24h — normalment abans</p>
         </form>
       </div>
+    </div>
+  </div>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Consentiment de cookies" aria-live="polite">
+    <p>Usem cookies analítiques per millorar el lloc web. Pots acceptar-les o rebutjar-les. <a href="/politica-privacitat">Més informació</a>.</p>
+    <div class="cookie-actions">
+      <button id="cookie-accept" class="btn-main">Acceptar galetes</button>
+      <button id="cookie-reject" class="cookie-reject-btn">Rebutjar</button>
     </div>
   </div>
 
