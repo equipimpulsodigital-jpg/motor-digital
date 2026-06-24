@@ -723,8 +723,25 @@ footer:hover .footer-big { color: #d8d0ff; }
 .sr-left { transform: translateX(-40px); }
 .sr-right { transform: translateX(40px); }
 
+/* ===== BTN NAV ===== */
+.btn-nav {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
+  padding: 0.45rem 1rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+.btn-nav:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
 /* ===== RESPONSIVE — TABLET ===== */
 @media (max-width: 900px) {
+  html { font-size: 17px; }
   .nav-links { display: none; }
   .nav-right { display: none; }
   .hamburger { display: flex; }
@@ -775,7 +792,7 @@ footer:hover .footer-big { color: #d8d0ff; }
     padding-bottom: 0;
   }
   .svc-row.expanded .svc-desc {
-    max-height: 120px;
+    max-height: 200px;
     padding-bottom: 1rem;
   }
   .svc-row.highlight { background: transparent; }
@@ -806,17 +823,19 @@ footer:hover .footer-big { color: #d8d0ff; }
 
 /* ===== RESPONSIVE — MOBILE ===== */
 @media (max-width: 500px) {
+  html { font-size: 15px; }
+
   #hero { padding: 90px 1.2rem 50px; }
-  #hero h1 { font-size: clamp(2.6rem, 11vw, 4rem); line-height: 1; margin-bottom: 2rem; }
+  #hero h1 { font-size: clamp(2.4rem, 11vw, 3.5rem); line-height: 1; margin-bottom: 2rem; }
   .hero-tag { margin-bottom: 1.5rem; }
-  .btn-main { width: 100%; text-align: center; padding: 1rem; }
+  .btn-main { width: 100%; text-align: center; padding: 1rem; white-space: normal; }
 
   /* Nav drawer más compacto */
   .nav-drawer { padding: 2rem 1.5rem; }
   .nav-drawer ul li a { font-size: 2rem; }
 
   /* Servicios */
-  .svc-head h3 { font-size: 0.9rem !important; }
+  .svc-head h3 { font-size: 1rem !important; }
   .tag-hot { font-size: 0.5rem; padding: 0.2rem 0.4rem; }
 
   /* Proceso */
