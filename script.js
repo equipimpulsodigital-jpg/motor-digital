@@ -271,19 +271,34 @@ function setLang(lang) {
 function openOverlay(el) {
   el.classList.add('open');
   document.body.style.overflow = 'hidden';
+  if (el.id === 'services-overlay') {
+    document.body.classList.add('svc-overlay-open');
+    document.querySelectorAll('.js-services-overlay').forEach(a => a.classList.add('nav-active'));
+  }
   const first = el.querySelector('input, button:not([id$="close"])');
   if (first) first.focus();
 }
 function closeOverlay(el) {
   el.classList.remove('open');
   document.body.style.overflow = '';
+  if (el.id === 'services-overlay') {
+    document.body.classList.remove('svc-overlay-open');
+    document.querySelectorAll('.js-services-overlay').forEach(a => a.classList.remove('nav-active'));
+  }
 }
 
 // ── Services overlay ───────────────────────────────────────────
 const servicesOverlay = document.getElementById('services-overlay');
 
 document.querySelectorAll('.js-services-overlay').forEach(el => {
-  el.addEventListener('click', e => { e.preventDefault(); openOverlay(servicesOverlay); });
+  el.addEventListener('click', e => {
+    e.preventDefault();
+    if (servicesOverlay.classList.contains('open')) {
+      closeOverlay(servicesOverlay);
+    } else {
+      openOverlay(servicesOverlay);
+    }
+  });
 });
 document.querySelectorAll('#svc-overlay-close, #svc-overlay-close-mobile').forEach(btn => {
   btn.addEventListener('click', () => closeOverlay(servicesOverlay));
@@ -475,7 +490,8 @@ window.addEventListener('scroll', () => {
   let cur = '';
   sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) cur = s.id; });
   document.querySelectorAll('.nav-links a').forEach(a => {
-    a.style.color = a.getAttribute('href') === `#${cur}` ? 'var(--fg)' : '';
+    if (a.classList.contains('nav-active')) return;
+    a.style.color = a.getAttribute('href') === `#${cur}` ? 'var(--accent)' : '';
   });
 }, { passive: true });
 
