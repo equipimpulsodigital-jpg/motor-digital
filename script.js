@@ -293,6 +293,7 @@ const servicesOverlay = document.getElementById('services-overlay');
 document.querySelectorAll('.js-services-overlay').forEach(el => {
   el.addEventListener('click', e => {
     e.preventDefault();
+    if (contactOverlay?.classList.contains('open')) closeOverlay(contactOverlay);
     if (servicesOverlay.classList.contains('open')) {
       closeOverlay(servicesOverlay);
     } else {
@@ -319,9 +320,21 @@ const contactOverlay = document.getElementById('contact-overlay');
 const overlayClose   = document.getElementById('overlay-close');
 
 document.querySelectorAll('.js-contact-overlay').forEach(el => {
-  el.addEventListener('click', e => { e.preventDefault(); openOverlay(contactOverlay); });
+  el.addEventListener('click', e => {
+    e.preventDefault();
+    if (servicesOverlay?.classList.contains('open')) closeOverlay(servicesOverlay);
+    openOverlay(contactOverlay);
+  });
 });
 overlayClose?.addEventListener('click', () => closeOverlay(contactOverlay));
+
+// Qualsevol link del navbar/drawer que no sigui trigger d'overlay tanca els overlays oberts
+document.querySelectorAll('#navbar a:not(.js-services-overlay):not(.js-contact-overlay), .nav-drawer a:not(.js-services-overlay):not(.js-contact-overlay)').forEach(el => {
+  el.addEventListener('click', () => {
+    if (contactOverlay?.classList.contains('open')) closeOverlay(contactOverlay);
+    if (servicesOverlay?.classList.contains('open')) closeOverlay(servicesOverlay);
+  });
+});
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     closeOverlay(contactOverlay);
