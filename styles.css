@@ -743,10 +743,13 @@ footer:hover .footer-big { color: #d8d0ff; }
   font-weight: 700;
   color: var(--accent);
   border: 1.5px solid var(--accent);
-  padding: 0.45rem 1rem;
+  padding: 0.45rem 0;
   border-radius: 4px;
   transition: background 0.2s, color 0.2s;
   white-space: nowrap;
+  width: 7.5rem;
+  text-align: center;
+  display: inline-block;
 }
 .btn-nav:hover {
   background: var(--accent);
