@@ -65,11 +65,11 @@
   <nav id="navbar">
     <a href="/" class="logo"><img src="../logo.png" alt="Motor Digital" class="logo-img"></a>
     <ul class="nav-links">
-      <li><a href="/#servicios">Serveis</a></li>
-      <li><a href="/#precios">Preus</a></li>
-      <li><a href="/#como-trabajamos">Procés</a></li>
+      <li><a href="/#servicios" data-i18n="nav.services">Serveis</a></li>
+      <li><a href="/#precios" data-i18n="nav.pricing">Preus</a></li>
+      <li><a href="/#como-trabajamos" data-i18n="nav.process">Procés</a></li>
       <li><a href="/blog" class="nav-active">Blog</a></li>
-      <li><a href="#contacto" class="js-contact-overlay">Contacte</a></li>
+      <li><a href="#contacto" class="js-contact-overlay" data-i18n="nav.contact">Contacte</a></li>
     </ul>
     <div class="nav-right">
       <span class="nav-clock" id="nav-clock"></span>
@@ -78,17 +78,17 @@
         <button class="lang-btn" data-lang="es">ES</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a href="#contacto" class="btn-nav js-contact-overlay">Parlem-ne</a>
+      <a href="#contacto" class="btn-nav js-contact-overlay" data-i18n="nav.cta">Parlem-ne</a>
     </div>
     <button class="hamburger" aria-label="Menú"><span></span><span></span></button>
   </nav>
   <div class="nav-drawer">
     <ul>
-      <li><a href="/#servicios">Serveis</a></li>
-      <li><a href="/#precios">Preus</a></li>
-      <li><a href="/#como-trabajamos">Procés</a></li>
+      <li><a href="/#servicios" data-i18n="nav.services">Serveis</a></li>
+      <li><a href="/#precios" data-i18n="nav.pricing">Preus</a></li>
+      <li><a href="/#como-trabajamos" data-i18n="nav.process">Procés</a></li>
       <li><a href="/blog" class="nav-active">Blog</a></li>
-      <li><a href="#contacto" class="js-contact-overlay">Contacte</a></li>
+      <li><a href="#contacto" class="js-contact-overlay" data-i18n="nav.contact">Contacte</a></li>
     </ul>
   </div>
 
@@ -168,8 +168,8 @@
 
   <section class="local-cta">
     <div class="container">
-      <h2>Vols que t'ajudem a posicionar-te a Google?</h2>
-      <a href="/seo-girona" class="btn-main magnetic">Veure el nostre servei de SEO</a>
+      <h2 data-i18n="blog.art.cta.seo">Vols que t'ajudem a posicionar-te a Google?</h2>
+      <a href="/seo-girona" class="btn-main magnetic" data-i18n="blog.art.cta.seo.btn">Veure el nostre servei de SEO</a>
     </div>
   </section>
 
@@ -178,10 +178,10 @@
     <div class="footer-bar">
       <span>© 2026 Motor Digital</span>
       <div class="footer-links">
-        <a href="/#servicios">Serveis</a>
-        <a href="/#precios">Preus</a>
+        <a href="/#servicios" data-i18n="nav.services">Serveis</a>
+        <a href="/#precios" data-i18n="nav.pricing">Preus</a>
         <a href="/blog">Blog</a>
-        <a href="#contacto" class="js-contact-overlay">Contacte</a>
+        <a href="#contacto" class="js-contact-overlay" data-i18n="nav.contact">Contacte</a>
       </div>
     </div>
   </footer>
@@ -194,9 +194,9 @@
     <div class="overlay-body">
       <div class="container contact-wrap">
         <div class="contact-left">
-          <div class="section-label">05 — Contacte</div>
-          <h2>Parlem?</h2>
-          <p>Explica'ns què tens al cap. Et responem en menys de 24 hores.</p>
+          <div class="section-label" data-i18n="contact.label">05 — Contacte</div>
+          <h2 data-i18n="contact.title">Parlem?</h2>
+          <p data-i18n="contact.desc">Explica'ns què tens al cap. Et responem en menys de 24 hores.</p>
           <div style="display:flex;flex-direction:column;gap:0.5rem;margin-top:0">
             <a href="mailto:info@motordigital.cat" class="contact-email">info@motordigital.cat</a>
             <a href="tel:+34680590660" class="contact-email">+34 680 590 660</a>
@@ -204,7 +204,7 @@
         </div>
         <form id="form-overlay">
           <div class="field">
-            <input type="text" name="nombre" placeholder="Nom" required />
+            <input type="text" name="nombre" placeholder="Nom" data-i18n-placeholder="contact.name" required />
           </div>
           <div class="field">
             <input type="email" name="email" placeholder="Email" required />
@@ -212,7 +212,7 @@
           <div class="field">
             <label for="service-select-overlay" class="visually-hidden">Què necessites?</label>
             <select name="servicio" id="service-select-overlay">
-              <option value="" disabled selected>Què necessites?</option>
+              <option value="" disabled selected data-i18n="contact.select">Què necessites?</option>
               <option>Disseny Web</option>
               <option>Desenvolupament Web</option>
               <option>SEO</option>
@@ -220,15 +220,15 @@
               <option>Xarxes Socials</option>
               <option>Email Marketing</option>
               <option>Manteniment Web</option>
-              <option>No sé, necessito consell</option>
+              <option data-i18n="contact.advice">No sé, necessito consell</option>
             </select>
           </div>
           <div class="field">
-            <textarea name="mensaje" placeholder="Explica'ns el teu projecte..." rows="4" required></textarea>
+            <textarea name="mensaje" placeholder="Explica'ns el teu projecte..." data-i18n-placeholder="contact.msg" rows="4" required></textarea>
           </div>
           <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
-          <button type="submit" class="btn-main magnetic">Enviar missatge</button>
-          <p class="form-note">Responem en menys de 24h — normalment abans</p>
+          <button type="submit" class="btn-main magnetic" data-i18n="contact.send">Enviar missatge</button>
+          <p class="form-note" data-i18n="contact.note">Responem en menys de 24h — normalment abans</p>
         </form>
       </div>
     </div>
