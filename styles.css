@@ -1312,6 +1312,10 @@ footer:hover .footer-big { color: #d8d0ff; }
 .article-section ul, .article-section ol { margin: 0.5rem 0 1.6rem 1.2rem; color: var(--muted); line-height: 1.95; max-width: 680px; }
 .article-section a { color: var(--accent); border-bottom: 1px solid rgba(124,58,237,0.3); }
 @media (max-width: 600px) {
+  .blog-hero { padding: 5.5rem 0 1.5rem; }
+  .blog-hero h1 { font-size: 1.7rem; }
+  .blog-index { padding: 2rem 0 5rem; }
+  .blog-cards { gap: 1.6rem; }
   .blog-card { padding: 1.4rem 1.3rem; }
   .article-section { padding: 2.5rem 0; }
 }
