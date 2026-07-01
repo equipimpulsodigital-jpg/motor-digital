@@ -890,7 +890,8 @@ footer:hover .footer-big { color: #d8d0ff; }
   flex-direction: column;
   overflow-y: auto;
 }
-#services-overlay {
+#services-overlay,
+#contact-overlay {
   top: 64px;
 }
 #contact-overlay.open,
