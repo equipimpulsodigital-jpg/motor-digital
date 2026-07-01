@@ -1288,25 +1288,25 @@ footer:hover .footer-big { color: #d8d0ff; }
 }
 
 /* ===== BLOG ===== */
-.blog-index { padding: 3rem 0 6rem; }
-.blog-cards { display: grid; gap: 1.5rem; }
-.blog-card { border: 1px solid var(--border); border-radius: 10px; padding: 1.8rem 2rem; transition: border-color 0.2s, transform 0.15s; }
+.blog-index { padding: 4rem 0 7rem; }
+.blog-cards { display: grid; gap: 2rem; }
+.blog-card { border: 1px solid var(--border); border-radius: 10px; padding: 2rem 2.2rem; transition: border-color 0.2s, transform 0.15s; }
 .blog-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-.blog-card-meta { font-size: 0.78rem; color: var(--muted); margin-bottom: 0.7rem; }
-.blog-card h2 { font-size: 1.1rem; font-weight: 700; line-height: 1.35; margin-bottom: 0.6rem; }
+.blog-card-meta { font-size: 0.78rem; color: var(--muted); margin-bottom: 0.8rem; }
+.blog-card h2 { font-size: 1.1rem; font-weight: 700; line-height: 1.35; margin-bottom: 0.7rem; }
 .blog-card h2 a { color: var(--fg); }
 .blog-card h2 a:hover { color: var(--accent); }
-.blog-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; margin-bottom: 1rem; }
+.blog-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; margin-bottom: 1.1rem; }
 .blog-card-link { font-size: 0.85rem; font-weight: 700; color: var(--accent); }
 
-.article-section { padding: 3rem 0; }
+.article-section { padding: 3.5rem 0; }
 .article-section + .article-section { border-top: 1px solid var(--border); }
-.article-section h2 { font-size: clamp(1.3rem, 2.5vw, 1.65rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 1.2rem; max-width: 680px; }
-.article-section h3 { font-size: 0.95rem; font-weight: 700; margin-top: 1.6rem; margin-bottom: 0.4rem; }
-.article-section p { font-size: 1rem; color: var(--muted); line-height: 1.85; margin-bottom: 1.2rem; max-width: 680px; }
-.article-section ul, .article-section ol { margin: 0.5rem 0 1.5rem 1.2rem; color: var(--muted); line-height: 1.9; max-width: 680px; }
+.article-section h2 { font-size: clamp(1.3rem, 2.5vw, 1.65rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 1.3rem; max-width: 680px; }
+.article-section h3 { font-size: 0.95rem; font-weight: 700; margin-top: 1.8rem; margin-bottom: 0.5rem; }
+.article-section p { font-size: 1rem; color: var(--muted); line-height: 1.85; margin-bottom: 1.3rem; max-width: 680px; }
+.article-section ul, .article-section ol { margin: 0.5rem 0 1.6rem 1.2rem; color: var(--muted); line-height: 1.95; max-width: 680px; }
 .article-section a { color: var(--accent); border-bottom: 1px solid rgba(124,58,237,0.3); }
 @media (max-width: 600px) {
-  .blog-card { padding: 1.3rem 1.2rem; }
-  .article-section { padding: 2rem 0; }
+  .blog-card { padding: 1.4rem 1.3rem; }
+  .article-section { padding: 2.5rem 0; }
 }
