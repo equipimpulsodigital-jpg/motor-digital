@@ -69,7 +69,7 @@
       <li><a href="/#precios">Preus</a></li>
       <li><a href="/#como-trabajamos">Procés</a></li>
       <li><a href="/blog" class="nav-active">Blog</a></li>
-      <li><a href="/#contacto">Contacte</a></li>
+      <li><a href="#contacto" class="js-contact-overlay">Contacte</a></li>
     </ul>
     <div class="nav-right">
       <span class="nav-clock" id="nav-clock"></span>
@@ -78,7 +78,7 @@
         <button class="lang-btn" data-lang="es">ES</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a href="/#contacto" class="btn-nav">Parlem-ne</a>
+      <a href="#contacto" class="btn-nav js-contact-overlay">Parlem-ne</a>
     </div>
     <button class="hamburger" aria-label="Menú"><span></span><span></span></button>
   </nav>
@@ -88,7 +88,7 @@
       <li><a href="/#precios">Preus</a></li>
       <li><a href="/#como-trabajamos">Procés</a></li>
       <li><a href="/blog" class="nav-active">Blog</a></li>
-      <li><a href="/#contacto">Contacte</a></li>
+      <li><a href="#contacto" class="js-contact-overlay">Contacte</a></li>
     </ul>
   </div>
 
@@ -181,11 +181,59 @@
         <a href="/#servicios">Serveis</a>
         <a href="/#precios">Preus</a>
         <a href="/blog">Blog</a>
-        <a href="/#contacto">Contacte</a>
+        <a href="#contacto" class="js-contact-overlay">Contacte</a>
       </div>
     </div>
   </footer>
 
+
+  <div id="contact-overlay" role="dialog" aria-label="Contacte" aria-modal="true">
+    <div class="overlay-header">
+      <a href="/" class="logo"><img src="../logo.png" alt="Motor Digital" class="logo-img"></a>
+      <button id="overlay-close" aria-label="Tancar">✕</button>
+    </div>
+    <div class="overlay-body">
+      <div class="container contact-wrap">
+        <div class="contact-left">
+          <div class="section-label">05 — Contacte</div>
+          <h2>Parlem?</h2>
+          <p>Explica'ns què tens al cap. Et responem en menys de 24 hores.</p>
+          <div style="display:flex;flex-direction:column;gap:0.5rem;margin-top:0">
+            <a href="mailto:equip.impulsodigital@gmail.com" class="contact-email">equip.impulsodigital@gmail.com</a>
+            <a href="tel:+34680590660" class="contact-email">+34 680 590 660</a>
+          </div>
+        </div>
+        <form id="form-overlay">
+          <div class="field">
+            <input type="text" name="nombre" placeholder="Nom" required />
+          </div>
+          <div class="field">
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="field">
+            <label for="service-select-overlay" class="visually-hidden">Què necessites?</label>
+            <select name="servicio" id="service-select-overlay">
+              <option value="" disabled selected>Què necessites?</option>
+              <option>Disseny Web</option>
+              <option>Desenvolupament Web</option>
+              <option>SEO</option>
+              <option>Botiga Online</option>
+              <option>Xarxes Socials</option>
+              <option>Email Marketing</option>
+              <option>Manteniment Web</option>
+              <option>No sé, necessito consell</option>
+            </select>
+          </div>
+          <div class="field">
+            <textarea name="mensaje" placeholder="Explica'ns el teu projecte..." rows="4" required></textarea>
+          </div>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+          <button type="submit" class="btn-main magnetic">Enviar missatge</button>
+          <p class="form-note">Responem en menys de 24h — normalment abans</p>
+        </form>
+      </div>
+    </div>
+  </div>
   <script src="../script.js"></script>
 </body>
 </html>
