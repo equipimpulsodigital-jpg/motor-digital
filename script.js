@@ -360,6 +360,9 @@ const TRANSLATIONS = {
     'bi.wi.t': '¿Web propia o Instagram: cuál es mejor para tu negocio?',
     'bi.wp.d': 'Comparativa honesta de costes, mantenimiento, velocidad y SEO entre WordPress y una web a medida. Sin tecnicismos, para ayudarte a elegir.',
     'bi.wp.t': 'WordPress o web a medida: cuál es mejor para tu negocio',
+    'blog.home.all': 'Ver todos los artículos →',
+    'blog.home.label': '05 — Blog',
+    'blog.home.title': 'Últimos artículos',
   },
   ca: {
     'nav.team':           'Equip',
@@ -722,6 +725,9 @@ const TRANSLATIONS = {
     'bi.wi.t': 'Web pròpia o Instagram: quin és millor per al teu negoci?',
     'bi.wp.d': 'Comparativa honesta de costos, manteniment, velocitat i SEO entre WordPress i una web a mida. Sense tecnicismes, per ajudar-te a triar.',
     'bi.wp.t': 'WordPress o web a mida: quina és millor per al teu negoci',
+    'blog.home.all': 'Veure tots els articles →',
+    'blog.home.label': '05 — Blog',
+    'blog.home.title': 'Últims articles',
   },
   en: {
     'nav.team':           'Team',
@@ -1084,6 +1090,9 @@ const TRANSLATIONS = {
     'bi.wi.t': 'Your own website or Instagram: which is better for your business?',
     'bi.wp.d': 'Honest comparison of costs, maintenance, speed and SEO between WordPress and a custom website. No technical jargon, to help you choose.',
     'bi.wp.t': 'WordPress or a custom website: which is better for your business',
+    'blog.home.all': 'See all articles →',
+    'blog.home.label': '05 — Blog',
+    'blog.home.title': 'Latest articles',
   },
 };
 
