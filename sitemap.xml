@@ -225,4 +225,19 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://motordigital.cat/blog/quant-costa-el-seo-a-girona</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/blog/velocitat-web-per-que-importa-i-com-millorar-la</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/blog/com-triar-el-nom-de-domini-per-al-teu-negoci</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
