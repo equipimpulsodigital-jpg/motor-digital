@@ -250,4 +250,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://motordigital.cat/blog/disseny-web-per-a-assessors-i-gestories</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/blog/disseny-web-per-a-immobiliaries</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/blog/web-per-a-fotografs-portfoli-online</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/blog/manteniment-web-que-inclou-i-per-que-el-necessites</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
