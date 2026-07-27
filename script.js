@@ -2658,7 +2658,8 @@ window.addEventListener('scroll', () => {
   sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) cur = s.id; });
   document.querySelectorAll('.nav-links a').forEach(a => {
     if (a.classList.contains('nav-active')) return;
-    a.style.color = a.getAttribute('href') === `#${cur}` ? 'var(--accent)' : '';
+    const key = a.dataset.section || (a.getAttribute('href') || '').replace(/^\/?#/, '');
+    a.style.color = key === cur ? 'var(--accent)' : '';
   });
 }, { passive: true });
 
