@@ -41,6 +41,7 @@ a { text-decoration: none; color: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1.5rem;
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s, background 0.3s;
 }
