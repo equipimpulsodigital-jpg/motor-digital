@@ -2610,9 +2610,12 @@ setInterval(updateClock, 1000);
 
 // ── Language switcher ──────────────────────────────────────────
 document.querySelectorAll('.lang-btn').forEach(btn => {
-  btn.addEventListener('click', () => setLang(btn.dataset.lang));
+  btn.addEventListener('click', () => {
+    localStorage.setItem('lang', btn.dataset.lang);
+    setLang(btn.dataset.lang);
+  });
 });
-setLang('ca');
+setLang(localStorage.getItem('lang') || 'ca');
 
 // ── Active nav highlight ───────────────────────────────────────
 const sections = document.querySelectorAll('section[id]');
