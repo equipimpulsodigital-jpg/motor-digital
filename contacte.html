@@ -98,18 +98,18 @@
 
   <section class="local-hero">
     <div class="container">
-      <div class="hero-tag">Contacte</div>
-      <h1>Parlem?</h1>
-      <p>Explica'ns què tens al cap. Et responem en menys de 24 hores.</p>
+      <div class="hero-tag" data-i18n="nav.contact">Contacte</div>
+      <h1 data-i18n="contact.title">Parlem?</h1>
+      <p data-i18n="contact.desc">Explica'ns què tens al cap. Et responem en menys de 24 hores.</p>
     </div>
   </section>
 
   <section id="contacto">
     <div class="container contact-wrap">
       <div class="contact-left">
-        <div class="section-label">Contacte</div>
-        <h2>Escriu-nos directament</h2>
-        <p>Si ho prefereixes, contacta'ns directament per correu o telèfon.</p>
+        <div class="section-label" data-i18n="nav.contact">Contacte</div>
+        <h2 data-i18n="p.co.direct.h2">Escriu-nos directament</h2>
+        <p data-i18n="p.co.direct.p">Si ho prefereixes, contacta'ns directament per correu o telèfon.</p>
         <div style="display:flex;flex-direction:column;gap:0.5rem;margin-top:0">
           <a href="mailto:info@motordigital.cat" class="contact-email">info@motordigital.cat</a>
           <a href="tel:+34680590660" class="contact-email">+34 680 590 660</a>
@@ -117,31 +117,31 @@
       </div>
       <form id="form">
         <div class="field">
-          <input type="text" name="nombre" placeholder="Nom" required />
+          <input type="text" name="nombre" data-i18n-placeholder="contact.name" placeholder="Nom" required />
         </div>
         <div class="field">
           <input type="email" name="email" placeholder="Email" required />
         </div>
         <div class="field">
-          <label for="service-select" class="visually-hidden">Què necessites?</label>
+          <label for="service-select" class="visually-hidden" data-i18n="contact.select">Què necessites?</label>
           <select name="servicio" id="service-select">
-            <option value="" disabled selected>Què necessites?</option>
-            <option>Disseny Web</option>
-            <option>Desenvolupament Web</option>
+            <option value="" disabled selected data-i18n="contact.select">Què necessites?</option>
+            <option data-i18n="svc.design">Disseny Web</option>
+            <option data-i18n="svc.dev">Desenvolupament Web</option>
             <option>SEO</option>
-            <option>Botiga Online</option>
-            <option>Xarxes Socials</option>
+            <option data-i18n="svc.shop">Botiga Online</option>
+            <option data-i18n="svc.social">Xarxes Socials</option>
             <option>Email Marketing</option>
-            <option>Manteniment Web</option>
-            <option>No sé, necessito consell</option>
+            <option data-i18n="svc.maint">Manteniment Web</option>
+            <option data-i18n="contact.advice">No sé, necessito consell</option>
           </select>
         </div>
         <div class="field">
-          <textarea name="mensaje" placeholder="Explica'ns el teu projecte..." rows="4" required></textarea>
+          <textarea name="mensaje" data-i18n-placeholder="contact.msg" placeholder="Explica'ns el teu projecte..." rows="4" required></textarea>
         </div>
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
-        <button type="submit" class="btn-main magnetic">Enviar missatge</button>
-        <p class="form-note">Responem en menys de 24h — normalment abans</p>
+        <button type="submit" class="btn-main magnetic" data-i18n="contact.send">Enviar missatge</button>
+        <p class="form-note" data-i18n="contact.note">Responem en menys de 24h — normalment abans</p>
       </form>
     </div>
   </section>
