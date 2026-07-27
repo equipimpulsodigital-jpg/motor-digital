@@ -2423,51 +2423,17 @@ function setLang(lang) {
 
 // ── Overlay helpers ────────────────────────────────────────────
 function openOverlay(el) {
+  if (!el) return;
   el.classList.add('open');
   document.body.style.overflow = 'hidden';
-  if (el.id === 'services-overlay') {
-    document.body.classList.add('svc-overlay-open');
-    document.querySelectorAll('.js-services-overlay').forEach(a => a.classList.add('nav-active'));
-  }
   const first = el.querySelector('input, button:not([id$="close"])');
   if (first) first.focus();
 }
 function closeOverlay(el) {
+  if (!el) return;
   el.classList.remove('open');
   document.body.style.overflow = '';
-  if (el.id === 'services-overlay') {
-    document.body.classList.remove('svc-overlay-open');
-    document.querySelectorAll('.js-services-overlay').forEach(a => a.classList.remove('nav-active'));
-  }
 }
-
-// ── Services overlay ───────────────────────────────────────────
-const servicesOverlay = document.getElementById('services-overlay');
-
-document.querySelectorAll('.js-services-overlay').forEach(el => {
-  el.addEventListener('click', e => {
-    e.preventDefault();
-    if (contactOverlay?.classList.contains('open')) closeOverlay(contactOverlay);
-    if (servicesOverlay.classList.contains('open')) {
-      closeOverlay(servicesOverlay);
-    } else {
-      openOverlay(servicesOverlay);
-    }
-  });
-});
-document.querySelectorAll('#svc-overlay-close, #svc-overlay-close-mobile').forEach(btn => {
-  btn.addEventListener('click', () => closeOverlay(servicesOverlay));
-});
-document.querySelectorAll('.js-close-svc').forEach(el => {
-  el.addEventListener('click', e => {
-    e.preventDefault();
-    closeOverlay(servicesOverlay);
-    const target = el.getAttribute('href');
-    if (target && !el.classList.contains('js-contact-overlay')) {
-      setTimeout(() => document.querySelector(target)?.scrollIntoView({ behavior: 'smooth' }), 300);
-    }
-  });
-});
 
 // ── Contact overlay ────────────────────────────────────────────
 const contactOverlay = document.getElementById('contact-overlay');
@@ -2476,23 +2442,20 @@ const overlayClose   = document.getElementById('overlay-close');
 document.querySelectorAll('.js-contact-overlay').forEach(el => {
   el.addEventListener('click', e => {
     e.preventDefault();
-    if (servicesOverlay?.classList.contains('open')) closeOverlay(servicesOverlay);
     openOverlay(contactOverlay);
   });
 });
 overlayClose?.addEventListener('click', () => closeOverlay(contactOverlay));
 
 // Qualsevol link del navbar/drawer que no sigui trigger d'overlay tanca els overlays oberts
-document.querySelectorAll('#navbar a:not(.js-services-overlay):not(.js-contact-overlay), .nav-drawer a:not(.js-services-overlay):not(.js-contact-overlay)').forEach(el => {
+document.querySelectorAll('#navbar a:not(.js-contact-overlay), .nav-drawer a:not(.js-contact-overlay)').forEach(el => {
   el.addEventListener('click', () => {
     if (contactOverlay?.classList.contains('open')) closeOverlay(contactOverlay);
-    if (servicesOverlay?.classList.contains('open')) closeOverlay(servicesOverlay);
   });
 });
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     closeOverlay(contactOverlay);
-    closeOverlay(servicesOverlay);
   }
 });
 
