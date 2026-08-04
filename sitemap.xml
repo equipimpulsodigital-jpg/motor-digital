@@ -216,6 +216,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://motordigital.cat/blog/web-per-a-floristeries</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://motordigital.cat/blog/web-per-a-academies-i-centres-destudis</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
