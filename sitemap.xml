@@ -216,6 +216,21 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://motordigital.cat/blog/web-per-a-optiques</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/blog/web-per-a-autoescoles</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/blog/web-per-a-psicolegs-i-centres-de-terapia</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://motordigital.cat/blog/web-per-a-floristeries</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
