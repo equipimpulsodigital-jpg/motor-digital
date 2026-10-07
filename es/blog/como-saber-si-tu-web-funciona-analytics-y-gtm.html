@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W4JN857N');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cómo saber si tu web funciona sin complicarte con estadísticas: qué mirar en Analytics y Google Tag Manager, y qué ignorar.">
+  <title>Cómo saber si tu web funciona: Analytics y GTM sin complicarse | Motor Digital</title>
+  <link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/com-saber-si-la-teva-web-funciona-analytics-i-gtm" />
+  <link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/como-saber-si-tu-web-funciona-analytics-y-gtm" />
+  <link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/com-saber-si-la-teva-web-funciona-analytics-i-gtm" />
+  <link rel="canonical" href="https://motordigital.cat/es/blog/como-saber-si-tu-web-funciona-analytics-y-gtm">
+
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:url" content="https://motordigital.cat/es/blog/como-saber-si-tu-web-funciona-analytics-y-gtm">
+  <meta property="og:title" content="Cómo saber si tu web funciona: Analytics y GTM sin complicarse | Motor Digital">
+  <meta property="og:description" content="Cómo saber si tu web funciona sin complicarte con estadísticas: qué mirar en Analytics y Google Tag Manager, y qué ignorar.">
+  <meta property="og:image" content="https://motordigital.cat/logo.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Cómo saber si tu web funciona: Analytics y GTM sin complicarse",
+    "description": "Cómo saber si tu web funciona sin complicarte con estadísticas: qué mirar en Analytics y Google Tag Manager, y qué ignorar.",
+    "author": {
+      "@type": "Organization",
+      "name": "Motor Digital",
+      "url": "https://motordigital.cat/es"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Motor Digital",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://motordigital.cat/logo.png"
+      }
+    },
+    "datePublished": "2026-07-31",
+    "dateModified": "2026-07-31",
+    "url": "https://motordigital.cat/es/blog/como-saber-si-tu-web-funciona-analytics-y-gtm"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Motor Digital",
+        "item": "https://motordigital.cat/es"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://motordigital.cat/es/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Cómo saber si tu web funciona",
+        "item": "https://motordigital.cat/es/blog/como-saber-si-tu-web-funciona-analytics-y-gtm"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Necesito saber programar para usar Google Analytics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. La instalación inicial (vía Google Tag Manager) requiere algo de configuración técnica que suele hacer quien te desarrolla la web, pero consultar los datos una vez instalado es tan sencillo como mirar gráficos y números en un panel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Es legal instalar Analytics sin avisar a los usuarios?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Hace falta un banner de cookies que permita aceptar o rechazar, y Analytics solo debería cargarse si el usuario acepta. Instalarlo sin consentimiento incumple el RGPD."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4JN857N"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div id="progress-bar"></div>
+
+  <nav id="navbar">
+    <a class="logo" href="/es"><img alt="Motor Digital" class="logo-img" src="/logo.png"></a>
+    <ul class="nav-links">
+      <li><a data-i18n="nav.services" href="/es/servicios">Servicios</a></li>
+      <li><a data-i18n="nav.pricing" href="/es/precios">Precios</a></li>
+      <li><a data-i18n="nav.process" href="/es/como-trabajamos">Proceso</a></li>
+      <li><a class="nav-active" href="/es/blog">Blog</a></li>
+      <li><a href="#contacto" class="js-contact-overlay" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="nav-clock" id="nav-clock"></span>
+      <div class="lang-switcher">
+        <a class="lang-btn" data-lang="ca" hreflang="ca" lang="ca" href="/blog/com-saber-si-la-teva-web-funciona-analytics-i-gtm">CA</a>
+        <a class="lang-btn active" data-lang="es" hreflang="es" lang="es" href="/es/blog/como-saber-si-tu-web-funciona-analytics-y-gtm">ES</a>
+      </div>
+      <a href="#contacto" class="btn-nav js-contact-overlay" data-i18n="nav.cta">Hablemos</a>
+    </div>
+    <button class="hamburger" aria-label="Menú"><span></span><span></span></button>
+  </nav>
+  <div class="nav-drawer">
+    <div class="lang-switcher" style="margin-bottom:1.5rem">
+        <a class="lang-btn" data-lang="ca" hreflang="ca" lang="ca" href="/blog/com-saber-si-la-teva-web-funciona-analytics-i-gtm">CA</a>
+        <a class="lang-btn active" data-lang="es" hreflang="es" lang="es" href="/es/blog/como-saber-si-tu-web-funciona-analytics-y-gtm">ES</a>
+      </div>
+    <ul>
+      <li><a data-i18n="nav.services" href="/es/servicios">Servicios</a></li>
+      <li><a data-i18n="nav.pricing" href="/es/precios">Precios</a></li>
+      <li><a data-i18n="nav.process" href="/es/como-trabajamos">Proceso</a></li>
+      <li><a class="nav-active" href="/es/blog">Blog</a></li>
+      <li><a href="#contacto" class="js-contact-overlay" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+  </div>
+
+  <section class="local-hero">
+    <div class="container">
+      <div class="hero-tag">Blog · 31 julio 2026 · 4 min</div>
+      <h1 data-i18n="a.an.0">Cómo saber si tu web funciona: Analytics y GTM sin complicarse</h1>
+      <p data-i18n="a.an.1">Tener una web sin mirar nunca los datos es como abrir una tienda y no saber nunca cuánta gente entra. Con dos herramientas gratuitas de Google puedes saberlo, sin necesidad de ser experto en estadística.</p>
+    </div>
+  </section>
+
+  <section class="article-section">
+    <div class="container">
+      <h2 data-i18n="a.an.2">Google Analytics y Google Tag Manager, en dos frases</h2>
+      <p data-i18n="a.an.3">Google Tag Manager (GTM) es el "cajón" donde se instalan las herramientas de medición sin tocar el código cada vez. Google Analytics es la herramienta que muestra los datos: cuánta gente visita la web, de dónde viene y qué hace. GTM instala, Analytics muestra.</p>
+    </div>
+  </section>
+
+  <section class="article-section">
+    <div class="container">
+      <h2 data-i18n="a.an.4">Los 4 datos que vale la pena mirar cada mes</h2>
+
+      <h3 data-i18n="a.an.5">1. Número de visitas y de dónde vienen</h3>
+      <p data-i18n="a.an.6">Saber si la gente llega por Google, redes sociales o directamente escribiendo tu dirección te ayuda a saber dónde funciona tu presencia digital.</p>
+
+      <h3 data-i18n="a.an.7">2. Qué páginas se visitan más</h3>
+      <p data-i18n="a.an.8">Si una página de servicio recibe muchas visitas y otra ninguna, eso te dice dónde hay interés real y dónde conviene mejorar el contenido o la promoción.</p>
+
+      <h3 data-i18n="a.an.9">3. Envíos del formulario de contacto</h3>
+      <p data-i18n="a.an.10">Configurar un evento que cuente cada vez que alguien envía el formulario te dice cuántas oportunidades reales genera la web, no solo visitas.</p>
+
+      <h3 data-i18n="a.an.11">4. Dispositivo desde el que se navega</h3>
+      <p data-i18n="a.an.12">Si la mayoría visita desde el móvil y tu web no funciona bien ahí, estás perdiendo a la mayoría de clientes potenciales sin saberlo.</p>
+    </div>
+  </section>
+
+  <section class="article-section">
+    <div class="container">
+      <h2 data-i18n="a.an.13">Errores habituales a evitar</h2>
+      <ul>
+        <li data-i18n="a.an.14">Instalar Analytics y no volver a mirarlo nunca</li>
+        <li data-i18n="a.an.15">Cargarlo sin banner de consentimiento de cookies (incumple el RGPD)</li>
+        <li data-i18n="a.an.16">Obsesionarse con métricas que no importan (tiempo en la página) e ignorar las que sí (formularios enviados)</li>
+        <li data-i18n="a.an.17">No configurar nunca ningún evento de conversión, solo mirar el número de visitas</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="article-section">
+    <div class="container">
+      <h2 data-i18n="a.an.18">Preguntas frecuentes</h2>
+
+      <h3 data-i18n="a.an.19">¿Necesito saber programar para usar Google Analytics?</h3>
+      <p data-i18n="a.an.20">No. La instalación inicial (vía Google Tag Manager) requiere algo de configuración técnica que suele hacer quien te desarrolla la web, pero consultar los datos una vez instalado es tan sencillo como mirar gráficos y números en un panel.</p>
+
+      <h3 data-i18n="a.an.21">¿Es legal instalar Analytics sin avisar a los usuarios?</h3>
+      <p data-i18n="a.an.22">No. Hace falta un banner de cookies que permita aceptar o rechazar, y Analytics solo debería cargarse si el usuario acepta. Instalarlo sin consentimiento incumple el RGPD.</p>
+    </div>
+  </section>
+
+  <section style="padding:2rem 0;border-top:1px solid var(--border)">
+    <div class="container">
+      <p style="font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:0.6rem">Lee también</p>
+      <a style="font-size:1.05rem;font-weight:700;color:var(--accent);text-decoration:none" href="/es/blog/rgpd-y-politica-de-privacidad-que-debe-tener-tu-web">RGPD y política de privacidad: qué debe tener tu web →</a>
+    </div>
+  </section>
+
+  <section class="local-cta">
+    <div class="container">
+      <h2 data-i18n="blog.art.cta.an">¿Quieres saber de dónde vienen los clientes de tu web?</h2>
+      <a class="btn-main magnetic" data-i18n="blog.art.cta.an.btn" href="/es/mantenimiento-web-girona">Ver nuestro servicio de mantenimiento web</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-big">MotorDigital</div>
+    <div class="footer-bar">
+      <span>© 2026 Motor Digital</span>
+      <div class="footer-links">
+        <a data-i18n="nav.services" href="/es/servicios">Servicios</a> <a data-i18n="nav.pricing" href="/es/precios">Precios</a> <a href="/es/blog">Blog</a> <a data-i18n="nav.contact" href="/es/contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <div id="contact-overlay" role="dialog" aria-modal="true" aria-label="Contacto">
+    <div class="overlay-header">
+      <button id="overlay-close" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="overlay-body">
+      <div class="container contact-wrap">
+        <div class="contact-left">
+          <div class="section-label" data-i18n="contact.label">05 — Contacto</div>
+          <h2 data-i18n="contact.title">¿Hablamos?</h2>
+          <p data-i18n="contact.desc">Cuéntanos qué tienes en mente. Te respondemos en menos de 24 horas.</p>
+          <div style="display:flex;flex-direction:column;gap:0.5rem;margin-top:0">
+            <a href="mailto:info@motordigital.cat" class="contact-email">info@motordigital.cat</a> <a href="tel:+34680590660" class="contact-email">+34 680 590 660</a>
+          </div>
+        </div>
+        <form id="form-overlay">
+          <div class="field">
+            <input type="text" name="nombre" data-i18n-placeholder="contact.name" required placeholder="Nombre">
+          </div>
+          <div class="field">
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="field">
+            <label for="service-select-overlay" class="visually-hidden">¿Qué necesitas?</label>
+            <select name="servicio" id="service-select-overlay">
+              <option value="" disabled selected data-i18n="contact.select">¿Qué necesitas?</option>
+              <option>Diseño Web</option>
+              <option>Desarrollo Web</option>
+              <option>SEO</option>
+              <option>Tienda Online</option>
+              <option>Redes Sociales</option>
+              <option>Email Marketing</option>
+              <option>Mantenimiento Web</option>
+              <option data-i18n="contact.advice">No sé, necesito consejo</option>
+            </select>
+          </div>
+          <div class="field">
+            <textarea name="mensaje" data-i18n-placeholder="contact.msg" rows="4" required placeholder="Cuéntanos tu proyecto..."></textarea>
+          </div>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+          <button type="submit" class="btn-main magnetic" data-i18n="contact.send">Enviar mensaje</button>
+          <p class="form-note" data-i18n="contact.note">Respondemos en menos de 24h — normalmente antes</p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>

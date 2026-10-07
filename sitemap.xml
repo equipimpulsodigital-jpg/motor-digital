@@ -1,402 +1,1283 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://motordigital.cat</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/" />
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/serveis</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/serveis" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/servicios" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/serveis" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/preus</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/preus" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/precios" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/preus" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/com-treballem</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/com-treballem" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/como-trabajamos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/com-treballem" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/contacte</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/contacte" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/contacto" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/contacte" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/disseny-web-girona</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-girona" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-girona" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-girona" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/disseny-web-lloret-de-mar</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-lloret-de-mar" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-lloret-de-mar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-lloret-de-mar" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/disseny-web-blanes</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-blanes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-blanes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-blanes" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/disseny-web-sant-feliu-de-guixols</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-sant-feliu-de-guixols" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-sant-feliu-de-guixols" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-sant-feliu-de-guixols" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/disseny-web-olot</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-olot" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-olot" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-olot" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/disseny-web-figueres</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-figueres" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-figueres" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-figueres" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/disseny-web-banyoles</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-banyoles" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-banyoles" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-banyoles" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/disseny-web-roses</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-roses" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-roses" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-roses" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/disseny-web-professional</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-professional" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-profesional" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-professional" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/seo-girona</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/seo-girona" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/seo-girona" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/seo-girona" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/botiga-online-girona</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/botiga-online-girona" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/tienda-online-girona" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/botiga-online-girona" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/manteniment-web-girona</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/manteniment-web-girona" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/mantenimiento-web-girona" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/manteniment-web-girona" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/xarxes-socials-girona</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/xarxes-socials-girona" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/redes-sociales-girona" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/xarxes-socials-girona" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/web-per-restaurants</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/web-per-restaurants" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/web-para-restaurantes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/web-per-restaurants" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/web-per-cliniques</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/web-per-cliniques" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/web-para-clinicas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/web-per-cliniques" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/web-per-assessors</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/web-per-assessors" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/web-para-asesorias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/web-per-assessors" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/web-per-botigues</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/web-per-botigues" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/web-para-tiendas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/web-per-botigues" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/web-per-hotels</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/web-per-hotels" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/web-para-hoteles" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/web-per-hotels" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/crear-web-barata</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/crear-web-barata" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/crear-web-barata" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/crear-web-barata" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/crear-web-professional</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/crear-web-professional" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/crear-web-profesional" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/crear-web-professional" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/crear-web-per-negocis</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/crear-web-per-negocis" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/crear-web-para-negocios" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/crear-web-per-negocis" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/crear-web-girona</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/crear-web-girona" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/crear-web-girona" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/crear-web-girona" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/crear-pagina-web</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/crear-pagina-web" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/crear-pagina-web" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/crear-pagina-web" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/web-per-perruqueries</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/web-per-perruqueries" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/web-para-peluquerias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/web-per-perruqueries" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/web-per-immobiliaries</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/web-per-immobiliaries" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/web-para-inmobiliarias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/web-per-immobiliaries" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/web-per-fotografs</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/web-per-fotografs" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/web-para-fotografos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/web-per-fotografs" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/disseny-web-la-bisbal-demporda</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-la-bisbal-demporda" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-la-bisbal-demporda" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-la-bisbal-demporda" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/disseny-web-palafrugell</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-palafrugell" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-palafrugell" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-palafrugell" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/disseny-web-palamos</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-palamos" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-palamos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-palamos" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/disseny-web-tossa-de-mar</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-tossa-de-mar" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-tossa-de-mar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-tossa-de-mar" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/quant-costa-una-pagina-web</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/quant-costa-una-pagina-web" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/cuanto-cuesta-una-pagina-web" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/quant-costa-una-pagina-web" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/que-necessita-la-web-dun-restaurant</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/que-necessita-la-web-dun-restaurant" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/que-necesita-la-web-de-un-restaurante" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/que-necessita-la-web-dun-restaurant" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/per-que-la-teva-web-no-apareix-a-google</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/per-que-la-teva-web-no-apareix-a-google" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/por-que-tu-web-no-aparece-en-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/per-que-la-teva-web-no-apareix-a-google" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-propia-vs-instagram</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-propia-vs-instagram" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-propia-vs-instagram" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-propia-vs-instagram" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/quan-val-la-pena-fer-una-botiga-online</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/quan-val-la-pena-fer-una-botiga-online" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/cuando-vale-la-pena-hacer-una-tienda-online" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/quan-val-la-pena-fer-una-botiga-online" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/quant-temps-triga-google-a-posicionar-una-web</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/quant-temps-triga-google-a-posicionar-una-web" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/cuanto-tarda-google-en-posicionar-una-web" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/quant-temps-triga-google-a-posicionar-una-web" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/wordpress-o-web-a-mida</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/wordpress-o-web-a-mida" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/wordpress-o-web-a-medida" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/wordpress-o-web-a-mida" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-per-a-pastisseries-i-forns</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-pastisseries-i-forns" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-pastelerias-y-panaderias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-pastisseries-i-forns" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-per-a-agencies-de-viatges</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-agencies-de-viatges" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-agencias-de-viajes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-agencies-de-viatges" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-per-a-arquitectes-i-interioristes</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-arquitectes-i-interioristes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-arquitectos-e-interioristas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-arquitectes-i-interioristes" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-per-a-optiques</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-optiques" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-opticas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-optiques" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-per-a-autoescoles</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-autoescoles" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-autoescuelas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-autoescoles" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-per-a-psicolegs-i-centres-de-terapia</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-psicolegs-i-centres-de-terapia" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-psicologos-y-centros-de-terapia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-psicolegs-i-centres-de-terapia" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-per-a-floristeries</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-floristeries" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-floristerias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-floristeries" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-per-a-academies-i-centres-destudis</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-academies-i-centres-destudis" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-academias-y-centros-de-estudios" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-academies-i-centres-destudis" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-per-a-advocats-i-despatxos-juridics</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-advocats-i-despatxos-juridics" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-abogados-y-despachos-juridicos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-advocats-i-despatxos-juridics" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-per-a-fisioterapeutes-i-centres-de-benestar</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-fisioterapeutes-i-centres-de-benestar" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-fisioterapeutas-y-centros-de-bienestar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-fisioterapeutes-i-centres-de-benestar" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-per-a-veterinaris</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-veterinaris" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-veterinarios" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-veterinaris" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-per-a-dentistes-i-cliniques-dentals</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-dentistes-i-cliniques-dentals" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-dentistas-y-clinicas-dentales" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-dentistes-i-cliniques-dentals" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-per-a-tallers-mecanics</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-tallers-mecanics" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-talleres-mecanicos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-tallers-mecanics" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-per-a-gimnasos-i-centres-esportius</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-gimnasos-i-centres-esportius" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-gimnasios-y-centros-deportivos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-gimnasos-i-centres-esportius" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-bilingue-catala-i-castella-per-que-importa</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-bilingue-catala-i-castella-per-que-importa" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-bilingue-catalan-y-castellano-por-que-importa" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-bilingue-catala-i-castella-per-que-importa" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/google-ads-o-seo-on-han-danar-els-teus-diners</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/google-ads-o-seo-on-han-danar-els-teus-diners" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/google-ads-o-seo-donde-invertir-tu-dinero" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/google-ads-o-seo-on-han-danar-els-teus-diners" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/com-saber-si-la-teva-web-funciona-analytics-i-gtm</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/com-saber-si-la-teva-web-funciona-analytics-i-gtm" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/como-saber-si-tu-web-funciona-analytics-y-gtm" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/com-saber-si-la-teva-web-funciona-analytics-i-gtm" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/migrar-de-wix-o-wordpress-a-una-web-propia</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/migrar-de-wix-o-wordpress-a-una-web-propia" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/migrar-de-wix-o-wordpress-a-una-web-propia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/migrar-de-wix-o-wordpress-a-una-web-propia" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/com-millorar-google-business-profile</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/com-millorar-google-business-profile" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/como-mejorar-google-business-profile" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/com-millorar-google-business-profile" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/fotos-per-a-la-web-del-teu-negoci</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/fotos-per-a-la-web-del-teu-negoci" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/fotos-para-la-web-de-tu-negocio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/fotos-per-a-la-web-del-teu-negoci" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/disseny-web-per-a-cliniques</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/disseny-web-per-a-cliniques" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/diseno-web-para-clinicas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/disseny-web-per-a-cliniques" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/com-fer-que-el-teu-negoci-aparegui-a-google-maps</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/com-fer-que-el-teu-negoci-aparegui-a-google-maps" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/como-hacer-que-tu-negocio-aparezca-en-google-maps" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/com-fer-que-el-teu-negoci-aparegui-a-google-maps" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/disseny-web-per-a-perruqueries-i-salons-de-bellesa</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/disseny-web-per-a-perruqueries-i-salons-de-bellesa" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/diseno-web-para-peluquerias-y-salones-de-belleza" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/disseny-web-per-a-perruqueries-i-salons-de-bellesa" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/com-escriure-els-textos-de-la-teva-web</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/com-escriure-els-textos-de-la-teva-web" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/como-escribir-los-textos-de-tu-web" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/com-escriure-els-textos-de-la-teva-web" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/quant-costa-el-seo-a-girona</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/quant-costa-el-seo-a-girona" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/cuanto-cuesta-el-seo-en-girona" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/quant-costa-el-seo-a-girona" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/velocitat-web-per-que-importa-i-com-millorar-la</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/velocitat-web-per-que-importa-i-com-millorar-la" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/velocidad-web-por-que-importa-y-como-mejorarla" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/velocitat-web-per-que-importa-i-com-millorar-la" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/com-triar-el-nom-de-domini-per-al-teu-negoci</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/com-triar-el-nom-de-domini-per-al-teu-negoci" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/como-elegir-el-nombre-de-dominio-para-tu-negocio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/com-triar-el-nom-de-domini-per-al-teu-negoci" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/email-marketing-per-a-negocis-locals</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/email-marketing-per-a-negocis-locals" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/email-marketing-para-negocios-locales" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/email-marketing-per-a-negocis-locals" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/seo-local-guia-completa-per-a-negocis</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/seo-local-guia-completa-per-a-negocis" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/seo-local-guia-completa-para-negocios" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/seo-local-guia-completa-per-a-negocis" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/disseny-web-per-a-assessors-i-gestories</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/disseny-web-per-a-assessors-i-gestories" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/diseno-web-para-asesorias-y-gestorias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/disseny-web-per-a-assessors-i-gestories" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/disseny-web-per-a-immobiliaries</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/disseny-web-per-a-immobiliaries" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/diseno-web-para-inmobiliarias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/disseny-web-per-a-immobiliaries" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-per-a-fotografs-portfoli-online</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-fotografs-portfoli-online" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-fotografos-portfolio-online" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-fotografs-portfoli-online" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/manteniment-web-que-inclou-i-per-que-el-necessites</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/manteniment-web-que-inclou-i-per-que-el-necessites" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/mantenimiento-web-que-incluye-y-por-que-lo-necesitas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/manteniment-web-que-inclou-i-per-que-el-necessites" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-per-a-hotels-i-allotjaments-turistics</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-hotels-i-allotjaments-turistics" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-hoteles-y-alojamientos-turisticos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-hotels-i-allotjaments-turistics" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-per-a-botigues-fisiques-com-vendre-mes</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-botigues-fisiques-com-vendre-mes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-tiendas-fisicas-como-vender-mas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-botigues-fisiques-com-vendre-mes" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/web-barata-vs-web-professional-que-amagues</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-barata-vs-web-professional-que-amagues" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-barata-vs-web-profesional-que-escondes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-barata-vs-web-professional-que-amagues" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://motordigital.cat/blog/rgpd-i-politica-de-privacitat-que-ha-de-tenir-la-teva-web</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/rgpd-i-politica-de-privacitat-que-ha-de-tenir-la-teva-web" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/rgpd-y-politica-de-privacidad-que-debe-tener-tu-web" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/rgpd-i-politica-de-privacitat-que-ha-de-tenir-la-teva-web" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/servicios</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/serveis" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/servicios" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/serveis" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/precios</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/preus" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/precios" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/preus" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/como-trabajamos</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/com-treballem" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/como-trabajamos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/com-treballem" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/contacto</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/contacte" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/contacto" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/contacte" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/diseno-web-girona</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-girona" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-girona" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-girona" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/diseno-web-lloret-de-mar</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-lloret-de-mar" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-lloret-de-mar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-lloret-de-mar" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/diseno-web-blanes</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-blanes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-blanes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-blanes" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/diseno-web-sant-feliu-de-guixols</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-sant-feliu-de-guixols" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-sant-feliu-de-guixols" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-sant-feliu-de-guixols" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/diseno-web-olot</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-olot" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-olot" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-olot" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/diseno-web-figueres</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-figueres" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-figueres" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-figueres" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/diseno-web-banyoles</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-banyoles" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-banyoles" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-banyoles" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/diseno-web-roses</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-roses" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-roses" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-roses" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/diseno-web-profesional</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-professional" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-profesional" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-professional" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/seo-girona</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/seo-girona" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/seo-girona" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/seo-girona" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/tienda-online-girona</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/botiga-online-girona" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/tienda-online-girona" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/botiga-online-girona" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/mantenimiento-web-girona</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/manteniment-web-girona" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/mantenimiento-web-girona" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/manteniment-web-girona" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/redes-sociales-girona</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/xarxes-socials-girona" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/redes-sociales-girona" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/xarxes-socials-girona" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/web-para-restaurantes</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/web-per-restaurants" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/web-para-restaurantes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/web-per-restaurants" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/web-para-clinicas</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/web-per-cliniques" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/web-para-clinicas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/web-per-cliniques" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/web-para-asesorias</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/web-per-assessors" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/web-para-asesorias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/web-per-assessors" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/web-para-tiendas</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/web-per-botigues" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/web-para-tiendas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/web-per-botigues" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/web-para-hoteles</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/web-per-hotels" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/web-para-hoteles" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/web-per-hotels" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/crear-web-barata</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/crear-web-barata" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/crear-web-barata" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/crear-web-barata" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/crear-web-profesional</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/crear-web-professional" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/crear-web-profesional" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/crear-web-professional" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/crear-web-para-negocios</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/crear-web-per-negocis" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/crear-web-para-negocios" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/crear-web-per-negocis" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/crear-web-girona</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/crear-web-girona" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/crear-web-girona" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/crear-web-girona" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/crear-pagina-web</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/crear-pagina-web" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/crear-pagina-web" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/crear-pagina-web" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/web-para-peluquerias</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/web-per-perruqueries" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/web-para-peluquerias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/web-per-perruqueries" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/web-para-inmobiliarias</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/web-per-immobiliaries" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/web-para-inmobiliarias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/web-per-immobiliaries" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/web-para-fotografos</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/web-per-fotografs" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/web-para-fotografos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/web-per-fotografs" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/diseno-web-la-bisbal-demporda</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-la-bisbal-demporda" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-la-bisbal-demporda" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-la-bisbal-demporda" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/diseno-web-palafrugell</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-palafrugell" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-palafrugell" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-palafrugell" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/diseno-web-palamos</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-palamos" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-palamos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-palamos" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/diseno-web-tossa-de-mar</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/disseny-web-tossa-de-mar" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/diseno-web-tossa-de-mar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/disseny-web-tossa-de-mar" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/cuanto-cuesta-una-pagina-web</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/quant-costa-una-pagina-web" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/cuanto-cuesta-una-pagina-web" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/quant-costa-una-pagina-web" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/que-necesita-la-web-de-un-restaurante</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/que-necessita-la-web-dun-restaurant" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/que-necesita-la-web-de-un-restaurante" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/que-necessita-la-web-dun-restaurant" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/por-que-tu-web-no-aparece-en-google</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/per-que-la-teva-web-no-apareix-a-google" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/por-que-tu-web-no-aparece-en-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/per-que-la-teva-web-no-apareix-a-google" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-propia-vs-instagram</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-propia-vs-instagram" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-propia-vs-instagram" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-propia-vs-instagram" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/cuando-vale-la-pena-hacer-una-tienda-online</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/quan-val-la-pena-fer-una-botiga-online" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/cuando-vale-la-pena-hacer-una-tienda-online" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/quan-val-la-pena-fer-una-botiga-online" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/cuanto-tarda-google-en-posicionar-una-web</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/quant-temps-triga-google-a-posicionar-una-web" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/cuanto-tarda-google-en-posicionar-una-web" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/quant-temps-triga-google-a-posicionar-una-web" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/wordpress-o-web-a-medida</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/wordpress-o-web-a-mida" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/wordpress-o-web-a-medida" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/wordpress-o-web-a-mida" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-para-pastelerias-y-panaderias</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-pastisseries-i-forns" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-pastelerias-y-panaderias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-pastisseries-i-forns" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-para-agencias-de-viajes</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-agencies-de-viatges" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-agencias-de-viajes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-agencies-de-viatges" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-para-arquitectos-e-interioristas</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-arquitectes-i-interioristes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-arquitectos-e-interioristas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-arquitectes-i-interioristes" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-para-opticas</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-optiques" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-opticas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-optiques" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-para-autoescuelas</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-autoescoles" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-autoescuelas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-autoescoles" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-para-psicologos-y-centros-de-terapia</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-psicolegs-i-centres-de-terapia" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-psicologos-y-centros-de-terapia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-psicolegs-i-centres-de-terapia" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-para-floristerias</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-floristeries" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-floristerias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-floristeries" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-para-academias-y-centros-de-estudios</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-academies-i-centres-destudis" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-academias-y-centros-de-estudios" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-academies-i-centres-destudis" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-para-abogados-y-despachos-juridicos</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-advocats-i-despatxos-juridics" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-abogados-y-despachos-juridicos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-advocats-i-despatxos-juridics" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-para-fisioterapeutas-y-centros-de-bienestar</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-fisioterapeutes-i-centres-de-benestar" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-fisioterapeutas-y-centros-de-bienestar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-fisioterapeutes-i-centres-de-benestar" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-para-veterinarios</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-veterinaris" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-veterinarios" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-veterinaris" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-para-dentistas-y-clinicas-dentales</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-dentistes-i-cliniques-dentals" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-dentistas-y-clinicas-dentales" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-dentistes-i-cliniques-dentals" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-para-talleres-mecanicos</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-tallers-mecanics" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-talleres-mecanicos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-tallers-mecanics" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-para-gimnasios-y-centros-deportivos</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-gimnasos-i-centres-esportius" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-gimnasios-y-centros-deportivos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-gimnasos-i-centres-esportius" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-bilingue-catalan-y-castellano-por-que-importa</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-bilingue-catala-i-castella-per-que-importa" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-bilingue-catalan-y-castellano-por-que-importa" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-bilingue-catala-i-castella-per-que-importa" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/google-ads-o-seo-donde-invertir-tu-dinero</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/google-ads-o-seo-on-han-danar-els-teus-diners" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/google-ads-o-seo-donde-invertir-tu-dinero" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/google-ads-o-seo-on-han-danar-els-teus-diners" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/como-saber-si-tu-web-funciona-analytics-y-gtm</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/com-saber-si-la-teva-web-funciona-analytics-i-gtm" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/como-saber-si-tu-web-funciona-analytics-y-gtm" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/com-saber-si-la-teva-web-funciona-analytics-i-gtm" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/migrar-de-wix-o-wordpress-a-una-web-propia</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/migrar-de-wix-o-wordpress-a-una-web-propia" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/migrar-de-wix-o-wordpress-a-una-web-propia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/migrar-de-wix-o-wordpress-a-una-web-propia" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/como-mejorar-google-business-profile</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/com-millorar-google-business-profile" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/como-mejorar-google-business-profile" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/com-millorar-google-business-profile" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/fotos-para-la-web-de-tu-negocio</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/fotos-per-a-la-web-del-teu-negoci" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/fotos-para-la-web-de-tu-negocio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/fotos-per-a-la-web-del-teu-negoci" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/diseno-web-para-clinicas</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/disseny-web-per-a-cliniques" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/diseno-web-para-clinicas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/disseny-web-per-a-cliniques" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/como-hacer-que-tu-negocio-aparezca-en-google-maps</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/com-fer-que-el-teu-negoci-aparegui-a-google-maps" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/como-hacer-que-tu-negocio-aparezca-en-google-maps" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/com-fer-que-el-teu-negoci-aparegui-a-google-maps" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/diseno-web-para-peluquerias-y-salones-de-belleza</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/disseny-web-per-a-perruqueries-i-salons-de-bellesa" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/diseno-web-para-peluquerias-y-salones-de-belleza" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/disseny-web-per-a-perruqueries-i-salons-de-bellesa" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/como-escribir-los-textos-de-tu-web</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/com-escriure-els-textos-de-la-teva-web" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/como-escribir-los-textos-de-tu-web" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/com-escriure-els-textos-de-la-teva-web" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/cuanto-cuesta-el-seo-en-girona</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/quant-costa-el-seo-a-girona" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/cuanto-cuesta-el-seo-en-girona" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/quant-costa-el-seo-a-girona" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/velocidad-web-por-que-importa-y-como-mejorarla</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/velocitat-web-per-que-importa-i-com-millorar-la" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/velocidad-web-por-que-importa-y-como-mejorarla" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/velocitat-web-per-que-importa-i-com-millorar-la" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/como-elegir-el-nombre-de-dominio-para-tu-negocio</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/com-triar-el-nom-de-domini-per-al-teu-negoci" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/como-elegir-el-nombre-de-dominio-para-tu-negocio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/com-triar-el-nom-de-domini-per-al-teu-negoci" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/email-marketing-para-negocios-locales</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/email-marketing-per-a-negocis-locals" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/email-marketing-para-negocios-locales" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/email-marketing-per-a-negocis-locals" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/seo-local-guia-completa-para-negocios</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/seo-local-guia-completa-per-a-negocis" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/seo-local-guia-completa-para-negocios" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/seo-local-guia-completa-per-a-negocis" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/diseno-web-para-asesorias-y-gestorias</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/disseny-web-per-a-assessors-i-gestories" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/diseno-web-para-asesorias-y-gestorias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/disseny-web-per-a-assessors-i-gestories" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/diseno-web-para-inmobiliarias</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/disseny-web-per-a-immobiliaries" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/diseno-web-para-inmobiliarias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/disseny-web-per-a-immobiliaries" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-para-fotografos-portfolio-online</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-fotografs-portfoli-online" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-fotografos-portfolio-online" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-fotografs-portfoli-online" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/mantenimiento-web-que-incluye-y-por-que-lo-necesitas</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/manteniment-web-que-inclou-i-per-que-el-necessites" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/mantenimiento-web-que-incluye-y-por-que-lo-necesitas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/manteniment-web-que-inclou-i-per-que-el-necessites" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-para-hoteles-y-alojamientos-turisticos</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-hotels-i-allotjaments-turistics" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-hoteles-y-alojamientos-turisticos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-hotels-i-allotjaments-turistics" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-para-tiendas-fisicas-como-vender-mas</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-per-a-botigues-fisiques-com-vendre-mes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-para-tiendas-fisicas-como-vender-mas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-per-a-botigues-fisiques-com-vendre-mes" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/web-barata-vs-web-profesional-que-escondes</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/web-barata-vs-web-professional-que-amagues" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/web-barata-vs-web-profesional-que-escondes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/web-barata-vs-web-professional-que-amagues" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://motordigital.cat/es/blog/rgpd-y-politica-de-privacidad-que-debe-tener-tu-web</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://motordigital.cat/blog/rgpd-i-politica-de-privacitat-que-ha-de-tenir-la-teva-web" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://motordigital.cat/es/blog/rgpd-y-politica-de-privacidad-que-debe-tener-tu-web" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motordigital.cat/blog/rgpd-i-politica-de-privacitat-que-ha-de-tenir-la-teva-web" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

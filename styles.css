@@ -119,6 +119,7 @@ a { text-decoration: none; color: inherit; }
   transition: background 0.15s, color 0.15s;
 }
 .lang-btn:hover { color: var(--accent); }
+a.lang-btn { display: inline-block; text-decoration: none; line-height: normal; }
 .lang-btn.active {
   background: var(--accent);
   color: #fff;
